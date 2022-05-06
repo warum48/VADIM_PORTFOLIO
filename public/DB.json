@@ -151,7 +151,7 @@
         "tags": ["react", "utils"],
         "url": [
           {
-            "link": "https://fpkgd.csb.app/"
+            "link": "https://slidergen.vercel.app/"
           }
         ]
       },
@@ -164,20 +164,20 @@
         "tags": ["react", "utils"],
         "url": [
           {
-            "link": "https://ry1wm.csb.app/"
+            "link": "https://iframe-breakpoints.vercel.app/"
           }
         ]
       },
       {
         "name": "Qrcodes generator and list",
         "logo": "",
-        "desc_en": "REST CRUD list",
-        "desc_ru": "Генератор и список QR-кодов для печати в журналах Imedia Group",
+        "desc_en": "REST CRUD list. This is just demo, API calls are disabled",
+        "desc_ru": "Генератор и список QR-кодов для печати в журналах Imedia Group. Это демо, вызовы API отключены",
         "img": ["reactaps/qrcodes/1.png"],
         "tags": ["react", "utils"],
         "url": [
           {
-            "link": "https://mgkped.csb.app/"
+            "link": "https://qrcodes-imweb.vercel.app/"
           }
         ]
       }
