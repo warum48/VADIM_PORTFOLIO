@@ -26,7 +26,6 @@ import {
 import { EmptyJSX } from "./components/EmptyJSX";
 import { ItemCard } from "./components/ItemCard";
 import { ItemCardSimple } from "./components/ItemCardSimple";
-import { Counter } from "./components/Counter";
 import { LangSwitch } from "./components/LangSwitch";
 import { Filters } from "./components/Filters";
 import { AnchorLinks } from "./components/AnchorLinks";
