@@ -101,122 +101,6 @@
     ]
   },
 
-  "sites_mob": {
-    "description": "Web-mobile applications",
-    "type": "mob",
-    "projects": [
-      {
-        "name": "Bond",
-        "logo": "logos/bond_street_logo.png",
-        "desc_en": "Quiz, videostories, timer",
-        "desc_ru": "Тест, видоеоистории, таймер",
-        "img": [
-          "webmobile/bond_preact/1.jpg",
-          "webmobile/bond_preact/2.jpg",
-          "webmobile/bond_preact/3.jpg"
-        ],
-        "tags": ["preact", "webmobile"],
-        "url": [
-          {
-            "link": "https://dev.nahab.info/aerovadim/bond_preact/?debug=true"
-          }
-        ]
-      },
-      {
-        "name": "Bond",
-        "logo": "logos/bond_street_logo.png",
-        "desc_en": "",
-        "desc_ru": "",
-        "img": ["webmobile/bond2020/1.jpg"],
-        "tags": ["webmobile", "jquery"],
-        "url": [
-          {
-            "link": "https://dev.nahab.info/dev-landings/bond2020/"
-          }
-        ]
-      }
-    ]
-  },
-
-  "react_apps": {
-    "description": "React applications",
-    "type": "desc",
-    "projects": [
-      {
-        "name": "Slider generator",
-        "logo": "",
-        "desc_en": "Slider generator",
-        "desc_ru": "Генератор слайдеров для контент-менеджеров космо",
-        "img": ["reactaps/slidergen/1.png"],
-        "tags": ["react", "utils"],
-        "url": [
-          {
-            "link": "https://slidergen.vercel.app/"
-          }
-        ]
-      },
-      {
-        "name": "Iframe code generator",
-        "logo": "",
-        "desc_en": "Generate code for insertions into an article and preview all screen sizes",
-        "desc_ru": "Генератор кода вставок в iframe для контент-менеджеров космо, первьювер iframe'ов в разных размерах, подсчет их высоты",
-        "img": ["reactaps/iframes/1.jpg"],
-        "tags": ["react", "utils"],
-        "url": [
-          {
-            "link": "https://iframe-breakpoints.vercel.app/"
-          }
-        ]
-      },
-      {
-        "name": "Qrcodes generator and list",
-        "logo": "",
-        "desc_en": "REST CRUD list. This is just demo, API calls are disabled",
-        "desc_ru": "Генератор и список QR-кодов для печати в журналах Imedia Group. Это демо, вызовы API отключены",
-        "img": ["reactaps/qrcodes/1.png"],
-        "tags": ["react", "utils"],
-        "url": [
-          {
-            "link": "https://qrcodes-imweb.vercel.app/"
-          }
-        ]
-      }
-    ]
-  },
-
-  "music_apps": {
-    "description": "Music applications",
-    "type": "desc",
-    "projects": [
-      {
-        "name": "Drone-ambient synthesizer",
-        "logo": "",
-        "desc_en": "Drone-ambient synthesizer",
-        "desc_ru": "Drone-ambient синтезатор",
-        "img": ["musicaps/drone/1.png"],
-        "tags": ["angular1", "sounddesign"],
-        "url": [
-          {
-            "link": "https://69lt1.csb.app/"
-          }
-        ]
-      },
-      {
-        "name": "Fugue in A minor",
-        "logo": "",
-        "desc_en": "Fugue in A minor",
-        "desc_ru": "Фуга для органа ля минор",
-        "img": ["musicaps/fugue_am/1.jpg"],
-        "tags": ["angular1", "sounddesign"],
-        "url": [
-          {
-            "link": "https://69lt1.csb.app/"
-          }
-        ]
-      }
-    ]
-  },
-
   "websites_angular": {
     "description": "Websites / Angular1",
     "type": "desc",
@@ -344,6 +228,123 @@
       }
     ]
   },
+
+  "sites_mob": {
+    "description": "Web-mobile applications",
+    "type": "mob",
+    "projects": [
+      {
+        "name": "Bond",
+        "logo": "logos/bond_street_logo.png",
+        "desc_en": "Quiz, videostories, timer",
+        "desc_ru": "Тест, видоеоистории, таймер",
+        "img": [
+          "webmobile/bond_preact/1.jpg",
+          "webmobile/bond_preact/2.jpg",
+          "webmobile/bond_preact/3.jpg"
+        ],
+        "tags": ["preact", "webmobile"],
+        "url": [
+          {
+            "link": "https://dev.nahab.info/aerovadim/bond_preact/?debug=true"
+          }
+        ]
+      },
+      {
+        "name": "Bond",
+        "logo": "logos/bond_street_logo.png",
+        "desc_en": "",
+        "desc_ru": "",
+        "img": ["webmobile/bond2020/1.jpg"],
+        "tags": ["webmobile", "jquery"],
+        "url": [
+          {
+            "link": "https://dev.nahab.info/dev-landings/bond2020/"
+          }
+        ]
+      }
+    ]
+  },
+
+  "react_apps": {
+    "description": "React applications",
+    "type": "desc",
+    "projects": [
+      {
+        "name": "Slider generator",
+        "logo": "",
+        "desc_en": "Slider generator",
+        "desc_ru": "Генератор слайдеров для контент-менеджеров космо",
+        "img": ["reactaps/slidergen/1.png"],
+        "tags": ["react", "utils"],
+        "url": [
+          {
+            "link": "https://slidergen.vercel.app/"
+          }
+        ]
+      },
+      {
+        "name": "Iframe code generator",
+        "logo": "",
+        "desc_en": "Generate code for insertions into an article and preview all screen sizes",
+        "desc_ru": "Генератор кода вставок в iframe для контент-менеджеров космо, первьювер iframe'ов в разных размерах, подсчет их высоты",
+        "img": ["reactaps/iframes/1.jpg"],
+        "tags": ["react", "utils"],
+        "url": [
+          {
+            "link": "https://iframe-breakpoints.vercel.app/"
+          }
+        ]
+      },
+      {
+        "name": "Qrcodes generator and list",
+        "logo": "",
+        "desc_en": "REST CRUD list. This is just demo, API calls are disabled",
+        "desc_ru": "Генератор и список QR-кодов для печати в журналах Imedia Group. Это демо, вызовы API отключены",
+        "img": ["reactaps/qrcodes/1.png"],
+        "tags": ["react", "utils"],
+        "url": [
+          {
+            "link": "https://qrcodes-imweb.vercel.app/"
+          }
+        ]
+      }
+    ]
+  },
+
+  "music_apps": {
+    "description": "Music applications",
+    "type": "desc",
+    "projects": [
+      {
+        "name": "Drone-ambient synthesizer",
+        "logo": "",
+        "desc_en": "Drone-ambient synthesizer",
+        "desc_ru": "Drone-ambient синтезатор",
+        "img": ["musicaps/drone/1.png"],
+        "tags": ["angular1", "sounddesign"],
+        "url": [
+          {
+            "link": "https://69lt1.csb.app/"
+          }
+        ]
+      },
+      {
+        "name": "Fugue in A minor",
+        "logo": "",
+        "desc_en": "Fugue in A minor",
+        "desc_ru": "Фуга для органа ля минор",
+        "img": ["musicaps/fugue_am/1.jpg"],
+        "tags": ["angular1", "sounddesign"],
+        "url": [
+          {
+            "link": "https://69lt1.csb.app/"
+          }
+        ]
+      }
+    ]
+  },
+
   "games_desc": {
     "description": "Desktop games",
     "type": "desc",
@@ -514,7 +515,7 @@
     ]
   },
   "design": {
-    "description": "Design (before 2012)",
+    "description": "Design",
     "type": "desc",
     "projects": [
       {

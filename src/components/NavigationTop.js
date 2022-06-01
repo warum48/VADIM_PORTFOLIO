@@ -92,12 +92,12 @@ export function NavigationTop({ dB }) {
           <div className="d-block d-sm-none">
             <AnchorLinks dB={dB} topMenu={true} />
             <hr className="text-white-50" />
-            <Filters
+            {/*<Filters
               dB={dB}
               className={"fi  d-lg-none " + rerenderCount}
               key={rerenderCount}
               topMenu={true}
-            />
+            />*/}
           </div>
         </Navbar.Collapse>
       </Container>

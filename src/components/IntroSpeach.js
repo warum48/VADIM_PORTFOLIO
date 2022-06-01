@@ -100,8 +100,13 @@ export const IntroSpeach = (props) => {
                 <br />
                 <strong>Specialization:</strong> Frontend developer
                 <br />
+                <strong>What can I do for you? </strong> Promo websites, landing
+                pages, web applications, online 2d games, banners, Instagram
+                games or masks
+                <br />
                 <strong>Stack:</strong> JavaScript ES6, React, Preact, jQuery,
-                Angular 1, Animation (CSS, Canvas, SVG), Webpack, HTML5, CSS3
+                Angular 1, Animation (CSS, Canvas, SVG), Webpack, HTML5, CSS3,
+                Photoshop, Figma
                 <br />
                 <strong>Working experience:</strong>
                 <ul
@@ -149,7 +154,7 @@ export const IntroSpeach = (props) => {
                 <strong>Current location:</strong> Cambodia
                 <br />
                 This portfolio is not a complete list of works, only shows the
-                spectrum.
+                spectrum of my skills.
               </>
             ) : (
               <>
