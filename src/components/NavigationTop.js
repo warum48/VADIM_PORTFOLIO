@@ -75,11 +75,13 @@ const Burger = ({ open, setOpen }) => {
     console.log("--opne", open);
   }, [open]);
   return (
-    <StyledBurger onClick={() => setOpen(!open)} open={open}>
-      <div />
-      <div />
-      <div />
-    </StyledBurger>
+    <div className="d-block d-sm-none">
+      <StyledBurger onClick={() => setOpen(!open)} open={open}>
+        <div />
+        <div />
+        <div />
+      </StyledBurger>
+    </div>
   );
 };
 
