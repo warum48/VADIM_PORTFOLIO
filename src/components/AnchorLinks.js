@@ -75,7 +75,7 @@ ES6:
 const found = arr1.some(r=> arr2.indexOf(r) >= 0)
 https://stackoverflow.com/questions/16312528/check-if-an-array-contains-any-element-of-another-array-in-javascript*/
 
-export const AnchorLinks = ({ dB, ...props }) => {
+export const AnchorLinks = ({ dB, setOpen = null, ...props }) => {
   const isBigScreen = useMediaQuery({ query: "(min-width: 992px)" });
   const isSmallScreen = useMediaQuery({ query: "(max-width: 991px)" });
   const smoothScroll = useRef(null);
@@ -164,7 +164,15 @@ export const AnchorLinks = ({ dB, ...props }) => {
           Object.keys(dB).map((keyName, i) => (
             <div key={keyName}>
               {dB[keyName].type !== "also" && (
-                <Link topmenu={props.topMenu} href={"#" + keyName}>
+                <Link
+                  topmenu={props.topMenu}
+                  href={"#" + keyName}
+                  onClick={() => {
+                    if (setOpen) {
+                      setOpen(false);
+                    }
+                  }}
+                >
                   {dB[keyName].description || dB[keyName].type}
                 </Link>
               )}
