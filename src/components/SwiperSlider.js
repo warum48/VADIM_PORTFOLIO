@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from "react";
 //import { RouterContext } from "components/RouterContext";
 //import { PackSlide } from "components/PackSlide";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/bundle"; ///bundle
+//import "swiper/css/bundle"; ///bundle
 //import "swiper/swiper.min.css";
 import { Navigation, Pagination } from "swiper";
 //import { EffectFade } from 'swiper';
