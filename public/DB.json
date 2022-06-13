@@ -556,7 +556,8 @@
   "banners": {
     "description": "Banners",
     "show_header": 1,
-    "type": "also",
+    "type": "compact",
+
     "projects": [
       {
         "name": "SVG HTML",
@@ -581,6 +582,9 @@
         "cover": ["banners/banner_interactive.png"],
         "url": "https://dev.nahab.info/aerovadim/-=cosmo/banners/promocode/desc/index.html",
         "tags": ["banner"]
+      },
+      {
+        "show_more": "true"
       }
     ]
   },

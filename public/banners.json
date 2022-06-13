@@ -1,0 +1,116 @@
+{
+  "mainfolder": "https://dev.nahab.info/banner/dist",
+  "banners": [
+    {
+      "preview": "240x400.gif",
+      "folder": "2017_03_mcdonalds_chkn",
+      "name_en": "McDonalds Chicken Check In",
+      "name": "Баннеры mcdonalds от 13 марта (чикен-чекин)",
+      "list": [
+        ["2017_03_mcdonalds_chkn/between", ""],
+        ["2017_03_mcdonalds_chkn/mediasniper", ""],
+        ["2017_03_mcdonalds_chkn/mailru", ""],
+        ["2017_03_mcdonalds_chkn/yamobile", ""],
+        ["2017_03_mcdonalds_chkn/yandex_rtb", ""]
+      ]
+    },
+
+    {
+      "folder": "2017_03_mcdonalds",
+      "preview": "240x400.jpg",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    },
+    {
+      "preview": "240x400.gif",
+      "folder": "2017_03_mcdonalds_chkn",
+      "name_en": "McDonalds Chicken Check In",
+      "name": "Баннеры mcdonalds от 13 марта (чикен-чекин)",
+      "list": [
+        ["2017_03_mcdonalds_chkn/between", ""],
+        ["2017_03_mcdonalds_chkn/mediasniper", ""],
+        ["2017_03_mcdonalds_chkn/mailru", ""],
+        ["2017_03_mcdonalds_chkn/yamobile", ""],
+        ["2017_03_mcdonalds_chkn/yandex_rtb", ""]
+      ]
+    },
+
+    {
+      "folder": "2017_03_mcdonalds",
+      "preview": "240x400.jpg",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    },
+
+    {
+      "folder": "2017_03_mcdonalds",
+      "preview": "240x400.jpg",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    },
+
+    {
+      "folder": "2017_03_mcdonalds",
+      "preview": "240x400.jpg",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    },
+
+    {
+      "folder": "2017_03_mcdonalds",
+      "preview": "240x400.jpg",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    }
+  ]
+}

@@ -73,9 +73,8 @@ export default function App() {
   const seltag = useSelector((state) => state.tag.value);
   const [dB, setDB] = useState(null);
   const language = useSelector((state) => state.lang.value);
-  const [renderCount, setRenderCount] = useState(0); //we need it to rerender ScrollSpy in AnkorLinks component
-  //const [outsideRender, setOutsideRender] = useState(0);
-  const [listIsBuilt, setListIsBuilt] = useState(false);
+  const [renderCount, setRenderCount] = useState(0);
+  const [outsideRender, setOutsideRender] = useState(0);
 
   useEffect(() => {
     fetch("DB.json")
@@ -92,27 +91,15 @@ export default function App() {
     setRenderCount((prev) => setRenderCount(prev + 1));
     //outsideRender
     //setTimeout(() => {
-    //setOutsideRender(outsideRender + 1);
-    //console.log("or", outsideRender);
+    setOutsideRender(outsideRender + 1);
+    console.log("or", outsideRender);
     //}, 1000);
   }, [dB]);
 
-  useInterval(logH, listIsBuilt ? 10000000 : 1000);
+  //uuseInterval(()=>{cons})
 
-  function logH() {
-    var offsetHeight = projsHolder.current.offsetHeight;
-    console.log("offsH", offsetHeight);
-    if (offsetHeight > 0) {
-      if (!listIsBuilt) {
-        setRenderCount((prev) => setRenderCount(prev + 1));
-        //setOutsideRender(outsideRender + 1);
-      }
-      setListIsBuilt(true);
-    }
-  }
-  //key={"or" + outsideRender}
   return (
-    <div className="App">
+    <div className="App" key={"or" + outsideRender}>
       <NavigationTop dB={dB} />
       <GoToTop />
       <Container
@@ -128,8 +115,8 @@ export default function App() {
                 <AnchorLinks
                   dB={dB}
                   renderCount={renderCount}
-                  //outsideRender={outsideRender}
-                  //setOutsideRender={setOutsideRender}
+                  outsideRender={outsideRender}
+                  setOutsideRender={setOutsideRender}
                 />
               )}
               <hr className="my-3" />
@@ -144,7 +131,7 @@ export default function App() {
                   <IntroSpeach />
                 </Col>
               </Row>
-              <div className="projsholder" ref={projsHolder}>
+              <div className="projsholder">
                 {dB &&
                   Object.keys(dB).map((keyName, i) => (
                     <React.Fragment key={keyName}>

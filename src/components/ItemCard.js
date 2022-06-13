@@ -17,6 +17,7 @@ import * as constants from "../CONSTS";
 import { LinkContainer } from "./StyledLinkContainer";
 //import { Slider } from "./Slider";
 //import { SliderFM } from "./SliderFM";
+import { SwiperSlider } from "./SwiperSlider";
 import { Tag } from "./StyledTag";
 import Tilt from "react-parallax-tilt";
 import {
@@ -48,10 +49,13 @@ export const ItemCard = ({ item, type }) => {
         {item.img.length <= 1 ? (
           <Card.Img variant="top" src={constants.imgurl_personal + item.img} />
         ) : (
-          <Card.Img
+          <>
+            {/*<Card.Img
             variant="top"
             src={constants.imgurl_personal + item.img[0]}
-          />
+          />*/}
+            <SwiperSlider images={item.img} />
+          </>
         )}
 
         <Card.Body
