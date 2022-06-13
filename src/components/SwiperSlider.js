@@ -6,10 +6,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import { Navigation, Pagination } from "swiper";
 //import { EffectFade } from 'swiper';
-import { EffectCreative } from "swiper";
+//import { EffectCreative } from "swiper";
+import SwiperCore, { EffectCreative } from "swiper";
 import * as constants from "../CONSTS";
 //import 'swiper/css/effect-fade';
 import "swiper/css/effect-creative";
+
+SwiperCore.use([EffectCreative]);
 
 export function SwiperSlider({ images }) {
   return (
