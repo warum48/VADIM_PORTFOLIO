@@ -1,0 +1,42 @@
+.playpausebutton {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index:500;
+
+  opacity: .7;
+  filter: drop-shadow(2px 3px 3px gray);
+
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+
+  border-color: transparent transparent transparent white;
+  transition: 300ms all ease;
+  cursor: pointer;
+
+  // play state
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+
+  &.paused {
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+    //top: 0%;
+    //left:100%;
+    //transform: translate(-100%,0%) scale(.4, .4);
+    top: 100%;
+    left:0%;
+    transform: translate(0%,-100%) scale(.4, .4);
+  }
+
+  &:hover {
+    border-color: transparent transparent transparent white;
+  }
+}
+
+
+

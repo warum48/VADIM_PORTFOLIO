@@ -57,7 +57,7 @@
       {
         "name": "got2b2021",
         "url": "https://sp.cosmo.ru/got2b2021/",
-        "img": ["logos/got2b-us-logo.png"],
+        "logo": ["logos/got2b-us-logo.png"],
         "tags": ["react"]
       },
       {
@@ -69,7 +69,7 @@
       {
         "name": "galaxywatch",
         "url": "http://sp.mhealth.ru/galaxywatch/",
-        "img": ["logos/samsung_galaxy_watch_logo.png"],
+        "logo": ["logos/samsung_galaxy_watch_logo.png"],
         "tags": ["react"]
       },
       {
@@ -82,13 +82,13 @@
       {
         "name": "playstation",
         "url": "https://sp.esquire.ru/playstation/",
-        "img": "logos/sony-logo.jpg",
+        "logo": "logos/sony-logo.jpg",
         "tags": ["react"]
       },
       {
         "name": "barbieastronaut",
         "url": "https://sp.cosmo.ru/barbieastronaut",
-        "img": ["logos/barbie-logo.png"],
+        "logo": ["logos/barbie-logo.png"],
         "tags": ["react"]
       },
       {

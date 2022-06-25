@@ -10,7 +10,8 @@ import {
   isDesktop
 } from "react-device-detect";
 import { SteppedWidthContainer } from "./components/SteppedWidthContainer";
-
+import ImageWithGray from "./components/ImageWithGray";
+import { IframeWithPreview } from "./components/IframeWithPreview";
 //change
 
 import {
@@ -38,9 +39,13 @@ import { GoToTop } from "./components/GoToTop";
 import { ErrorBoundary } from "react-error-boundary";
 
 import { useSelector, useDispatch } from "react-redux";
+import { getPosts } from "./redux/asyncFetch";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 //import "./DB.json";
+
+const storage_url = "https://dev.nahab.info/banner/dist/";
 
 const SectionHead = styled.div`
   font-size: 30px;
@@ -56,11 +61,10 @@ const SectionHeadAlso = styled.div`
   padding: 10px 015px;
 `;
 
-const LeftMenu = styled.div`
-  /*position: sticky;
-  top: 88px;
-  height: 80vh;
-  overflow: auto;*/
+const Img = styled.img`
+  max-width: 240px;
+  border: 1px solid black;
+  border-style: border-box;
 `;
 
 export default function Banners() {
@@ -72,6 +76,8 @@ export default function Banners() {
   const seltag = useSelector((state) => state.tag.value);
   const [dB, setDB] = useState(null);
   const language = useSelector((state) => state.lang.value);
+  const { entities, loading, error_ } = useSelector((state) => state.posts);
+  const dispatch = useDispatch();
   //const steppedWidthContainer = useRef(null);
 
   useEffect(() => {
@@ -87,6 +93,8 @@ export default function Banners() {
     //steppedWidthContainer.current.style.width = "720px";
 
     window.addEventListener("resize", onResize);
+
+    //dispatch(getPosts());
 
     return () => window.removeEventListener("keyup", onResize);
   }, []);
@@ -110,21 +118,64 @@ export default function Banners() {
       >
         <Row>
           <Col>
+            <SteppedWidthContainer
+              //ref={steppedWidthContainer}
+              style={{ minWidth: "320px", padding: "10px" }}
+              step={240}
+              padding={10}
+              spaceAround={24}
+              className=" d-flex flex-wrap justify-content-start  mx-auto"
+            >
+              {language == "ru" ? "Делаю баннеры" : "I create banners"}
+              {/*<div>
+                ---fetch loading--- {loading + ""} -- {entities.length} --{" "}
+                {error_ + ""} --{" "}
+                {entities.websites_react &&
+                  entities.websites_react.projects.length}
+                </div>*/}
+            </SteppedWidthContainer>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
             <div className="d-flex justify-content-center">
               <SteppedWidthContainer
                 //ref={steppedWidthContainer}
                 step={240}
+                padding={10}
                 spaceAround={24}
                 className=" d-flex flex-wrap justify-content-start  mx-auto"
               >
                 {dB &&
                   dB.banners.map((item, i) => (
-                    <div key={item}>
-                      <img
+                    <div key={"bana" + i} style={{ padding: "10px" }}>
+                      {/*<Img
                         alt=""
                         src={
                           dB.mainfolder + "/" + item.folder + "/" + item.preview
                         }
+                      />*/}
+                      {/*<ImageWithGray
+                        //key={`16:9-${index}`}
+                        aspectRatio="240:400"
+                        src={
+                          dB.mainfolder + "/" + item.folder + "/" + item.preview
+                        }
+                      />*/}
+
+                      <IframeWithPreview
+                        aspectRatio="240:400"
+                        imgSrc={
+                          dB.mainfolder + "/" + item.folder + "/" + item.preview
+                        }
+                        iframeSrc={
+                          dB.mainfolder +
+                          "/" +
+                          item.folder +
+                          "/" +
+                          item.preview_url
+                        }
+                        pausePosition={item.position}
                       />
                     </div>
                   ))}
@@ -177,3 +228,8 @@ export default function Banners() {
         "tags": ["react"]
       },
       */
+
+//https://dev.nahab.info/banner/dist/2018_03_sberbank/_masters/master_master_240x400/240x400.html
+//https://dev.nahab.info/banner/dist/2018_05_chevrolet_tahoe/240x400/240x400.html
+//https://dev.nahab.info/banner/dist/2018_05_sberbank/240x400/240x400.html
+//https://dev.nahab.info/banner/dist/2017_04_aftersales_opel/yandex_rtb/240x400/240x400.html

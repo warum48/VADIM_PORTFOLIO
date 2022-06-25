@@ -30,6 +30,7 @@ import { ItemCard } from "./components/ItemCard";
 import { ItemCardSimple } from "./components/ItemCardSimple";
 import { LangSwitch } from "./components/LangSwitch";
 import { Filters } from "./components/Filters";
+import { Logos } from "./components/Logos";
 import { AnchorLinks } from "./components/AnchorLinks";
 import { IntroSpeach } from "./components/IntroSpeach";
 import { NavigationTop } from "./components/NavigationTop";
@@ -134,7 +135,13 @@ export default function App() {
               )}
               <hr className="my-3" />
 
-              {isDesktop && <Filters dB={dB} />}
+              {isDesktop && (
+                <>
+                  <Filters dB={dB} />
+                  <hr className="my-3" />
+                  <Logos dB={dB} />
+                </>
+              )}
             </LeftMenu>
           </Col>
           <Col sm={8} md={8} lg={9}>

@@ -70,7 +70,7 @@ export const ItemCard = ({ item, type }) => {
               min-height: 50px;
             `}
           >
-            {type !== "mob" && (
+            {type !== "mob" && item.logo && (
               <>
                 <LogoContainer>
                   <Image

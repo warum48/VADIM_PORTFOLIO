@@ -2,8 +2,8 @@
 import React, { useState, useEffect, useContext } from "react";
 //import { RouterContext } from "components/RouterContext";
 //import { PackSlide } from "components/PackSlide";
-//import { Swiper, SwiperSlide } from "swiper/react";
-import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
+//import { Swiper, SwiperSlide } from "swiper/react"; //!!!!! in noncreate-react-app
+import { Swiper, SwiperSlide } from "swiper/react/swiper-react"; //!! for CRA + css from cdn
 //import "swiper/css/bundle"; ///bundle
 //import "swiper/swiper.min.css";
 import { Navigation, Pagination } from "swiper";

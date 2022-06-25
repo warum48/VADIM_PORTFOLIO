@@ -62,10 +62,10 @@ export const ItemCardSimple = ({ item, type }) => {
                 //className="item_logo_also"
                 //style={{ backgroundColor: item.logo_bg }}
                 >
-                  {item.img ? (
+                  {item.logo ? (
                     <Image
                       fluid
-                      src={constants.imgurl_personal + item.img}
+                      src={constants.imgurl_personal + item.logo}
                       className="item_name"
                       alt=""
                       css={css`
