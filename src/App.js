@@ -138,8 +138,6 @@ export default function App() {
               {isDesktop && (
                 <>
                   <Filters dB={dB} />
-                  <hr className="my-3" />
-                  <Logos dB={dB} />
                 </>
               )}
             </LeftMenu>
@@ -147,8 +145,11 @@ export default function App() {
           <Col sm={8} md={8} lg={9}>
             <div>
               <Row>
-                <Col>
+                <Col md={8}>
                   <IntroSpeach />
+                </Col>
+                <Col md={4} className="d-none d-md-block">
+                  <Logos dB={dB} />
                 </Col>
               </Row>
               <div className="projsholder" ref={projsHolder}>

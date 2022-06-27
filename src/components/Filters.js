@@ -131,7 +131,7 @@ export const Filters = ({ dB, topMenu = false, ...props }) => {
           margin: 0.5rem;
         `}
       >
-        SHOW BY TAG:&nbsp;
+        FILTER BY TAG:&nbsp;
       </span>
       {tags.map((tagg, index) => (
         <TagButton

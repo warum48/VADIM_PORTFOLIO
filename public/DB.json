@@ -23,7 +23,12 @@
         "img": ["sites/beeline/1.jpg"],
         "url": [
           {
-            "link": "https://sp.imweb.ru/implant/sp/greetingcard2022/templates/default/preview.html"
+            "name": "View",
+            "link": "https://newyear2022-beeline.ru/create"
+          },
+          {
+            "name": "Dev mirror",
+            "link": "https://dev.nahab.info/dev-beeline2021/"
           }
         ],
         "tags": ["react", "greetingcard", "lottie"]
@@ -147,7 +152,7 @@
         "desc_en": "3D CSS animation",
         "desc_ru": "3D CSS анимация",
         "img": ["sites/bayer/1.jpg"],
-        "url": [{ "link": "https://sp.kommersant.ru/bayer/#!/" }],
+        "url": [{ "link": "https://dev.nahab.info/dev-bayer2016/#!/" }],
         "tags": ["3D", "3D CSS animation", "angular1"]
       },
 
@@ -221,7 +226,7 @@
         "img": ["sites/ingosstrakh/1.jpg"],
         "url": [
           {
-            "link": "https://sp.kommersant.ru/ingos-70-let/#!/"
+            "link": "https://api.nahab.info/ingos-70-let/#!/"
           }
         ],
         "tags": ["keyframe animation", "angular1"]
@@ -453,7 +458,7 @@
         "desc_en": "Drawing, Transition effect",
         "desc_ru": "Спецэффект перехода между фото, рисовательный движок",
         "img": ["intractiveblocks/stenograffia/1.jpg"],
-        "url": [{ "link": "https://sp.kommersant.ru/stenograffia2017/#!/" }],
+        "url": [{ "link": "https://api.nahab.info/stenograffia2017/#!/" }],
         "tags": ["drawing", "special effect", "canvas"]
       },
 

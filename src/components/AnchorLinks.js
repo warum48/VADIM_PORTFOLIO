@@ -172,7 +172,16 @@ export const AnchorLinks = ({
         const id = hash.replace("#", "");
         const element = document.getElementById(id);
         if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
+          //element.scrollIntoView({ behavior: "smooth" });
+          var headerOffset = 45;
+          var elementPosition = element.getBoundingClientRect().top;
+          var offsetPosition =
+            elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
         }
       }, 100);
     }
@@ -235,8 +244,8 @@ export const AnchorLinks = ({
             ))}
         </Scrollspy>
       }
-      <Link to="/banners">link</Link>
-      <span>{renderCount}</span>
+      {/*<Link to="/banners">link</Link>
+      <span>{renderCount}</span>*/}
     </LinksCont>
   );
 };

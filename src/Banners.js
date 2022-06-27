@@ -126,7 +126,9 @@ export default function Banners() {
               spaceAround={24}
               className=" d-flex flex-wrap justify-content-start  mx-auto"
             >
-              {language == "ru" ? "Делаю баннеры" : "I create banners"}
+              {language == "ru"
+                ? "Так вышло, что у меня большой опыт в производстве баннеров. Баннеры делались под ТТ самых известных в России площадок во всевозможных форматах"
+                : ""}
               {/*<div>
                 ---fetch loading--- {loading + ""} -- {entities.length} --{" "}
                 {error_ + ""} --{" "}

@@ -33,15 +33,19 @@ const LogosCont = styled.div`
 const LogoContainer = styled.div`
   /*display: inline-block;*/
   min-height: 50px;
-  min-width: 20%;
-  max-width: 20%;
-  margin: 0.1rem;
+  /*min-width: 20%;
+  max-width: 50px;*/
+  flex-basis: 20%;
+  max-width: 60px;
+  margin: 0.5rem;
   text-align: center;
   justify-content: center;
-  flex: 1;
+  /*flex: 1;*/
   opacity: 0.6;
+  filter: grayscale(100%);
   &:hover {
     opacity: 1;
+    filter: grayscale(0%);
   }
 `;
 
@@ -63,6 +67,7 @@ const LogoContainer = styled.div`
 const LogosHead = styled.div`
   flex-basis: 100%;
   margin-bottom: 1rem;
+  color: gray;
 `;
 
 const ClearButton = styled.button`
@@ -124,9 +129,9 @@ export const Logos = ({ dB, topMenu = false, ...props }) => {
         dB[keyName].projects.forEach((item, index) => {
           if (item.logo) {
             //item.tags.forEach((itemm, index) => {
-            //if (fullAr.indexOf(item) === -1) {
-            fullAr.push(item);
-            //}
+            if (fullAr.indexOf(item.logo) === -1) {
+              fullAr.push(item.logo);
+            }
             //});
           }
         });
@@ -137,31 +142,24 @@ export const Logos = ({ dB, topMenu = false, ...props }) => {
   return (
     <LogosCont {...props}>
       <LogosHead>
-        LOGOS. This companies are the sign of quality, they ask developers for
-        the same quality{" "}
+        {/*
+        These companies are the sign of quality, they ask developers for the
+      same quality"*/}
       </LogosHead>
       {tags.map((item, index) => (
         <LogoContainer>
           <Image
             fluid
-            src={constants.imgurl_personal + item.logo}
+            src={constants.imgurl_personal + item}
             alt=""
             css={css`
-              background-color: ${item.logo_bg};
+              /*background-color: ${item.logo_bg};*/
               max-height: 60px;
               margin-top: 0px;
             `}
           />
         </LogoContainer>
       ))}
-      <br />
-      {tag !== "" && (
-        <ClearButton
-        //onClick={() => dispatch(updatetag(""))}
-        >
-          <span>CLEAR TAG</span>
-        </ClearButton>
-      )}
     </LogosCont>
   );
 };
