@@ -525,8 +525,9 @@
     "projects": [
       {
         "name": "Burn",
+        "logo": "logos/burn_logo.png",
         "desc_en": "Photoshop collage and design for BURN",
-        "desc_ru": "Дизайн-коллаж спецпроекта BURN",
+        "desc_ru": "Дизайн-коллаж спецпроекта BURN (коллаж собран в ФШ из отдельных объектов из клипарта)",
         "img": ["design/vulkan-end_.jpg"],
         "url": [
           {
@@ -545,9 +546,9 @@
 
       {
         "name": "Panasonic FZ18",
-        "logo": "intractiveblocks/gillettevenus/logo.png",
         "desc_en": "Letter design for Panasonic",
         "desc_ru": "Рассылка Panasonic",
+        "logo": "logos/panasonic_logo.svg",
         "img": ["design/crea_FZ18_mod3_tennis2_full.jpg"],
         "url": [
           {

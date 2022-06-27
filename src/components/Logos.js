@@ -147,7 +147,7 @@ export const Logos = ({ dB, topMenu = false, ...props }) => {
       same quality"*/}
       </LogosHead>
       {tags.map((item, index) => (
-        <LogoContainer>
+        <LogoContainer key={"logo_panel" + index}>
           <Image
             fluid
             src={constants.imgurl_personal + item}

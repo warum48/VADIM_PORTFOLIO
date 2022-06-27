@@ -22,45 +22,61 @@ import { jsx } from "@emotion/react";
 import { css } from "@emotion/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "@emotion/styled";
+import { Routes, Route, Link } from "react-router-dom";
 //import "./styles.css";
 
+const NameHome = styled.div`
+  flex-grow: 100;
+  color: white;
+  padding: 0 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+
+  a,
+  a:hover {
+    text-decoration: none;
+    text-align: left;
+    color: white;
+  }
+`;
+
 const StyledBurger = styled.button`
-position: absolute;
-top: 10px;
-right: 2rem;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-width: 2rem;
-height: 2rem;
-background: transparent;
-border: none;
-cursor: pointer;
-padding: 0;
-z-index: 10;
-
-&:focus {
-  outline: none;
-}
-
-div {
+  position: absolute;
+  top: 10px;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 2rem;
-  height: 0.25rem;
-  background: white;
-  /*background: ${(props) => (props.isOpen ? "#ffff22" : "#EFFFFA")};
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
 
-  transition: all 0.5s linear;*/
-  transition: transform 0.2s linear;
-  position: relative;
-  transform-origin: 1px;
-
-  :first-of-type {
-    transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+  &:focus {
+    outline: none;
   }
 
-  :nth-of-type(2) {
-    opacity: ${({ open }) => (open ? "0" : "1")};
-    transform: ${({ open }) => (open ? "translateX(5px)" : "translateX(0)")};
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    background: white;
+    /*background: ${(props) => (props.isOpen ? "#ffff22" : "#EFFFFA")};
+
+    transition: all 0.5s linear;*/
+    transition: transform 0.2s linear;
+    position: relative;
+    transform-origin: 1px;
+
+    :first-of-type {
+      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+    }
+
+    :nth-of-type(2) {
+      opacity: ${({ open }) => (open ? "0" : "1")};
+      transform: ${({ open }) => (open ? "translateX(5px)" : "translateX(0)")};
   }
 
   :nth-of-type(3) {
@@ -119,33 +135,26 @@ export function NavigationTop({ dB }) {
         fluid
         className="d-flex justify-content-between align-content-center"
       >
-        <div
-          className="d-none header_nameeee d-sm-flex"
-          css={css`
-            flex-grow: 100;
-            color: white;
-            padding: 0 1rem;
-            flex-direction: column;
-            align-items: flex-start;
-          `}
-        >
-          <div
-            className="header_myname"
-            css={css`
-              font-size: 20px;
-            `}
-          >
-            Vadim Rumyantsev
-          </div>
-          <div
-            className="header_occupation"
-            css={css`
-              font-size: 14px;
-            `}
-          >
-            Frontend developer
-          </div>
-        </div>
+        <NameHome className="d-none header_nameeee d-sm-flex">
+          <Link to="/">
+            <div
+              className="header_myname"
+              css={css`
+                font-size: 20px;
+              `}
+            >
+              Vadim Rumyantsev
+            </div>
+            <div
+              className="header_occupation"
+              css={css`
+                font-size: 14px;
+              `}
+            >
+              Frontend developer
+            </div>
+          </Link>
+        </NameHome>
         <LangSwitch />
         {/*<Burger open={open} setOpen={setOpen} lang={"EN"} />*/}
         <Navbar.Toggle

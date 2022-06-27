@@ -40,8 +40,12 @@ const MoreButton = styled.div`
   cursor: pointer;
   margin: 5px;
 
-  a {
+  a,
+  a:hover {
     color: white;
+  }
+  &:hover {
+    transform: scale(1.1, 1.1);
   }
 `;
 
