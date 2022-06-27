@@ -27,6 +27,8 @@ import {
   isMobile,
   isDesktop
 } from "react-device-detect";
+import { ShowMoreButton } from "./ShowMoreButton";
+
 
 const LogoContainer = styled.div`
   min-height: 50px;
@@ -36,6 +38,13 @@ const LogoContainer = styled.div`
   justify-content: center;
 `;
 
+const StyledBody = styled(Card.Body)`
+  min-height: 200px ;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+`
+
 //{/**/}
 //<Slider images={item.img} sizeKeeperSrc={item.img[0]} />
 //{/*<SliderFM images={item.img} sizeKeeperSrc={item.img[0]} />*/}
@@ -44,6 +53,14 @@ export const ItemCard = ({ item, type }) => {
   const [lang, setLang] = useState("ru");
   const language = useSelector((state) => state.lang.value);
   return (
+    <>
+      {item.show_more === "true" ? (
+        <Card style={{ width: "100%" }} className="mb-3 overflow-hidden">
+        <StyledBody >
+        <ShowMoreButton />
+        </StyledBody>
+        </Card>
+      ) : (
     <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8} tiltEnable={isDesktop}>
       <Card style={{ width: "100%" }} className="mb-3 overflow-hidden">
         {item.img.length <= 1 ? (
@@ -139,5 +156,6 @@ export const ItemCard = ({ item, type }) => {
         </Card.Body>
       </Card>
     </Tilt>
+      )}</>
   );
 };

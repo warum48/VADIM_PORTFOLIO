@@ -27,14 +27,25 @@ const LogoName = styled.div`
   font-weight: 800;
 `;
 
+const StyledBody = styled(Card.Body)`
+  min-height: 140px ;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+`
+
 export const ItemCardSimple = ({ item, type }) => {
   const [lang, setLang] = useState("ru");
   const language = useSelector((state) => state.lang.value);
   return (
     <>
       {item.show_more === "true" ? (
+        <Card style={{ width: "100%" }} className="mb-3 overflow-hidden">
+        <StyledBody >
         <ShowMoreButton />
-      ) : (
+        </StyledBody>
+        </Card>
+      )  : (
         <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8}>
           <Card style={{ width: "100%" }} className="mb-3">
             {/*<Card.Img

@@ -556,6 +556,10 @@
           }
         ],
         "tags": ["photoshop", "design"]
+      },
+      {
+        "show_more": "true",
+        "url": "design"
       }
     ]
   },
@@ -590,7 +594,8 @@
         "tags": ["banner"]
       },
       {
-        "show_more": "true"
+        "show_more": "true",
+        "url": "banners"
       }
     ]
   },
