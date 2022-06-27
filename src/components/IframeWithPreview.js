@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import ImageWithGray from "./ImageWithGray";
-import "./playpause.scss";
+//import "./playpause.scss";
 import { useToggle } from "./Utils";
 import FadeIn from "./FadeIn";
 import styled from "@emotion/styled";
