@@ -1,0 +1,62 @@
+{
+  "mainfolder": "https://dev.nahab.info/banner/dist",
+  "banners": [
+    {
+      "preview": "480x800.png",
+      "preview_url": "mediasniper/html/240x400_adobe_170314_v1_mcdonalds/",
+      "folder": "2017_03_mcdonalds_chkn"
+    },
+
+    {
+      "folder": "2017_03_mcdonalds",
+      "preview": "240x400.jpg",
+      "preview_url": "mediasniper/mcdonalds_chkn_html_0313/240x400_adobe_170313_v1_mcdonalds/"
+    },
+    {
+      "folder": "2017_04_mcdonalds_desertcofe_may",
+      "preview": "480x800.png",
+      "preview_url": "mediasniper/html/240x400_adobe_270417_v1_mcdonalds/"
+    },
+    {
+      "folder": "2017_04_mcdonalds_5-50_may",
+      "preview": "480x800.png",
+      "preview_url": "mediasniper/html/240x400_adobe_030517_v1_mcdonalds/"
+    },
+
+    {
+      "folder": "2017_08_mcdonalds_yourname",
+      "preview": "240x400.jpg",
+      "previev_url": "OMDProgrammatic/html/240x400_adobe_280817_v1_Mcdonalds/"
+    },
+
+    {
+      "folder": "2017_09_mcdonalds_newdeserts",
+      "preview": "480x800.png",
+      "preview_url": "master/240x400.html",
+      "position": "TR"
+    },
+
+    {
+      "folder": "2017_11_mcdonalds_monopoly_",
+      "preview": "480x800.png",
+      "preview_url": "mediasniper/skoda/-=html/240x400/"
+    },
+
+    {
+      "folder": "2018_04_mcdonalds_birthday",
+      "preview": "480x800.png",
+      "preview_url": "Mediasniper/240x400_adobe_180423_v1_mcdbirthday/"
+    },
+
+    {
+      "folder": "2018_03_sberbank",
+      "preview": "480x800.png",
+      "preview_url": "_masters/master_master_240x400/240x400.html"
+    },
+    {
+      "folder": "2018_05_sberbank",
+      "preview": "480x800.jpg",
+      "preview_url": "240x400/240x400.html"
+    }
+  ]
+}

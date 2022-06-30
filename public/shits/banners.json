@@ -1,0 +1,174 @@
+{
+  "mainfolder": "https://dev.nahab.info/banner/dist",
+  "banners": [
+    {
+      "preview": "480x800.png",
+      "preview_url": "mediasniper/html/240x400_adobe_170314_v1_mcdonalds/",
+      "folder": "2017_03_mcdonalds_chkn",
+      "name_en": "McDonalds Chicken Check In",
+      "name": "Баннеры mcdonalds от 13 марта (чикен-чекин)",
+      "list": [
+        ["2017_03_mcdonalds_chkn/between", ""],
+        ["2017_03_mcdonalds_chkn/mediasniper", ""],
+        ["2017_03_mcdonalds_chkn/mailru", ""],
+        ["2017_03_mcdonalds_chkn/yamobile", ""],
+        ["2017_03_mcdonalds_chkn/yandex_rtb", ""]
+      ]
+    },
+
+    {
+      "folder": "2017_03_mcdonalds",
+      "preview": "240x400.jpg",
+      "preview_url": "mediasniper/mcdonalds_chkn_html_0313/240x400_adobe_170313_v1_mcdonalds/",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    },
+    {
+      "folder": "2017_04_mcdonalds_desertcofe_may",
+      "preview": "480x800.png",
+      "preview_url": "mediasniper/html/240x400_adobe_270417_v1_mcdonalds/",
+      "name_en": "McDonalds 5-50",
+      "name": "Баннеры 5-50",
+      "list": [
+        ["2017_04_mcdonalds_desertcofe_may/mediasniper", ""],
+        ["2017_04_mcdonalds_desertcofe_may/My.target", ""],
+        ["2017_04_mcdonalds_desertcofe_may/OTM", ""],
+        ["2017_04_mcdonalds_desertcofe_may/Yandex.ruRTB", ""],
+        ["2017_04_mcdonalds_desertcofe_may/rambler", ""]
+      ]
+    },
+    {
+      "folder": "2017_04_mcdonalds_5-50_may",
+      "preview": "480x800.png",
+      "preview_url": "mediasniper/html/240x400_adobe_030517_v1_mcdonalds/",
+      "name_en": "McDonalds 5-50",
+      "name": "Баннеры 5-50",
+      "list": [
+        ["2017_04_mcdonalds_5-50_may/masters", ""],
+        ["2017_04_mcdonalds_5-50_may/mediasniper", ""],
+        ["2017_04_mcdonalds_5-50_may/Yandex.ruRTB", ""],
+        ["2017_04_mcdonalds_5-50_may/mytarget_lastmile", ""],
+        ["2017_04_mcdonalds_5-50_may/mytarget_social", ""],
+        ["2017_04_mcdonalds_5-50_may/Yandex.ru", ""],
+        ["2017_04_mcdonalds_5-50_may/rambler", ""]
+      ]
+    },
+
+    {
+      "folder": "2017_08_mcdonalds_yourname",
+      "preview": "240x400.jpg",
+      "previev_url": "OMDProgrammatic/html/240x400_adobe_280817_v1_Mcdonalds/",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    },
+
+    {
+      "folder": "2017_09_mcdonalds_newdeserts",
+      "preview": "480x800.png",
+      "preview_url": "master/240x400.html",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    },
+
+    {
+      "folder": "2017_11_mcdonalds_monopoly_",
+      "preview": "480x800.png",
+      "preview_url": "mediasniper/skoda/-=html/240x400/",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    },
+
+    {
+      "folder": "2018_04_mcdonalds_birthday",
+      "preview": "480x800.png",
+      "preview_url": "Mediasniper/240x400_adobe_180423_v1_mcdbirthday/",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    },
+
+    {
+      "folder": "2018_03_sberbank",
+      "preview": "480x800.png",
+      "preview_url": "_masters/master_master_240x400/240x400.html",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    },
+    {
+      "folder": "2018_05_sberbank",
+      "preview": "480x800.jpg",
+      "preview_url": "240x400/240x400.html",
+      "name_en": "McDonalds Burgers",
+      "name": "Баннеры mcdonalds от 7 марта (булки)",
+      "list": [
+        ["2017_03_mcdonalds/adme", ""],
+        ["2017_03_mcdonalds/mediasniper", ""],
+        ["2017_03_mcdonalds/mytarget", ""],
+        ["2017_03_mcdonalds/village_wonderzine_slon", ""],
+        ["2017_03_mcdonalds/wifi_branding/src", "Wifi branding"],
+        ["2017_03_mcdonalds/wifi_fullscreen", "Wifi fullscreen"],
+        ["2017_03_mcdonalds/yandex_main", ""],
+        ["2017_03_mcdonalds/yandex_rtb", ""]
+      ]
+    }
+  ]
+}

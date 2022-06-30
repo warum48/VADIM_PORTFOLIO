@@ -1,0 +1,186 @@
+"websites_react_also": {
+  "description": "Websites / React",
+  "type": "also",
+  "projects": [
+    {
+      "name": "v-a-c2021",
+      "logoname": "V-A-C",
+      "url": "https://sp.esquire.ru/v-a-c2021/",
+      "tags": ["react"]
+    },
+    {
+      "name": "got2b2021",
+      "url": "https://sp.cosmo.ru/got2b2021/",
+      "img": ["logos/got2b-us-logo.png"],
+      "tags": ["react"]
+    },
+    {
+      "name": "acquapanna2021",
+      "logoname": "PANNA",
+      "url": "http://sp.bazaar.ru/acquapanna2021/",
+      "tags": ["react", "quiz"]
+    },
+    {
+      "name": "galaxywatch",
+      "url": "http://sp.mhealth.ru/galaxywatch/",
+      "img": ["logos/samsung_galaxy_watch_logo.png"],
+      "tags": ["react"]
+    },
+    {
+      "name": "travel2021",
+      "logoname": "Hylak Forte",
+      "url": "https://sp.cosmo.ru/travel2021/",
+      "tags": ["react"]
+    },
+
+    {
+      "name": "playstation",
+      "url": "https://sp.esquire.ru/playstation/",
+      "img": "logos/sony-logo.jpg",
+      "tags": ["react"]
+    },
+    {
+      "name": "barbieastronaut",
+      "url": "https://sp.cosmo.ru/barbieastronaut",
+      "img": ["logos/barbie-logo.png"],
+      "tags": ["react"]
+    },
+    {
+      "name": "fondpotanina",
+      "url": "https://sp.goodhouse.ru/fondpotanina/",
+      "logoname": "",
+      "cover": ["sites/fondpotanina/1.jpg"],
+      "tags": ["react"]
+    }
+  ]
+},
+
+"websites_angular": {
+  "description": "Websites / Angular1",
+  "type": "desc",
+  "projects": [
+    {
+      "name": "KIA Quoris",
+      "logo": "sites/kia/kia_logo_2012.svg",
+      "desc_en": "Prerendered 3d car rotating on canvas",
+      "desc_ru": "Пререндер машины на канвасе",
+      "img": ["sites/kia/1.jpg"],
+      "url": [
+        {
+          "link": "https://sp.esquire.ru/quoris2015"
+        }
+      ],
+      "tags": ["canvas", "pseudo3d", "angular1", "jquery"]
+    },
+    {
+      "name": "Elle / Austria",
+      "name_ru": "Elle",
+      "logo": "sites/austria/logo.png",
+      "desc_en": "Scrollmagic and sound design",
+      "desc_ru": "Scrollmagic и саунд дизайн",
+      "img": ["sites/austria/1.jpg"],
+      "url": [{ "link": "https://sp.elle.ua/feelaustria/" }],
+      "tags": ["parallax", "scrollmagic", "sounddesign", "angular1"]
+    },
+    {
+      "name": "Dyson",
+      "name_ru": "Дайсон",
+      "logo": "sites/dyson/dyson_logo.svg",
+      "year": "2020",
+      "desc_en": "3D gallery",
+      "desc_ru": "3D обзор комнат рассказывающий о преимуществах пылесоса Дайсон",
+      "img": ["sites/dyson/1.jpg", "sites/dyson/2.jpg"],
+      "url": [{ "link": "https://sp.esquire.ru/dyson2020/" }],
+      "tags": ["3D", "panolens", "angular1"]
+    },
+    {
+      "name": "Bayer",
+      "name_ru": "Bayer",
+      "logo": "sites/bayer/logo_bayer.svg",
+      "year": "2020",
+      "desc_en": "3D CSS animation",
+      "desc_ru": "3D CSS анимация",
+      "img": ["sites/bayer/1.jpg"],
+      "url": [{ "link": "https://sp.kommersant.ru/bayer/#!/" }],
+      "tags": ["3D", "3D CSS animation", "angular1"]
+    },
+
+    {
+      "name": "Bahroma",
+      "name_ru": "Бахрома",
+      "logo": "sites/bahroma/logo.png",
+      "year": "2020",
+      "desc_en": "3D CSS animation",
+      "desc_ru": "3D CSS анимация",
+      "img": ["sites/bahroma/1.jpg"],
+      "url": [{ "link": "http://specialproject.bahroma.ru/" }],
+      "tags": ["3D", "3D CSS animatiosn", "angular1"]
+    },
+
+    {
+      "name": "Sex around the world",
+      "name_ru": "Секс вокруг света",
+      "logo": "sites/sex2015/logo.png",
+      "year": "2015",
+      "desc_en": "Fullpage parallax",
+      "desc_ru": "Fullpage parallax",
+      "img": ["sites/sex2015/1.jpg"],
+      "url": [{ "link": "https://sp.cosmo.ru/sex2015/#/" }],
+      "tags": ["fullpage", "parallax", "angular1"]
+    },
+
+    {
+      "name": "Soderzhanki",
+      "name_ru": "Содержанки",
+      "logo": "",
+      "year": "2020",
+      "desc_en": "Chat bot quiz",
+      "desc_ru": "Тест-диалог с ботом с разными ветками историй в зависимости от выбираемых ответов, в формате чата на экране мобильного телефона",
+      "img": ["sites/soderzhanki/1.jpg"],
+      "url": [{ "link": "https://sp.cosmo.ru/soderzhanki/#!/" }],
+      "tags": ["chatbot", "angular1"]
+    },
+
+    {
+      "name": "Canon",
+      "logo": "sites/canon/logo.png",
+      "year": "2020",
+      "desc_en": "Photo adjustment",
+      "desc_ru": "Цветокоррекция фото",
+      "img": ["sites/canon/1.jpg"],
+      "url": [],
+      "tags": ["photofilter", "angular1"]
+    },
+
+    {
+      "name": "Gazprom",
+      "name_ru": "Газпром",
+      "logo": "sites/neft/logo.svg",
+      "desc_en": "Oilfields of Russia",
+      "desc_ru": "Карта нефтяных месторождений в России",
+      "img": ["sites/neft/1.jpg"],
+      "url": [
+        {
+          "link": "https://sp.popmech.ru/neft/#!/"
+        }
+      ],
+      "tags": ["map", "angular1", "canvas"]
+    },
+
+    {
+      "name": "Ingosstrakh",
+      "name_ru": "Ингосстрах",
+      "desc_en": "The history of the company",
+      "desc_ru": "История компании",
+      "img": ["sites/ingosstrakh/1.jpg"],
+      "url": [
+        {
+          "link": "https://sp.kommersant.ru/ingos-70-let/#!/"
+        }
+      ],
+      "tags": ["keyframe animation", "angular1"]
+    }
+  ]
+},
+
+

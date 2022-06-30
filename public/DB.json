@@ -23,7 +23,12 @@
         "img": ["sites/beeline/1.jpg"],
         "url": [
           {
-            "link": "https://sp.imweb.ru/implant/sp/greetingcard2022/templates/default/preview.html"
+            "name": "View",
+            "link": "https://newyear2022-beeline.ru/create"
+          },
+          {
+            "name": "Dev mirror",
+            "link": "https://dev.nahab.info/dev-beeline2021/"
           }
         ],
         "tags": ["react", "greetingcard", "lottie"]
@@ -57,7 +62,7 @@
       {
         "name": "got2b2021",
         "url": "https://sp.cosmo.ru/got2b2021/",
-        "img": ["logos/got2b-us-logo.png"],
+        "logo": ["logos/got2b-us-logo.png"],
         "tags": ["react"]
       },
       {
@@ -69,7 +74,7 @@
       {
         "name": "galaxywatch",
         "url": "http://sp.mhealth.ru/galaxywatch/",
-        "img": ["logos/samsung_galaxy_watch_logo.png"],
+        "logo": ["logos/samsung_galaxy_watch_logo.png"],
         "tags": ["react"]
       },
       {
@@ -82,13 +87,13 @@
       {
         "name": "playstation",
         "url": "https://sp.esquire.ru/playstation/",
-        "img": "logos/sony-logo.jpg",
+        "logo": "logos/sony-logo.jpg",
         "tags": ["react"]
       },
       {
         "name": "barbieastronaut",
         "url": "https://sp.cosmo.ru/barbieastronaut",
-        "img": ["logos/barbie-logo.png"],
+        "logo": ["logos/barbie-logo.png"],
         "tags": ["react"]
       },
       {
@@ -147,7 +152,7 @@
         "desc_en": "3D CSS animation",
         "desc_ru": "3D CSS анимация",
         "img": ["sites/bayer/1.jpg"],
-        "url": [{ "link": "https://sp.kommersant.ru/bayer/#!/" }],
+        "url": [{ "link": "https://dev.nahab.info/dev-bayer2016/#!/" }],
         "tags": ["3D", "3D CSS animation", "angular1"]
       },
 
@@ -221,7 +226,7 @@
         "img": ["sites/ingosstrakh/1.jpg"],
         "url": [
           {
-            "link": "https://sp.kommersant.ru/ingos-70-let/#!/"
+            "link": "https://api.nahab.info/ingos-70-let/#!/"
           }
         ],
         "tags": ["keyframe animation", "angular1"]
@@ -453,7 +458,7 @@
         "desc_en": "Drawing, Transition effect",
         "desc_ru": "Спецэффект перехода между фото, рисовательный движок",
         "img": ["intractiveblocks/stenograffia/1.jpg"],
-        "url": [{ "link": "https://sp.kommersant.ru/stenograffia2017/#!/" }],
+        "url": [{ "link": "https://api.nahab.info/stenograffia2017/#!/" }],
         "tags": ["drawing", "special effect", "canvas"]
       },
 
@@ -520,8 +525,9 @@
     "projects": [
       {
         "name": "Burn",
+        "logo": "logos/burn_logo.png",
         "desc_en": "Photoshop collage and design for BURN",
-        "desc_ru": "Дизайн-коллаж спецпроекта BURN",
+        "desc_ru": "Дизайн-коллаж спецпроекта BURN (коллаж собран в ФШ из отдельных объектов из клипарта)",
         "img": ["design/vulkan-end_.jpg"],
         "url": [
           {
@@ -540,9 +546,9 @@
 
       {
         "name": "Panasonic FZ18",
-        "logo": "intractiveblocks/gillettevenus/logo.png",
         "desc_en": "Letter design for Panasonic",
         "desc_ru": "Рассылка Panasonic",
+        "logo": "logos/panasonic_logo.svg",
         "img": ["design/crea_FZ18_mod3_tennis2_full.jpg"],
         "url": [
           {
@@ -550,13 +556,18 @@
           }
         ],
         "tags": ["photoshop", "design"]
+      },
+      {
+        "show_more": "true",
+        "url": "design"
       }
     ]
   },
   "banners": {
     "description": "Banners",
     "show_header": 1,
-    "type": "also",
+    "type": "compact",
+
     "projects": [
       {
         "name": "SVG HTML",
@@ -581,6 +592,10 @@
         "cover": ["banners/banner_interactive.png"],
         "url": "https://dev.nahab.info/aerovadim/-=cosmo/banners/promocode/desc/index.html",
         "tags": ["banner"]
+      },
+      {
+        "show_more": "true",
+        "url": "banners"
       }
     ]
   },

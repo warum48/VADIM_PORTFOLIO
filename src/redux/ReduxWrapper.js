@@ -20,6 +20,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import counterReducer from "./counterSlice";
 import TagReducer from "./TagSlice";
 import langReducer from "./langSlice";
+import { postReducer } from "./asyncFetch";
 //import store from './store';
 
 //import App from './App';
@@ -29,6 +30,7 @@ import langReducer from "./langSlice";
 const persistConfig = {
   key: "root",
   version: 1,
+  blacklist: ["posts"],
   storage
 };
 
@@ -36,7 +38,8 @@ const reducers = combineReducers({
   counter: counterReducer,
   //mdicts: dictsReducer,
   tag: TagReducer,
-  lang: langReducer
+  lang: langReducer,
+  posts: postReducer
 });
 
 const persistedReducer = persistReducer(persistConfig, reducers);

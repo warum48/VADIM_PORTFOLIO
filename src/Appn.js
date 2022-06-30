@@ -28,10 +28,8 @@ import {
 import { EmptyJSX } from "./components/EmptyJSX";
 import { ItemCard } from "./components/ItemCard";
 import { ItemCardSimple } from "./components/ItemCardSimple";
-import { ItemCardMasonry } from "./components/ItemCardMasonry";
 import { LangSwitch } from "./components/LangSwitch";
 import { Filters } from "./components/Filters";
-import { Logos } from "./components/Logos";
 import { AnchorLinks } from "./components/AnchorLinks";
 import { IntroSpeach } from "./components/IntroSpeach";
 import { NavigationTop } from "./components/NavigationTop";
@@ -39,7 +37,6 @@ import { GoToTop } from "./components/GoToTop";
 import { ErrorBoundary } from "react-error-boundary";
 import { useTimeout } from "./components/Utils";
 import { useInterval } from "./components/Utils";
-import Masonry from "react-masonry-css";
 
 import { useSelector, useDispatch } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -76,71 +73,8 @@ export default function App() {
   const seltag = useSelector((state) => state.tag.value);
   const [dB, setDB] = useState(null);
   const language = useSelector((state) => state.lang.value);
-  const [renderCount, setRenderCount] = useState(0); //we need it to rerender ScrollSpy in AnkorLinks component
-  //const [outsideRender, setOutsideRender] = useState(0);
-  const [listIsBuilt, setListIsBuilt] = useState(false);
-
-  const breakpointColumnsObj = {
-    default: 4,
-    1100: 4,
-    700: 2,
-    500: 2
-  };
-
-  const breakColNum = {
-    /*desc: {
-      default: 3,
-      992: 2,
-      768: 1
-    },
-    mob: {
-      default: 4,
-      992: 3,
-      768: 2,
-      556: 1
-    },
-    also: {
-      default: 4,
-      992: 4,
-      768: 3,
-      556: 2
-    },
-    compact: {
-      default: 4,
-      992: 4,
-      768: 3,
-      556: 2
-    }*/
-    desc: {
-      default: 3,
-      1200: 2,
-      992: 1
-      //768: 1
-    },
-    mob: {
-      default: 4,
-      1200: 3,
-      992: 2,
-      //768: 2,
-      556: 1
-    },
-    also: {
-      default: 4,
-      // 1200: 4,
-      992: 3,
-      // 768: 3,
-      556: 2,
-      320: 1
-    },
-    compact: {
-      default: 4,
-      //1200: 4,
-      992: 3,
-      // 768: 3,
-      556: 2,
-      320: 1
-    }
-  };
+  const [renderCount, setRenderCount] = useState(0);
+  const [outsideRender, setOutsideRender] = useState(0);
 
   useEffect(() => {
     fetch("DB.json")
@@ -157,27 +91,15 @@ export default function App() {
     setRenderCount((prev) => setRenderCount(prev + 1));
     //outsideRender
     //setTimeout(() => {
-    //setOutsideRender(outsideRender + 1);
-    //console.log("or", outsideRender);
+    setOutsideRender(outsideRender + 1);
+    console.log("or", outsideRender);
     //}, 1000);
   }, [dB]);
 
-  useInterval(logH, listIsBuilt ? 10000000 : 1000);
+  //uuseInterval(()=>{cons})
 
-  function logH() {
-    var offsetHeight = projsHolder.current.offsetHeight;
-    console.log("offsH", offsetHeight);
-    if (offsetHeight > 0) {
-      if (!listIsBuilt) {
-        setRenderCount((prev) => setRenderCount(prev + 1));
-        //setOutsideRender(outsideRender + 1);
-      }
-      setListIsBuilt(true);
-    }
-  }
-  //key={"or" + outsideRender}
   return (
-    <div className="App">
+    <div className="App" key={"or" + outsideRender}>
       <NavigationTop dB={dB} />
       <GoToTop />
       <Container
@@ -193,30 +115,23 @@ export default function App() {
                 <AnchorLinks
                   dB={dB}
                   renderCount={renderCount}
-                  //outsideRender={outsideRender}
-                  //setOutsideRender={setOutsideRender}
+                  outsideRender={outsideRender}
+                  setOutsideRender={setOutsideRender}
                 />
               )}
               <hr className="my-3" />
 
-              {isDesktop && (
-                <>
-                  <Filters dB={dB} />
-                </>
-              )}
+              {isDesktop && <Filters dB={dB} />}
             </LeftMenu>
           </Col>
           <Col sm={8} md={8} lg={9}>
             <div>
               <Row>
-                <Col md={8}>
+                <Col>
                   <IntroSpeach />
                 </Col>
-                <Col md={4} className="d-none d-md-block">
-                  <Logos dB={dB} />
-                </Col>
               </Row>
-              <div className="projsholder" ref={projsHolder}>
+              <div className="projsholder">
                 {dB &&
                   Object.keys(dB).map((keyName, i) => (
                     <React.Fragment key={keyName}>
@@ -253,50 +168,47 @@ export default function App() {
 
                       <Row>
                         <>
-                          <Masonry
-                            breakpointCols={breakColNum[dB[keyName].type]}
-                            className={"my-masonry-grid"}
-                            columnClassName={"my-masonry-grid_column"}
-                          >
-                            {dB[keyName].projects
-                              .filter((it) => {
-                                if (seltag === "") {
-                                  return true;
-                                } else {
-                                  return (
-                                    it.tags !== undefined &&
-                                    it.tags.indexOf(seltag) !== -1
-                                  );
-                                }
-                              })
-                              .map((item, index) =>
-                                dB[keyName].type !== "also" &&
-                                dB[keyName].type !== "compact" ? (
+                          {dB[keyName].projects
+                            .filter((it) => {
+                              if (seltag === "") {
+                                return true;
+                              } else {
+                                return (
+                                  it.tags !== undefined &&
+                                  it.tags.indexOf(seltag) !== -1
+                                );
+                              }
+                            })
+                            .map((item, index) =>
+                              dB[keyName].type !== "also" &&
+                              dB[keyName].type !== "compact" ? (
+                                <Col
+                                  sm={dB[keyName].type === "desc" ? 12 : 6}
+                                  md={dB[keyName].type === "desc" ? 12 : 6}
+                                  lg={dB[keyName].type === "desc" ? 6 : 4}
+                                  xl={dB[keyName].type === "desc" ? 4 : 3}
+                                  key={"it" + i + index}
+                                  className="item"
+                                >
                                   <ItemCard
                                     item={item}
                                     type={dB[keyName].type}
                                   />
-                                ) : (
-                                  <>
-                                    {/*}<Col
+                                </Col>
+                              ) : (
+                                <Col
                                   xs={6}
                                   lg={3}
                                   key={"it" + i + index}
                                   className="item"
-                                > *
+                                >
                                   <ItemCardSimple
                                     item={item}
                                     type={dB[keyName].type}
                                   />
-                                  </Col>*/}
-                                    <ItemCardSimple
-                                      item={item}
-                                      type={dB[keyName].type}
-                                    />
-                                  </>
-                                )
-                              )}
-                          </Masonry>
+                                </Col>
+                              )
+                            )}
                         </>
                       </Row>
                     </React.Fragment>

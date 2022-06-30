@@ -4,6 +4,11 @@
   --orpink: #ca1f1f;
   --yellowalert: #faf7c8;
   scroll-behavior: auto;
+  --swiper-theme-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,6 +41,20 @@ ul {
 }
 i {
   font-weight: 600;
+}
+
+.mw240 {
+  min-width: 240px;
+  /*width: 240px;*/
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  text-shadow: 0px 2px lightgray;
+}
+.swiper-pagination-bullet {
+  text-shadow: 0px 2px lightgray;
+  border: 1px solid lightgray;
 }
 
 /*li span {
@@ -154,3 +173,25 @@ i {
   align-items: center;
   justify-content: center;
 }*/
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  /*display: inline-flex;*/
+  /*margin-left: -15px; */ /* gutter size offset */
+  width: auto;
+  /*gap: 15px;*/
+}
+.my-masonry-grid_column {
+  padding: calc(var(--bs-gutter-x) * 0.25); /*7.5px;*/
+  background-clip: padding-box;
+  /*box-sizing: border-box;*/
+}
+
+/* Style your items */
+.my-masonry-grid_column > .dddiv {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  /*margin-bottom: 30px;*/
+}

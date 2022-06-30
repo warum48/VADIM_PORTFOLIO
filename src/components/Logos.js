@@ -4,6 +4,7 @@ import { css, jsx } from "@emotion/react";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updatetag } from "../redux/TagSlice";
+import * as constants from "../CONSTS";
 import {
   Container,
   Row,
@@ -22,31 +23,51 @@ import {
   isDesktop
 } from "react-device-detect";
 
-import { Tag } from "./StyledTag";
-
-const TagCont = styled.div`
+const LogosCont = styled.div`
   margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
-/*const Tag = styled.div`
+const LogoContainer = styled.div`
+  /*display: inline-block;*/
+  min-height: 50px;
+  /*min-width: 20%;
+  max-width: 50px;*/
+  flex-basis: 20%;
+  max-width: 60px;
+  margin: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  /*flex: 1;*/
+  opacity: 0.6;
+  filter: grayscale(100%);
+  &:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
+`;
+
+/*const LogoButton = styled.div`
   display: inline-block;
+  font-size: 0.8rem;
   padding: 4px 10px 5px 10px;
   background-color: gray;
-  transition: all 0.5s;
-  &:hover {
-    background-color: #333333;
-  }
   color: white;
   border-radius: 15px;
   margin: 0px 2px 4px 2px;
   cursor: pointer;
-`;*/
-const TagButton = styled(Tag)`
-  cursor: pointer;
   transition: all 0.5s;
   &:hover {
     background-color: #333333;
   }
+`;*/
+
+const LogosHead = styled.div`
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+  color: gray;
 `;
 
 const ClearButton = styled.button`
@@ -95,7 +116,7 @@ ES6:
 const found = arr1.some(r=> arr2.indexOf(r) >= 0)
 https://stackoverflow.com/questions/16312528/check-if-an-array-contains-any-element-of-another-array-in-javascript*/
 
-export const Filters = ({ dB, topMenu = false, ...props }) => {
+export const Logos = ({ dB, topMenu = false, ...props }) => {
   const [tags, setTags] = useState(["react", "sounddesign", "canvas"]);
   const tag = useSelector((state) => state.tag.value);
   const dispatch = useDispatch();
@@ -106,50 +127,39 @@ export const Filters = ({ dB, topMenu = false, ...props }) => {
       Object.keys(dB).forEach((keyName, i) => {
         //console.log(keyName);
         dB[keyName].projects.forEach((item, index) => {
-          if (item.tags) {
-            item.tags.forEach((itemm, index) => {
-              if (fullAr.indexOf(itemm) === -1) {
-                fullAr.push(itemm);
-              }
-            });
+          if (item.logo) {
+            //item.tags.forEach((itemm, index) => {
+            if (fullAr.indexOf(item.logo) === -1) {
+              fullAr.push(item.logo);
+            }
+            //});
           }
         });
       });
       setTags(fullAr);
-      //console.log('i', i);
-
-      //setFilters(db);
-      //doRefresh(prev => prev + 1);
     }
   }, [dB]);
   return (
-    <TagCont {...props}>
-      <span
-        className={topMenu ? "text-white" : ""}
-        css={css`
-          display: block;
-          margin: 0.5rem;
-        `}
-      >
-        FILTER BY TAG:&nbsp;
-      </span>
-      {tags.map((tagg, index) => (
-        <TagButton
-          onClick={() => dispatch(updatetag(tagg))}
-          key={"key" + index}
-          css={css`
-            background-color: ${tag === tagg ? `#333333` : ""};
-          `}
-        >
-          {tagg}
-        </TagButton>
+    <LogosCont {...props}>
+      <LogosHead>
+        {/*
+        These companies are the sign of quality, they ask developers for the
+      same quality"*/}
+      </LogosHead>
+      {tags.map((item, index) => (
+        <LogoContainer key={"logo_panel" + index}>
+          <Image
+            fluid
+            src={constants.imgurl_personal + item}
+            alt=""
+            css={css`
+              /*background-color: ${item.logo_bg};*/
+              max-height: 60px;
+              margin-top: 0px;
+            `}
+          />
+        </LogoContainer>
       ))}
-      <br />
-      {tag !== "" && (
-        <ClearButton onClick={() => dispatch(updatetag(""))}>
-          <span>CLEAR TAG</span>
-        </ClearButton>
-      )}
-    </TagCont>
+    </LogosCont>
   );
 };
