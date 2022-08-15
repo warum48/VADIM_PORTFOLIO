@@ -135,7 +135,7 @@ export const AnchorLinks = ({
         console.log("scroll destroy warning");
       }
     }
-    smoothScroll.current = new SmoothScroll('a[href*="#"]', {
+    /*smoothScroll.current = new SmoothScroll('a[href*="#"]', {
       speed: 500,
       speedAsDuration: true,
       offset: function () {
@@ -145,7 +145,7 @@ export const AnchorLinks = ({
           return 80;
         }
       }
-    });
+    });*/
     //https://github.com/cferdinandi/smooth-scroll
   }, [menuIdAr, isSmallScreen, renderCount]);
 
@@ -190,7 +190,7 @@ export const AnchorLinks = ({
   function onSpyChildrenUpdate() {}
 
   function onSpyUpdate(e) {
-    console.log("spup", e);
+    //console.log("spup", e);
     //console.log('typ', typeof e);
 
     try {

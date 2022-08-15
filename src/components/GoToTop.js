@@ -29,7 +29,7 @@ const TopButton = styled.button`
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
-    font-size: 2em;
+    font-size: 20px;
     line-height: 40px;
     color: #fff;
   }
