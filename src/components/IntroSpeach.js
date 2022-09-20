@@ -151,8 +151,8 @@ export const IntroSpeach = (props) => {
                 </ul>
                 <strong>Place of birth:</strong> Moscow
                 <br />
-                <strong>Current location:</strong> Cambodia
-                <br />
+                {/*<strong>Current location:</strong> Cambodia
+                <br />*/}
                 This portfolio is not a complete list of works, only shows the
                 spectrum of my skills.
               </>
@@ -210,8 +210,8 @@ export const IntroSpeach = (props) => {
                 </ul>
                 <strong>Место регистрации:</strong> Москва
                 <br />
-                <strong>Текущая локация:</strong> Камбоджа
-                <br />
+                {/*<strong>Текущая локация:</strong> Камбоджа
+                <br />*/}
                 Это портфолио не явлеются полным списком работ, только
                 показывает спектр.
               </>
