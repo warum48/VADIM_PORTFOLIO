@@ -17,7 +17,7 @@
       {
         "name": "Holesterix",
         "name_ru": "Холестерикс",
-        "logo": "sites/ey/holesterix-logo.svg",
+        "logo": "sites/holesterix/holesterix-logo.png",
         "desc_en": "ScrollTrigger animation, calculators",
         "desc_ru": "ScrollTrigger анимация, калькуляторы",
         "img": ["sites/holesterix/1.png", "sites/holesterix/3.png"],
@@ -461,7 +461,7 @@
             "link": "https://dev.nahab.info/aerovadim/portfolio/games/flash/nokia_parkur.zip"
           }
         ],
-        "tags": ["canvas", "game", "flash", "design"]
+        "tags": ["game", "flash", "design"]
       }
     ]
   },
