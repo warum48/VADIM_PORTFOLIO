@@ -118,7 +118,8 @@ export const AnchorLinks = ({
     var tempIdAr = menuAr.map(function (item) {
       return item.id;
     });
-    console.log("---menuar", menuAr);
+    //console.log("---menuar", menuAr);
+    tempIdAr.unshift("about");
 
     setMenuIdAr(tempIdAr);
   }, [menuAr]);
@@ -126,13 +127,13 @@ export const AnchorLinks = ({
   useEffect(() => {
     //setOutsideRender(outsideRender + 1);
 
-    console.log("renderCount---", renderCount);
-    console.log("smoothScroll.current", smoothScroll.current);
+    //console.log("renderCount---", renderCount);
+    //console.log("smoothScroll.current", smoothScroll.current);
     if (smoothScroll.current) {
       try {
         smoothScroll.current.destroy();
       } catch (e) {
-        console.log("scroll destroy warning");
+        //console.log("scroll destroy warning");
       }
     }
     /*smoothScroll.current = new SmoothScroll('a[href*="#"]', {
@@ -152,7 +153,7 @@ export const AnchorLinks = ({
   useEffect(() => {
     //console.log('debouncedBrowserHash', debouncedBrowserHash);
     if (debouncedBrowserHash) {
-      console.log("push ankor to history", debouncedBrowserHash);
+      //console.log("push ankor to history", debouncedBrowserHash);
       //!!!!! --push or not---- window.history.pushState(null, null, "/#" + debouncedBrowserHash);
       window.history.replaceState(null, null, "/#" + debouncedBrowserHash);
     } else {
@@ -199,7 +200,7 @@ export const AnchorLinks = ({
         //console.log('id------', e.getAttribute('id'));
       }
     } catch (e) {
-      console.log("WARNING update scroll");
+      //console.log("WARNING update scroll");
     }
   }
 

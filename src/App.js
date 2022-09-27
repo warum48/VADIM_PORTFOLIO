@@ -166,7 +166,7 @@ export default function App() {
 
   function logH() {
     var offsetHeight = projsHolder.current.offsetHeight;
-    console.log("offsH", offsetHeight);
+    //console.log("offsH", offsetHeight);
     if (offsetHeight > 0) {
       if (!listIsBuilt) {
         setRenderCount((prev) => setRenderCount(prev + 1));
@@ -219,7 +219,7 @@ export default function App() {
               <div className="projsholder" ref={projsHolder}>
                 {dB &&
                   Object.keys(dB).map((keyName, i) => (
-                    <React.Fragment key={keyName}>
+                    <React.Fragment key={"proj" + i}>
                       {dB[keyName].projects.filter((it) => {
                         if (seltag === "") {
                           return true;
@@ -275,25 +275,14 @@ export default function App() {
                                   <ItemCard
                                     item={item}
                                     type={dB[keyName].type}
+                                    key={"itemcard" + index}
                                   />
                                 ) : (
-                                  <>
-                                    {/*}<Col
-                                  xs={6}
-                                  lg={3}
-                                  key={"it" + i + index}
-                                  className="item"
-                                > *
                                   <ItemCardSimple
                                     item={item}
                                     type={dB[keyName].type}
+                                    key={"itemcard" + index}
                                   />
-                                  </Col>*/}
-                                    <ItemCardSimple
-                                      item={item}
-                                      type={dB[keyName].type}
-                                    />
-                                  </>
                                 )
                               )}
                           </Masonry>
@@ -334,3 +323,17 @@ export default function App() {
         "tags": ["react"]
       },
       */
+/*{
+        "name": "Gazprom",
+        "name_ru": "Газпром",
+        "logo": "sites/neft/logo.svg",
+        "desc_en": "Oilfields of Russia",
+        "desc_ru": "Карта нефтяных месторождений в России",
+        "img": ["sites/neft/1.jpg"],
+        "url": [
+          {
+            "link": "https://sp.popmech.ru/neft/#!/"
+          }
+        ],
+        "tags": ["map", "angular1", "canvas"]
+      },*/

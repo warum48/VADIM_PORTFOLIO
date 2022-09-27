@@ -88,7 +88,7 @@ const StyledBurger = styled.button`
 const Burger = ({ open, setOpen }) => {
   //open={open} onClick={() => setOpen(!open)}
   useState(() => {
-    console.log("--opne", open);
+    //console.log("--opne", open);
   }, [open]);
   return (
     <div className="d-block d-sm-none">
@@ -117,7 +117,7 @@ export function NavigationTop({ dB }) {
   };
 
   useState(() => {
-    console.log("opne", open);
+    //console.log("opne", open);
   }, [open]);
 
   return (

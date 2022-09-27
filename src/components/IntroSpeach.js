@@ -54,7 +54,7 @@ export const IntroSpeach = (props) => {
   const language = useSelector((state) => state.lang.value);
   useEffect(() => {}, []);
   return (
-    <SpeachContainer className="text-start">
+    <SpeachContainer className="text-start" id="about">
       {/*<Row>
         <Col xs={4} md={3} lg={2}>
           <Image fluid src={constants.imgurl_personal + "myphoto/1.jpg"} />
@@ -96,17 +96,18 @@ export const IntroSpeach = (props) => {
               <>
                 <strong>Name:</strong> Vadim Rumyantsev
                 <br />
-                <strong>Age:</strong> 40
+                <strong>Year of birth:</strong> 1981
                 <br />
                 <strong>Specialization:</strong> Frontend developer
                 <br />
-                <strong>What can I do for you? </strong> Promo websites, landing
-                pages, web applications, online 2d games, banners, Instagram
-                games or masks
+                <strong>My skills: </strong> Promo websites, landing pages, web
+                applications, online 2d games, banners
+                {/* , Instagram
+                games or masks*/}
                 <br />
-                <strong>Stack:</strong> JavaScript ES6, React, Preact, jQuery,
-                Angular 1, Animation (CSS, Canvas, SVG), Webpack, HTML5, CSS3,
-                Photoshop, Figma
+                <strong>Stack:</strong> JavaScript ES6, React, Redux Toolkit,
+                Preact, jQuery, Angular 1, Animation (CSS, Canvas, SVG),
+                Webpack, HTML5, CSS3, Photoshop, Figma
                 <br />
                 <strong>Working experience:</strong>
                 <ul
@@ -160,12 +161,13 @@ export const IntroSpeach = (props) => {
               <>
                 <strong>Имя:</strong> Вадим Румянцев
                 <br />
-                <strong>Возраст:</strong> 40
+                <strong>Год рождения:</strong> 1981
                 <br />
                 <strong>Специальность:</strong> Frontend developer
                 <br />
-                <strong>Stack:</strong> JavaScript ES6, React, Webpack, HTML5,
-                CSS3, Preact, jQuery, Animation (CSS, Canvas, SVG)
+                <strong>Stack:</strong> JavaScript ES6, React, Redux Toolkit,
+                Webpack, HTML5, CSS3, Preact, jQuery, Animation (CSS, Canvas,
+                SVG)
                 <br />
                 <strong>Опыт работы:</strong>
                 <ul

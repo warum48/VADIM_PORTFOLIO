@@ -15,6 +15,17 @@
       },
 
       {
+        "name": "Holesterix",
+        "name_ru": "Холестерикс",
+        "logo": "sites/ey/holesterix-logo.svg",
+        "desc_en": "ScrollTrigger animation, calculators",
+        "desc_ru": "ScrollTrigger анимация, калькуляторы",
+        "img": ["sites/holesterix/1.png", "sites/holesterix/3.png"],
+        "url": [{ "link": "https://xn--e1aajibrrgdg2a.xn--p1ai/" }],
+        "tags": ["react", "scrolltrigger", "calculator"]
+      },
+
+      {
         "name": "Beeline",
         "name_ru": "Билайн",
         "logo": "sites/beeline/logo.jpeg",
@@ -201,21 +212,6 @@
         "img": ["sites/canon/1.jpg"],
         "url": [],
         "tags": ["photofilter", "angular1"]
-      },
-
-      {
-        "name": "Gazprom",
-        "name_ru": "Газпром",
-        "logo": "sites/neft/logo.svg",
-        "desc_en": "Oilfields of Russia",
-        "desc_ru": "Карта нефтяных месторождений в России",
-        "img": ["sites/neft/1.jpg"],
-        "url": [
-          {
-            "link": "https://sp.popmech.ru/neft/#!/"
-          }
-        ],
-        "tags": ["map", "angular1", "canvas"]
       },
 
       {
@@ -449,6 +445,27 @@
       }
     ]
   },
+
+  "games_flash": {
+    "description": "Flash games",
+    "type": "desc",
+    "projects": [
+      {
+        "name": "Nokia",
+        "logo": "games/flash/nokia_logo.png",
+        "desc_en": "Nokia Parkur",
+        "desc_ru": "Nokia Паркур",
+        "img": ["games/flash/nokia.png"],
+        "url": [
+          {
+            "link": "https://dev.nahab.info/aerovadim/portfolio/games/flash/nokia_parkur.zip"
+          }
+        ],
+        "tags": ["canvas", "game", "flash", "design"]
+      }
+    ]
+  },
+
   "interactive_blocks": {
     "description": "Interactive blocks",
     "type": "desc",
