@@ -28,6 +28,7 @@ import {
 import { EmptyJSX } from "./components/EmptyJSX";
 import { ItemCard } from "./components/ItemCard";
 import { ItemCardSimple } from "./components/ItemCardSimple";
+import { ItemCardMultishots } from "./components/ItemCardMultishots";
 import { ItemCardMasonry } from "./components/ItemCardMasonry";
 import { LangSwitch } from "./components/LangSwitch";
 import { Filters } from "./components/Filters";
@@ -139,6 +140,12 @@ export default function App() {
       // 768: 3,
       556: 2,
       320: 1
+    },
+    multi: {
+      default: 1
+      //1200: 2,
+      //992: 1
+      //768: 1
     }
   };
 
@@ -269,8 +276,8 @@ export default function App() {
                                   );
                                 }
                               })
-                              .map((item, index) =>
-                                dB[keyName].type !== "also" &&
+                              .map((item, index) => {
+                                /*dB[keyName].type !== "also" &&
                                 dB[keyName].type !== "compact" ? (
                                   <ItemCard
                                     item={item}
@@ -283,8 +290,43 @@ export default function App() {
                                     type={dB[keyName].type}
                                     key={"itemcard" + index}
                                   />
-                                )
-                              )}
+                                )*/
+
+                                if (
+                                  dB[keyName].type === "also" ||
+                                  dB[keyName].type === "compact"
+                                ) {
+                                  return (
+                                    <ItemCardSimple
+                                      item={item}
+                                      type={dB[keyName].type}
+                                      key={"itemcard" + index}
+                                    />
+                                  );
+                                } else if (
+                                  dB[keyName].type === "desc" ||
+                                  dB[keyName].type === "mob"
+                                ) {
+                                  return (
+                                    <ItemCard
+                                      item={item}
+                                      type={dB[keyName].type}
+                                      key={"itemcard" + index}
+                                    />
+                                  );
+                                } else if (dB[keyName].type === "multi") {
+                                  return (
+                                    <ItemCardMultishots
+                                      item={item}
+                                      //type={dB[keyName].type}
+                                      type={"desc"}
+                                      key={"itemcard" + index}
+                                    />
+                                  );
+                                }
+
+                                return <div>type not found</div>;
+                              })}
                           </Masonry>
                         </>
                       </Row>

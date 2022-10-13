@@ -117,6 +117,74 @@
     ]
   },
 
+  "petproject_react": {
+    "description": "LTFL Pet Project / React",
+    "type": "multi",
+    "projects": [
+      {
+        "name": "LTFL",
+        "name_ru": "LTFL",
+
+        "desc_en": "My current pet project. Learn this f... language. Memorize foreigh words with the help of repetitive listening and rhythm. ",
+        "desc_ru": "Выучи этот ... язык. Запоминай слова с помощью повторяемого прослушивания и ритма. Проект в стадии наполнения",
+        "img": [
+          "ltfl/intro.png",
+          "ltfl/dicts.png",
+          "ltfl/playloop.png",
+          "ltfl/playsynth.png"
+        ],
+        "url": [{ "link": "https://ltfl.vercel.app" }],
+        "tags": ["react", "redux toolkit", "MUI", "typescript"]
+      }
+    ]
+  },
+
+  "react_apps": {
+    "description": "React applications",
+    "type": "desc",
+    "projects": [
+      {
+        "name": "Slider generator",
+        "logo": "",
+        "desc_en": "Slider generator",
+        "desc_ru": "Генератор слайдеров для контент-менеджеров космо",
+        "img": ["reactaps/slidergen/1.png"],
+        "tags": ["react", "utils"],
+        "url": [
+          {
+            "link": "https://slidergen.vercel.app/"
+          }
+        ]
+      },
+      {
+        "name": "Iframe code generator",
+        "logo": "",
+        "desc_en": "Generate code for insertions into an article and preview all screen sizes",
+        "desc_ru": "Генератор кода вставок в iframe для контент-менеджеров космо, первьювер iframe'ов в разных размерах, подсчет их высоты",
+        "img": ["reactaps/iframes/1.jpg"],
+        "tags": ["react", "utils"],
+        "url": [
+          {
+            "link": "https://iframe-breakpoints.vercel.app/"
+          }
+        ]
+      },
+      {
+        "name": "Qrcodes generator and list",
+        "logo": "",
+        "desc_en": "REST CRUD list. This is just demo, API calls are disabled",
+        "desc_ru": "Генератор и список QR-кодов для печати в журналах Imedia Group. Это демо, вызовы API отключены",
+        "img": ["reactaps/qrcodes/1.png"],
+        "tags": ["react", "utils"],
+        "url": [
+          {
+            "link": "https://qrcodes-imweb.vercel.app/"
+          }
+        ]
+      }
+    ]
+  },
+
   "websites_angular": {
     "description": "Websites / Angular1",
     "type": "desc",
@@ -261,52 +329,6 @@
         "url": [
           {
             "link": "https://dev.nahab.info/dev-landings/bond2020/"
-          }
-        ]
-      }
-    ]
-  },
-
-  "react_apps": {
-    "description": "React applications",
-    "type": "desc",
-    "projects": [
-      {
-        "name": "Slider generator",
-        "logo": "",
-        "desc_en": "Slider generator",
-        "desc_ru": "Генератор слайдеров для контент-менеджеров космо",
-        "img": ["reactaps/slidergen/1.png"],
-        "tags": ["react", "utils"],
-        "url": [
-          {
-            "link": "https://slidergen.vercel.app/"
-          }
-        ]
-      },
-      {
-        "name": "Iframe code generator",
-        "logo": "",
-        "desc_en": "Generate code for insertions into an article and preview all screen sizes",
-        "desc_ru": "Генератор кода вставок в iframe для контент-менеджеров космо, первьювер iframe'ов в разных размерах, подсчет их высоты",
-        "img": ["reactaps/iframes/1.jpg"],
-        "tags": ["react", "utils"],
-        "url": [
-          {
-            "link": "https://iframe-breakpoints.vercel.app/"
-          }
-        ]
-      },
-      {
-        "name": "Qrcodes generator and list",
-        "logo": "",
-        "desc_en": "REST CRUD list. This is just demo, API calls are disabled",
-        "desc_ru": "Генератор и список QR-кодов для печати в журналах Imedia Group. Это демо, вызовы API отключены",
-        "img": ["reactaps/qrcodes/1.png"],
-        "tags": ["react", "utils"],
-        "url": [
-          {
-            "link": "https://qrcodes-imweb.vercel.app/"
           }
         ]
       }
@@ -613,7 +635,7 @@
     ]
   },
   "implants": {
-    "description": "Interactive implants",
+    "description": "Interactive Iframes",
     "show_header": 1,
     "type": "also",
     "projects": [

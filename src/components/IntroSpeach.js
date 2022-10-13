@@ -220,7 +220,7 @@ export const IntroSpeach = (props) => {
             )}
           </div>
 
-          <Peace>
+          {/*<Peace>
             <PeaceImg src="./images/Peace_sign.svg" height="80px" />
             {language === "en" ? (
               <>
@@ -234,7 +234,7 @@ export const IntroSpeach = (props) => {
                 сработаетмся
               </>
             )}
-          </Peace>
+            </Peace>*/}
         </Col>
       </Row>
     </SpeachContainer>
