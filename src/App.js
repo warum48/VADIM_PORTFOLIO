@@ -41,7 +41,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import { useTimeout } from "./components/Utils";
 import { useInterval } from "./components/Utils";
 import Masonry from "react-masonry-css";
-
+import * as constants from "./CONSTS";
 import { useSelector, useDispatch } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
@@ -150,7 +150,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    fetch("DB.json")
+    fetch(constants.imgurl_personal + "DB.json")
       .then((res) => res.json())
       //.then(setDB);
       .then((data) => {

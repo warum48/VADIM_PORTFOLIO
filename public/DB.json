@@ -9,7 +9,13 @@
         "logo": "sites/ey/logo.png",
         "desc_en": "Taxes world map with filters",
         "desc_ru": "Интерактивная налоговая карта мира с фильтрами",
-        "img": ["sites/ey/1.jpg"],
+        "img": [
+          "sites/ey/1.png",
+          "sites/ey/2.png",
+          "sites/ey/3.png",
+          "sites/ey/4.png",
+          "sites/ey/5.png"
+        ],
         "url": [{ "link": "https://dev.nahab.info/dev-eyvtimes/" }],
         "tags": ["react", "map"]
       },

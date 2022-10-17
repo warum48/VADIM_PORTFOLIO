@@ -149,6 +149,10 @@ export const IntroSpeach = (props) => {
                     {"-> "}Angular {"-> "}
                     React), HTML,CSS, Webpack
                   </li>
+                  <li>
+                    <i>2022:</i> Freelance for advertising agency "Digitas
+                    Moscow". React websites and promo applications
+                  </li>
                 </ul>
                 <strong>Place of birth:</strong> Moscow
                 <br />
