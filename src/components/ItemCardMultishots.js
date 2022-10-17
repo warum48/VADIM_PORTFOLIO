@@ -81,7 +81,7 @@ export const ItemCardMultishots = ({ item, type }) => {
         <Card style={{ width: "100%" }} className="mb-3 overflow-hidden">
           <MultiShots>
             {item.img.map((image, index) => (
-              <div>
+              <div key={"imke" + index}>
                 <Image fluid src={constants.imgurl_personal + image} alt="" />
               </div>
             ))}

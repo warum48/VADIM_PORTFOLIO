@@ -26,7 +26,11 @@
         "logo": "sites/holesterix/holesterix-logo.png",
         "desc_en": "ScrollTrigger animation, calculators",
         "desc_ru": "ScrollTrigger анимация, калькуляторы",
-        "img": ["sites/holesterix/1.png", "sites/holesterix/3.png"],
+        "img": [
+          "sites/holesterix/1.png",
+          "sites/holesterix/2.png",
+          "sites/holesterix/3.png"
+        ],
         "url": [{ "link": "https://xn--e1aajibrrgdg2a.xn--p1ai/" }],
         "tags": ["react", "scrolltrigger", "calculator"]
       },
@@ -55,7 +59,7 @@
         "logo": "sites/tommy/logo.png",
         "desc_en": "Taro cards & holy random",
         "desc_ru": "Карты таро и божественный рандом расскажут что носить",
-        "img": ["sites/tommy/1.jpg"],
+        "img": ["sites/tommy/1.jpg", "sites/tommy/2.jpg"],
         "url": [
           {
             "link": "https://sp.bazaar.ru/lamoda2021/"
@@ -640,6 +644,53 @@
       }
     ]
   },
+
+  "vue_apps": {
+    "description": "Vue quizzes",
+    "type": "mob",
+    "projects": [
+      {
+        "name": "Cordiant",
+        "logo": "logos/logo_condiant.png",
+        "desc_en": "Quiz for Cordiant",
+        "desc_ru": "Тест для Cordiant",
+        "img": ["vue/quizzes/cordiant.png"],
+        "tags": ["vue", "quiz"],
+        "url": [
+          {
+            "link": "https://sp.imweb.ru/implant/sp/cordiant2022/"
+          }
+        ]
+      },
+      {
+        "name": "Ozon",
+        "logo": "logos/logo_ozon.svg",
+        "desc_en": "Quiz for Ozon",
+        "desc_ru": "Тест для Ozon",
+        "img": ["vue/quizzes/ozon.png"],
+        "tags": ["vue", "quiz"],
+        "url": [
+          {
+            "link": "https://sp.imweb.ru/implant/sp/ozon2022/"
+          }
+        ]
+      },
+      {
+        "name": "Pobeda",
+        "logo": "logos/logo_condiant.png",
+        "desc_en": "Quiz for Pobeda chocolate",
+        "desc_ru": "Тест для шоколада Победа",
+        "img": ["vue/quizzes/pobeda.png"],
+        "tags": ["vue", "quiz"],
+        "url": [
+          {
+            "link": "https://dev.nahab.info/implant/sp/pobeda/"
+          }
+        ]
+      }
+    ]
+  },
+
   "implants": {
     "description": "Interactive Iframes",
     "show_header": 1,

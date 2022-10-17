@@ -150,7 +150,10 @@ export default function App() {
   };
 
   useEffect(() => {
+    //
+    console.log("constants.imgurl_personal + ", constants.imgurl_personal);
     fetch(constants.imgurl_personal + "DB.json")
+      //fetch("DB.json")
       .then((res) => res.json())
       //.then(setDB);
       .then((data) => {
@@ -216,10 +219,10 @@ export default function App() {
           <Col sm={8} md={8} lg={9}>
             <div>
               <Row>
-                <Col md={8}>
+                <Col md={7}>
                   <IntroSpeach />
                 </Col>
-                <Col md={4} className="d-none d-md-block">
+                <Col md={5} className="d-none d-md-block">
                   <Logos dB={dB} />
                 </Col>
               </Row>
