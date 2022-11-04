@@ -101,7 +101,7 @@ export const IntroSpeach = (props) => {
                 <strong>Specialization:</strong> Frontend developer
                 <br />
                 <strong>My skills: </strong> Promo websites, landing pages, web
-                applications, online 2d games, banners
+                applications, online 2d games
                 {/* , Instagram
                 games or masks*/}
                 <br />
