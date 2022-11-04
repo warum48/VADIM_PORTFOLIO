@@ -29,7 +29,6 @@ import {
 } from "react-device-detect";
 import { ShowMoreButton } from "./ShowMoreButton";
 
-
 const LogoContainer = styled.div`
   min-height: 50px;
   width: 33%;
@@ -39,11 +38,11 @@ const LogoContainer = styled.div`
 `;
 
 const StyledBody = styled(Card.Body)`
-  min-height: 200px ;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-`
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 //{/**/}
 //<Slider images={item.img} sizeKeeperSrc={item.img[0]} />
@@ -56,106 +55,110 @@ export const ItemCard = ({ item, type }) => {
     <>
       {item.show_more === "true" ? (
         <Card style={{ width: "100%" }} className="mb-3 overflow-hidden">
-        <StyledBody >
-        <ShowMoreButton />
-        </StyledBody>
+          <StyledBody>
+            <ShowMoreButton />
+          </StyledBody>
         </Card>
       ) : (
-    <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8} tiltEnable={isDesktop}>
-      <Card style={{ width: "100%" }} className="mb-3 overflow-hidden">
-        {item.img.length <= 1 ? (
-          <Card.Img variant="top" src={constants.imgurl_personal + item.img} />
-        ) : (
-          <>
-            {/*<Card.Img
+        <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8} tiltEnable={isDesktop}>
+          <Card style={{ width: "100%" }} className="mb-3 overflow-hidden">
+            {item.img.length <= 1 ? (
+              <Card.Img
+                variant="top"
+                src={constants.imgurl_personal + item.img}
+              />
+            ) : (
+              <>
+                {/*<Card.Img
             variant="top"
             src={constants.imgurl_personal + item.img[0]}
           />*/}
-            <SwiperSlider images={item.img} />
-          </>
-        )}
-
-        <Card.Body
-          className="text-start"
-          css={css`
-            border-top: 1px #dddddd solid;
-          `}
-        >
-          <div
-            className="d-flex w-100 p-2  justify-content-between"
-            css={css`
-              min-height: 50px;
-            `}
-          >
-            {type !== "mob" && item.logo && (
-              <>
-                <LogoContainer>
-                  <Image
-                    fluid
-                    src={constants.imgurl_personal + item.logo}
-                    alt=""
-                    css={css`
-                      background-color: ${item.logo_bg};
-                      max-height: 60px;
-                    `}
-                  />
-                </LogoContainer>
-                <div className="vr"></div>{" "}
+                <SwiperSlider images={item.img} />
               </>
             )}
-            <div
-              className="ps-3"
+
+            <Card.Body
+              className="text-start"
               css={css`
-                width: ${type !== "mob" ? `66%` : "100%"};
+                border-top: 1px #dddddd solid;
               `}
             >
-              {type == "mobbbb" ||
-                (false && (
-                  <LogoContainer>
-                    <Image
-                      fluid
-                      src={constants.imgurl_personal + item.logo}
-                      alt=""
-                      css={css`
-                        background-color: ${item.logo_bg};
-                        max-height: 60px;
-                        margin-top: -160px;
-                      `}
-                    />
-                  </LogoContainer>
-                ))}
-
-              <Card.Text
-                className="mb-3"
+              <div
+                className="d-flex w-100 p-2  justify-content-between"
                 css={css`
-                  font-size: 0.9rem;
+                  min-height: 50px;
                 `}
               >
-                {language === "en" ? item.desc_en : item.desc_ru}
-              </Card.Text>
-              <div className="item_tags">
-                {item.tags?.map((tag, index) => (
-                  <Tag key={"i" + index}>{tag}</Tag>
-                ))}
-              </div>
+                {type !== "mob" && item.logo && (
+                  <>
+                    <LogoContainer>
+                      <Image
+                        fluid
+                        src={constants.imgurl_personal + item.logo}
+                        alt=""
+                        css={css`
+                          background-color: ${item.logo_bg};
+                          max-height: 60px;
+                        `}
+                      />
+                    </LogoContainer>
+                    <div className="vr"></div>{" "}
+                  </>
+                )}
+                <div
+                  className="ps-3"
+                  css={css`
+                    width: ${type !== "mob" ? `66%` : "100%"};
+                  `}
+                >
+                  {type == "mobbbb" ||
+                    (false && (
+                      <LogoContainer>
+                        <Image
+                          fluid
+                          src={constants.imgurl_personal + item.logo}
+                          alt=""
+                          css={css`
+                            background-color: ${item.logo_bg};
+                            max-height: 60px;
+                            margin-top: -160px;
+                          `}
+                        />
+                      </LogoContainer>
+                    ))}
 
-              {type !== "also" &&
-                item.url.map((url, index) => (
-                  <a
-                    href={url.link}
-                    className="item_name"
-                    key={"a" + item.name + index}
-                    target="_blank"
-                    rel="noreferrer noopener"
+                  <Card.Text
+                    className="mb-3"
+                    css={css`
+                      font-size: 0.9rem;
+                    `}
                   >
-                    <LinkContainer>{url.name || "View"}</LinkContainer>
-                  </a>
-                ))}
-            </div>
-          </div>
-        </Card.Body>
-      </Card>
-    </Tilt>
-      )}</>
+                    {language === "en" ? item.desc_en : item.desc_ru}
+                  </Card.Text>
+                  <div className="item_tags">
+                    {item.tags?.map((tag, index) => (
+                      <Tag key={"i" + index}>{tag}</Tag>
+                    ))}
+                  </div>
+
+                  {type !== "also" &&
+                    item.url.map((url, index) => (
+                      <a
+                        href={url.link}
+                        className="item_name"
+                        key={"a" + item.name + index}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <LinkContainer>{url.name || "View"}</LinkContainer>
+                      </a>
+                    ))}
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
+        </Tilt>
+      )}
+    </>
   );
 };

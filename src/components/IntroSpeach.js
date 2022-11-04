@@ -105,9 +105,10 @@ export const IntroSpeach = (props) => {
                 {/* , Instagram
                 games or masks*/}
                 <br />
-                <strong>Stack:</strong> JavaScript ES6, React, Redux Toolkit,
-                Preact, jQuery, Angular 1, Animation (CSS, Canvas, SVG),
-                Webpack, HTML5, CSS3, Photoshop, Figma
+                <strong>Stack:</strong> JavaScript ES6, TypeScript, React, Redux
+                Toolkit, Preact, jQuery, Angular 1, Animation (CSS, Canvas,
+                SVG), Webpack, HTML5, CSS3, SASS, Styled Components (Emotion),
+                MUI, Bootstrap, Photoshop, Figma
                 <br />
                 <strong>Working experience:</strong>
                 <ul
@@ -169,9 +170,10 @@ export const IntroSpeach = (props) => {
                 <br />
                 <strong>Специальность:</strong> Frontend developer
                 <br />
-                <strong>Stack:</strong> JavaScript ES6, React, Redux Toolkit,
-                Webpack, HTML5, CSS3, Preact, jQuery, Animation (CSS, Canvas,
-                SVG)
+                <strong>Stack:</strong> JavaScript ES6, TypeScript, React, Redux
+                Toolkit, Preact, jQuery, Angular 1, Animation (CSS, Canvas,
+                SVG), Webpack, HTML5, CSS3, SASS, Styled Components (Emotion),
+                MUI, Bootstrap, Photoshop, Figma
                 <br />
                 <strong>Опыт работы:</strong>
                 <ul

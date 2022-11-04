@@ -141,6 +141,9 @@ export const ItemCardMultishots = ({ item, type }) => {
                   className="mb-3"
                   css={css`
                     font-size: 0.9rem;
+                    @media (min-width: 996px) {
+                      max-width: 70%;
+                    }
                   `}
                 >
                   {language === "en" ? item.desc_en : item.desc_ru}
