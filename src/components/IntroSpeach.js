@@ -81,7 +81,7 @@ export const IntroSpeach = (props) => {
       </Row>*/}
       <Row>
         <Col>
-          <Image
+          {/*<Image
             fluid
             src={constants.imgurl_personal + "myphoto/1.jpg"}
             className={"float-start"}
@@ -89,7 +89,7 @@ export const IntroSpeach = (props) => {
               max-width: 150px;
               padding: 0 20px 10px 0;
             `}
-          />
+          />*/}
 
           <div className="inline">
             {language === "en" ? (
