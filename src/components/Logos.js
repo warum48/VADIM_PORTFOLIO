@@ -34,7 +34,7 @@ const LogosHead = styled.div`
 `;
 
 export const Logos = ({ dB, topMenu = false, ...props }) => {
-  const [logos, setLogos] = useState([""]);
+  const [logos, setLogos] = useState([]);
   useEffect(() => {
     if (dB) {
       var fullAr = [];
