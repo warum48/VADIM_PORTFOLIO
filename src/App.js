@@ -150,8 +150,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    //
-    console.log("constants.imgurl_personal + ", constants.imgurl_personal);
+    //console.log("constants.imgurl_personal + ", constants.imgurl_personal);
     fetch(constants.imgurl_personal + "DB.json")
       //fetch("DB.json")
       .then((res) => res.json())

@@ -96,7 +96,7 @@ const found = arr1.some(r=> arr2.indexOf(r) >= 0)
 https://stackoverflow.com/questions/16312528/check-if-an-array-contains-any-element-of-another-array-in-javascript*/
 
 export const Filters = ({ dB, topMenu = false, ...props }) => {
-  const [tags, setTags] = useState(["react", "sounddesign", "canvas"]);
+  const [tags, setTags] = useState([""]); //react", "sounddesign", "canvas
   const tag = useSelector((state) => state.tag.value);
   const dispatch = useDispatch();
   useEffect(() => {
