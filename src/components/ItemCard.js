@@ -106,26 +106,30 @@ export const ItemCard = ({ item, type }) => {
                   </>
                 )}
                 <div
-                  className="ps-3"
+                  //className="ps-3"
+                  //width: ${type !== "mob" ? `66%` : "100%"};
                   css={css`
-                    width: ${type !== "mob" ? `66%` : "100%"};
+                    background-color: "white";
                   `}
                 >
-                  {type == "mobbbb" ||
-                    (false && (
-                      <LogoContainer>
-                        <Image
-                          fluid
-                          src={constants.imgurl_personal + item.logo}
-                          alt=""
-                          css={css`
-                            background-color: ${item.logo_bg};
-                            max-height: 60px;
-                            margin-top: -160px;
-                          `}
-                        />
-                      </LogoContainer>
-                    ))}
+                  {type == "mob" && (
+                    <LogoContainer
+                      className="mob_logo"
+                      css={css`
+                        text-align: left;
+                      `}
+                    >
+                      <Image
+                        fluid
+                        src={constants.imgurl_personal + item.logo}
+                        alt=""
+                        css={css`
+                          background-color: ${item.logo_bg};
+                          max-width: 80px;
+                        `}
+                      />
+                    </LogoContainer>
+                  )}
 
                   <Card.Text
                     className="mb-3"
