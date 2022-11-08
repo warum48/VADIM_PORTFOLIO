@@ -3,7 +3,7 @@
   "name": "Frontend developer portfolio",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "/favicon.ico",
       "sizes": "32x32",
       "type": "image/x-icon"
     }
