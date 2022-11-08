@@ -96,7 +96,7 @@ const found = arr1.some(r=> arr2.indexOf(r) >= 0)
 https://stackoverflow.com/questions/16312528/check-if-an-array-contains-any-element-of-another-array-in-javascript*/
 
 export const Filters = ({ dB, topMenu = false, ...props }) => {
-  const [tags, setTags] = useState([""]); //react", "sounddesign", "canvas
+  const [tags, setTags] = useState([]); //react", "sounddesign", "canvas
   const tag = useSelector((state) => state.tag.value);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -123,33 +123,39 @@ export const Filters = ({ dB, topMenu = false, ...props }) => {
     }
   }, [dB]);
   return (
-    <TagCont {...props}>
-      <span
-        className={topMenu ? "text-white" : ""}
-        css={css`
-          display: block;
-          margin: 0.5rem;
-        `}
-      >
-        FILTER BY TAG:&nbsp;
-      </span>
-      {tags.map((tagg, index) => (
-        <TagButton
-          onClick={() => dispatch(updatetag(tagg))}
-          key={"key" + index}
-          css={css`
-            background-color: ${tag === tagg ? `#333333` : ""};
-          `}
-        >
-          {tagg}
-        </TagButton>
-      ))}
-      <br />
-      {tag !== "" && (
-        <ClearButton onClick={() => dispatch(updatetag(""))}>
-          <span>CLEAR TAG</span>
-        </ClearButton>
+    <>
+      {tags.length > 0 ? (
+        <TagCont {...props}>
+          <span
+            className={topMenu ? "text-white" : ""}
+            css={css`
+              display: block;
+              margin: 0.5rem;
+            `}
+          >
+            FILTER BY TAG:&nbsp;
+          </span>
+          {tags.map((tagg, index) => (
+            <TagButton
+              onClick={() => dispatch(updatetag(tagg))}
+              key={"key" + index}
+              css={css`
+                background-color: ${tag === tagg ? `#333333` : ""};
+              `}
+            >
+              {tagg}
+            </TagButton>
+          ))}
+          <br />
+          {tag !== "" && (
+            <ClearButton onClick={() => dispatch(updatetag(""))}>
+              <span>CLEAR TAG</span>
+            </ClearButton>
+          )}
+        </TagCont>
+      ) : (
+        <TagCont {...props}>LOADING CONTENT...</TagCont>
       )}
-    </TagCont>
+    </>
   );
 };
