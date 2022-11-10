@@ -4,43 +4,12 @@ import { css, jsx } from "@emotion/react";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updatetag } from "../redux/TagSlice";
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-  Button,
-  Accordion,
-  Card,
-  useAccordionButton
-} from "react-bootstrap";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-  isDesktop
-} from "react-device-detect";
-
 import { Tag } from "./StyledTag";
 
 const TagCont = styled.div`
   margin-top: 1rem;
 `;
 
-/*const Tag = styled.div`
-  display: inline-block;
-  padding: 4px 10px 5px 10px;
-  background-color: gray;
-  transition: all 0.5s;
-  &:hover {
-    background-color: #333333;
-  }
-  color: white;
-  border-radius: 15px;
-  margin: 0px 2px 4px 2px;
-  cursor: pointer;
-`;*/
 const TagButton = styled(Tag)`
   cursor: pointer;
   transition: all 0.5s;
@@ -104,7 +73,6 @@ export const Filters = ({ dB, topMenu = false, ...props }) => {
     if (dB) {
       var fullAr = [];
       Object.keys(dB).forEach((keyName, i) => {
-        //console.log(keyName);
         dB[keyName].projects.forEach((item, index) => {
           if (item.tags) {
             item.tags.forEach((itemm, index) => {
@@ -116,10 +84,6 @@ export const Filters = ({ dB, topMenu = false, ...props }) => {
         });
       });
       setTags(fullAr);
-      //console.log('i', i);
-
-      //setFilters(db);
-      //doRefresh(prev => prev + 1);
     }
   }, [dB]);
   return (
@@ -135,7 +99,7 @@ export const Filters = ({ dB, topMenu = false, ...props }) => {
           >
             FILTER BY TAG:&nbsp;
           </span>
-          {tags.map((tagg, index) => (
+          {tags.sort(Intl.Collator().compare).map((tagg, index) => (
             <TagButton
               onClick={() => dispatch(updatetag(tagg))}
               key={"key" + index}

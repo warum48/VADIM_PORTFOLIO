@@ -10,7 +10,7 @@ import { Navigation, Pagination } from "swiper";
 //import { EffectFade } from 'swiper';
 //import { EffectCreative } from "swiper";
 import SwiperCore, { EffectCreative } from "swiper";
-import * as constants from "../CONSTS";
+import * as constants from "../../CONSTS";
 //import 'swiper/css/effect-fade';
 //import "swiper/css/effect-creative";
 //import "swiper/css/effect-creative";

@@ -3,19 +3,10 @@ import styled from "@emotion/styled";
 import { css, jsx } from "@emotion/react";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-  Button,
-  Accordion,
-  Card,
-  useAccordionButton
-} from "react-bootstrap";
+import { Image, Card } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import { ShowMoreButton } from "./ShowMoreButton";
-import * as constants from "../CONSTS";
+import * as constants from "../../CONSTS";
 
 const LogoContainer = styled.div`
   flex: 0 0 auto;
@@ -28,31 +19,25 @@ const LogoName = styled.div`
 `;
 
 const StyledBody = styled(Card.Body)`
-  min-height: 140px ;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-`
+  min-height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const ItemCardSimple = ({ item, type }) => {
-  const [lang, setLang] = useState("ru");
   const language = useSelector((state) => state.lang.value);
   return (
     <>
       {item.show_more === "true" ? (
         <Card style={{ width: "100%" }} className="mb-3 overflow-hidden">
-        <StyledBody >
-        <ShowMoreButton />
-        </StyledBody>
+          <StyledBody>
+            <ShowMoreButton />
+          </StyledBody>
         </Card>
-      )  : (
+      ) : (
         <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8}>
           <Card style={{ width: "100%" }} className="mb-3">
-            {/*<Card.Img
-          variant="top"
-          src={constants.imgurl_pagekeeper + item.url}
-          className="p-3"
-        />*/}
             <Image
               fluid
               src={
@@ -63,16 +48,8 @@ export const ItemCardSimple = ({ item, type }) => {
             />
 
             <Card.Body className="text-start">
-              {/*<Card.Text className="mb-1">
-            <a href={item.url} className="item_name">
-              {item.url}
-            </a>
-          </Card.Text>*/}
               <div className="item_toppp d-flex w-100 p-2  justify-content-between">
-                <LogoContainer
-                //className="item_logo_also"
-                //style={{ backgroundColor: item.logo_bg }}
-                >
+                <LogoContainer>
                   {item.logo ? (
                     <Image
                       fluid

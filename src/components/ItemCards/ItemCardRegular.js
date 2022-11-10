@@ -1,32 +1,15 @@
 /** @jsxImportSource @emotion/react */ /* **/
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-  Button,
-  Accordion,
-  Card,
-  useAccordionButton
-} from "react-bootstrap";
+import { Image, Card } from "react-bootstrap";
 import styled from "@emotion/styled";
 import { css, jsx } from "@emotion/react";
-import * as constants from "../CONSTS";
+import * as constants from "../../CONSTS";
 import { LinkContainer } from "./StyledLinkContainer";
-//import { Slider } from "./Slider";
-//import { SliderFM } from "./SliderFM";
 import { SwiperSlider } from "./SwiperSlider";
-import { Tag } from "./StyledTag";
+import { Tag } from "../StyledTag";
 import Tilt from "react-parallax-tilt";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-  isDesktop
-} from "react-device-detect";
+import { isDesktop } from "react-device-detect";
 import { ShowMoreButton } from "./ShowMoreButton";
 
 const LogoContainer = styled.div`
@@ -44,12 +27,7 @@ const StyledBody = styled(Card.Body)`
   align-items: center;
 `;
 
-//{/**/}
-//<Slider images={item.img} sizeKeeperSrc={item.img[0]} />
-//{/*<SliderFM images={item.img} sizeKeeperSrc={item.img[0]} />*/}
-
-export const ItemCard = ({ item, type }) => {
-  const [lang, setLang] = useState("ru");
+export const ItemCardRegular = ({ item, type }) => {
   const language = useSelector((state) => state.lang.value);
   return (
     <>
@@ -68,13 +46,7 @@ export const ItemCard = ({ item, type }) => {
                 src={constants.imgurl_personal + item.img}
               />
             ) : (
-              <>
-                {/*<Card.Img
-            variant="top"
-            src={constants.imgurl_personal + item.img[0]}
-          />*/}
-                <SwiperSlider images={item.img} />
-              </>
+              <SwiperSlider images={item.img} />
             )}
 
             <Card.Body
@@ -106,13 +78,11 @@ export const ItemCard = ({ item, type }) => {
                   </>
                 )}
                 <div
-                  //className="ps-3"
-                  //width: ${type !== "mob" ? `66%` : "100%"};
                   css={css`
                     background-color: "white";
                   `}
                 >
-                  {type == "mob" && (
+                  {type === "mob" && (
                     <LogoContainer
                       className="mob_logo"
                       css={css`

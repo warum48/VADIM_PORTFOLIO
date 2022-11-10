@@ -13,12 +13,12 @@ import {
 } from "react-bootstrap";
 import styled from "@emotion/styled";
 import { css, jsx } from "@emotion/react";
-import * as constants from "../CONSTS";
+import * as constants from "../../CONSTS";
 import { LinkContainer } from "./StyledLinkContainer";
 //import { Slider } from "./Slider";
 //import { SliderFM } from "./SliderFM";
 import { SwiperSlider } from "./SwiperSlider";
-import { Tag } from "./StyledTag";
+import { Tag } from "../StyledTag";
 import Tilt from "react-parallax-tilt";
 import {
   BrowserView,

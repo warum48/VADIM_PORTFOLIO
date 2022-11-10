@@ -27,13 +27,13 @@ import {
   useAccordionButton
 } from "react-bootstrap";
 //import { Item } from "./other/Item";
-import { EmptyJSX } from "./components/EmptyJSX";
-import { ItemCard } from "./components/ItemCard";
+/*import { EmptyJSX } from "./components/EmptyJSX";
+import { ItemCardRegular } from "./components/ItemCardRegular";
 import { ItemCardSimple } from "./components/ItemCardSimple";
 import { LangSwitch } from "./components/LangSwitch";
 import { Filters } from "./components/Filters";
 import { AnchorLinks } from "./components/AnchorLinks";
-import { IntroSpeach } from "./components/IntroSpeach";
+import { IntroSpeach } from "./components/IntroSpeach";*/
 import { NavigationTop } from "./components/NavigationTop";
 import { GoToTop } from "./components/GoToTop";
 import { ErrorBoundary } from "react-error-boundary";
