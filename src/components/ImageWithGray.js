@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-//import "./ImageWithGray.css"; //dfdf
 import styled from "@emotion/styled";
 import { css, keyframes } from "@emotion/react";
 
@@ -50,16 +49,7 @@ const ImageWithGray = ({
   const onImageLoaded = (event) => {
     setHasImageLoaded(true);
     onLoad(event);
-  }; //
-
-  /*useEffect(() => {
-    if (containerRef.current) {
-      const [ratioWidth, ratioHeight] = aspectRatio.split(":");
-      const height =
-        (containerRef.current.offsetWidth / ratioWidth) * ratioHeight;
-      setContainerHeight(height);
-    }
-  }, [containerRef, aspectRatio]);*/
+  };
 
   useEffect(() => {
     if (containerRef.current) {
@@ -67,10 +57,10 @@ const ImageWithGray = ({
       const height = (maxWidth / ratioWidth) * ratioHeight;
       setContainerHeight(height);
     }
-  }, [containerRef, aspectRatio]);
+  }, [containerRef, aspectRatio, maxWidth]);
 
   return (
-    <ImageWrapper 
+    <ImageWrapper
       ref={containerRef}
       style={{ minHeight: containerHeight, width: maxWidth }}
     >

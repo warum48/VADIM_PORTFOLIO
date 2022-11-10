@@ -1,9 +1,6 @@
 import React from "react";
-//import styled from "styled-components";
-//import css from "styled-components";
 import styled from "@emotion/styled";
 import { useSelector, useDispatch } from "react-redux";
-//import { decrease, increase } from "./counterSlice";
 import { setEn, setRu } from "../redux/langSlice";
 
 const Switcher = styled.div`
@@ -13,14 +10,7 @@ const Switcher = styled.div`
 `;
 
 const Button = styled.div`
-  /* This renders the buttons above... Edit me! */
   display: flex;
-  /*border-radius: 3px;
-  border: 2px solid white;
-  padding: 0.5rem 0;
-  margin: 0.5rem 1rem;
-  width: 6rem;
-  height: 3rem;*/
   background: transparent;
   background-color: #ffffff11;
   &:hover {
@@ -39,7 +29,6 @@ const Button = styled.div`
 const LangName = styled.div`
   display: flex;
   margin: 5px;
-  /*width: 3rem;*/
   align-items: center;
   justify-content: center;
 `;
@@ -58,13 +47,8 @@ const LangFlag = styled.div`
 `;
 
 export function LangSwitch() {
-  //const count = useSelector((state) => state.counter.value);
   const language = useSelector((state) => state.lang.value);
-  // in our slice, we provided the name property as 'counter'
-  // and the initialState with a 'value' property
-  // thus to read our data, we need useSelector to return the state.counter.value
   const dispatch = useDispatch();
-  // gets the dispatch function to dispatch our actions
 
   return (
     <Switcher>
@@ -72,8 +56,6 @@ export function LangSwitch() {
         <LangName>EN</LangName>
         <LangFlag lang={"EN"} curlang={language} />
       </Button>
-      {/*<p>{language}</p>
-      <button onClick={() => dispatch(setRu())}>RU</button>*/}
       <Button onClick={() => dispatch(setRu())} lang={"RU"} curlang={language}>
         <LangName>RU</LangName>
         <LangFlag lang={"RU"} curlang={language} />

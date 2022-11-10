@@ -24,7 +24,7 @@ export default function FadeIn({
       count = 0;
     }
 
-    if (count == maxIsVisible) {
+    if (count === maxIsVisible) {
       // We're done updating maxVisible, notify when animation is done
       const timeout = setTimeout(() => {
         if (onComplete) onComplete();

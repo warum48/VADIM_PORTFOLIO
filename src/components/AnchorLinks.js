@@ -4,10 +4,8 @@ import { css, jsx } from "@emotion/react";
 import React, { useState, useEffect, useRef } from "react";
 import Scrollspy from "./Third-party/scrollspy";
 import { useDebounce } from "./Utils";
-import { isSafari } from "react-device-detect"; //
 import { useMediaQuery } from "react-responsive";
-import SmoothScroll from "smooth-scroll";
-import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 //import { HashLink } from "react-router-hash-link";
 
 const LinksCont = styled.div`
@@ -33,48 +31,8 @@ const AnkorLink = styled.div`
   a{
     color: ${(props) => (props.topmenu ? "white" : "black")};
     &:hover {
-    /*color: ${(props) =>
-      props.topmenu ? "var(--lightblue)" : "var(--darkblue)"};*/
       color: var(--lightblue) ;
   }
-  }
-`;
-
-const ClearButton = styled.button`
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  padding: 8px;
-  min-width: 130px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  &:hover {
-    span {
-      padding-right: 25px;
-      &:after {
-        opacity: 1;
-        right: 0;
-      }
-    }
-  }
-  span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    &:after {
-      content: "✖";
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
   }
 `;
 
@@ -88,14 +46,12 @@ https://stackoverflow.com/questions/16312528/check-if-an-array-contains-any-elem
 
 export const AnchorLinks = ({
   dB,
-  //readyToDraw = false,
   renderCount,
   setOpen = null,
   outsideRender = 0,
   setOutsideRender = () => {},
   ...props
 }) => {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 992px)" });
   const isSmallScreen = useMediaQuery({ query: "(max-width: 991px)" });
   const smoothScroll = useRef(null);
   const [menuIdAr, setMenuIdAr] = useState([]);
@@ -105,7 +61,6 @@ export const AnchorLinks = ({
   const [menuAr, setMenuAr] = useState([]);
 
   useEffect(() => {
-    //var menuAr = [];
     if (dB) {
       var headAr = Object.keys(dB).map(function (keyName, i) {
         return { name: dB[keyName].description, id: keyName };
@@ -118,17 +73,11 @@ export const AnchorLinks = ({
     var tempIdAr = menuAr.map(function (item) {
       return item.id;
     });
-    //console.log("---menuar", menuAr);
     tempIdAr.unshift("about");
-
     setMenuIdAr(tempIdAr);
   }, [menuAr]);
 
   useEffect(() => {
-    //setOutsideRender(outsideRender + 1);
-
-    //console.log("renderCount---", renderCount);
-    //console.log("smoothScroll.current", smoothScroll.current);
     if (smoothScroll.current) {
       try {
         smoothScroll.current.destroy();
@@ -136,25 +85,10 @@ export const AnchorLinks = ({
         //console.log("scroll destroy warning");
       }
     }
-    /*smoothScroll.current = new SmoothScroll('a[href*="#"]', {
-      speed: 500,
-      speedAsDuration: true,
-      offset: function () {
-        if (isSmallScreen) {
-          return 80;
-        } else {
-          return 80;
-        }
-      }
-    });*/
-    //https://github.com/cferdinandi/smooth-scroll
   }, [menuIdAr, isSmallScreen, renderCount]);
 
   useEffect(() => {
-    //console.log('debouncedBrowserHash', debouncedBrowserHash);
     if (debouncedBrowserHash) {
-      //console.log("push ankor to history", debouncedBrowserHash);
-      //!!!!! --push or not---- window.history.pushState(null, null, "/#" + debouncedBrowserHash);
       window.history.replaceState(null, null, "/#" + debouncedBrowserHash);
     } else {
     }
@@ -163,12 +97,9 @@ export const AnchorLinks = ({
   const { pathname, hash, key } = useLocation();
 
   useEffect(() => {
-    // if not a hash link, scroll to top
     if (hash === "") {
       window.scrollTo(0, 0);
-    }
-    // else scroll to id
-    else {
+    } else {
       setTimeout(() => {
         const id = hash.replace("#", "");
         const element = document.getElementById(id);
@@ -188,16 +119,10 @@ export const AnchorLinks = ({
     }
   }, [pathname, hash, key]);
 
-  function onSpyChildrenUpdate() {}
-
   function onSpyUpdate(e) {
-    //console.log("spup", e);
-    //console.log('typ', typeof e);
-
     try {
       if (e) {
         setBrowserHash(e.getAttribute("id"));
-        //console.log('id------', e.getAttribute('id'));
       }
     } catch (e) {
       //console.log("WARNING update scroll");
@@ -207,35 +132,26 @@ export const AnchorLinks = ({
   return (
     <LinksCont {...props}>
       {
-        //readyToDraw &&
         <Scrollspy
           key={"sp" + renderCount}
           items={menuIdAr}
           currentClassName="active"
           onUpdate={onSpyUpdate}
           onChildrenUpdate={onSpyUpdate}
-          //offset={-5}
           offset={isSmallScreen ? -86 : -86}
         >
           {dB &&
-            //menuAr[0] &&
             Object.keys(dB).map((keyName, i) => (
               <div key={keyName}>
                 {dB[keyName].type !== "also" && (
                   <AnkorLink
                     topmenu={props.topMenu}
-                    //href={"#" + keyName}
                     onClick={() => {
                       if (setOpen) {
                         setOpen(false);
                       }
                     }}
                   >
-                    {/*<HashLink smooth to={"/#" + keyName}>
-                      {dB[keyName].description || dB[keyName].type}
-                    </HashLink>
-                    dB[keyName].description || dB[keyName].type
-                    <Link to={{ pathname: "/", hash: keyName }}>*/}
                     <Link to={"/#" + keyName}>
                       {dB[keyName].description || dB[keyName].type}
                     </Link>
@@ -245,8 +161,6 @@ export const AnchorLinks = ({
             ))}
         </Scrollspy>
       }
-      {/*<Link to="/banners">link</Link>
-      <span>{renderCount}</span>*/}
     </LinksCont>
   );
 };

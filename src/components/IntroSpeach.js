@@ -3,17 +3,7 @@ import styled from "@emotion/styled";
 import { css, jsx } from "@emotion/react";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import * as constants from "../CONSTS";
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-  Button,
-  Accordion,
-  Card,
-  useAccordionButton
-} from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 const SpeachContainer = styled.div`
   width: 100%;
@@ -36,49 +26,11 @@ const PeaceImg = styled.img`
   padding-right: 1rem;
 `;
 
-/*const LiSpan = styled.span`
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  margin-top: 1rem;
-  padding: 1rem;
-`;*/
-
-/*const SpeachHead = styled.div`
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  margin-top: 1rem;
-  padding: 1rem;
-`;*/
-
 export const IntroSpeach = (props) => {
   const language = useSelector((state) => state.lang.value);
   useEffect(() => {}, []);
   return (
     <SpeachContainer className="text-start" id="about">
-      {/*<Row>
-        <Col xs={4} md={3} lg={2}>
-          <Image fluid src={constants.imgurl_personal + "myphoto/1.jpg"} />
-        </Col>
-        <Col xs={8} md={9} lg={10}>
-          <div className="inline">
-            <strong>Name:</strong> Vadim Rumyantsev
-            <br />
-            <strong>Age:</strong> 40
-            <br />
-            <strong>Specialization:</strong> Frontend developer
-            <br />
-            <strong>Stack:</strong> JavaScript ES6, React, Webpack, HTML5, CSS3,
-            Preact, jQuery, Animation (CSS, Canvas, SVG)
-            <br />
-          </div>
-        </Col>
-        <Col className="py-3" md={9} lg={10}>
-          <strong>Опыт работы</strong> в веб-разработке 15 лет, в то время
-          наиболее интересные сайты и приложения делались на Flash/ActionScript,
-          с его угасанием перешел на JavaScript (jQuery {"-> "}Angular {"-> "}
-          React), продолжая выполнять те же задачи
-        </Col>
-      </Row>*/}
       <Row>
         <Col>
           {/*<Image
