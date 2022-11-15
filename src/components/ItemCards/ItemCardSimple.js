@@ -10,7 +10,9 @@ import * as constants from "../../CONSTS";
 
 const LogoContainer = styled.div`
   flex: 0 0 auto;
-  width: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
 `;
 const LogoName = styled.div`
   text-align: center;
@@ -36,39 +38,49 @@ export const ItemCardSimple = ({ item, type }) => {
           </StyledBody>
         </Card>
       ) : (
-        <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8}>
-          <Card style={{ width: "100%" }} className="mb-3">
-            <Image
-              fluid
-              src={
-                item.cover
-                  ? constants.imgurl_personal + item.cover
-                  : constants.imgurl_pagekeeper + item.url
-              }
-            />
+        <a
+          href={item.url}
+          className="item_name"
+          target="_blank"
+          rel="noreferrer"
+          css={css`
+            color: black;
+            text-decoration: none;
+          `}
+        >
+          <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8}>
+            <Card style={{ width: "100%" }} className="mb-3">
+              <Image
+                fluid
+                src={
+                  item.cover
+                    ? constants.imgurl_personal + item.cover
+                    : constants.imgurl_pagekeeper + item.url
+                }
+              />
 
-            <Card.Body className="text-start">
-              <div className="item_toppp d-flex w-100 p-2  justify-content-between">
-                <LogoContainer>
-                  {item.logo ? (
-                    <Image
-                      fluid
-                      src={constants.imgurl_personal + item.logo}
-                      className="item_name"
-                      alt=""
-                      css={css`
-                        background-color: ${item.logo_bg};
-                        max-height: 60px;
-                      `}
-                    />
-                  ) : (
-                    <LogoName>{item.logoname || ""}</LogoName>
-                  )}
-                  {item.desc_en && (
-                    <>{language === "en" ? item.desc_en : item.desc_ru}</>
-                  )}
-                </LogoContainer>
-                <div className="item_simple center-all ps-3">
+              <Card.Body className="text-start">
+                <div className="item_toppp d-flex w-100 p-2  justify-content-between">
+                  <LogoContainer>
+                    {item.logo ? (
+                      <Image
+                        fluid
+                        src={constants.imgurl_personal + item.logo}
+                        className="item_name"
+                        alt=""
+                        css={css`
+                          background-color: ${item.logo_bg};
+                          max-height: 50px;
+                        `}
+                      />
+                    ) : (
+                      <LogoName>{item.logoname || ""}</LogoName>
+                    )}
+                    {item.desc_en && (
+                      <>{language === "en" ? item.desc_en : item.desc_ru}</>
+                    )}
+                  </LogoContainer>
+                  {/*<div className="item_simple center-all ps-3">
                   <a
                     href={item.url}
                     className="item_name"
@@ -77,11 +89,12 @@ export const ItemCardSimple = ({ item, type }) => {
                   >
                     View
                   </a>
+                  </div>*/}
                 </div>
-              </div>
-            </Card.Body>
-          </Card>
-        </Tilt>
+              </Card.Body>
+            </Card>
+          </Tilt>
+        </a>
       )}
     </>
   );

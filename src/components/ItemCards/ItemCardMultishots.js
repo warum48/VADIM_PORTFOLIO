@@ -148,7 +148,12 @@ export const ItemCardMultishots = ({ item, type }) => {
                 >
                   {language === "en" ? item.desc_en : item.desc_ru}
                 </Card.Text>
-                <div className="item_tags">
+                <div
+                  className="item_tags"
+                  css={css`
+                    margin-left: -2px;
+                  `}
+                >
                   {item.tags?.map((tag, index) => (
                     <Tag key={"i" + index}>{tag}</Tag>
                   ))}

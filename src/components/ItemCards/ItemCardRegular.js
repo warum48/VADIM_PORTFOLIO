@@ -15,6 +15,7 @@ import { ShowMoreButton } from "./ShowMoreButton";
 const LogoContainer = styled.div`
   min-height: 50px;
   width: 33%;
+  min-width: 80px;
   padding-right: 1rem;
   text-align: center;
   justify-content: center;
@@ -56,7 +57,8 @@ export const ItemCardRegular = ({ item, type }) => {
               `}
             >
               <div
-                className="d-flex w-100 p-2  justify-content-between"
+                // justify-content-between
+                className="d-flex w-100 p-2 "
                 css={css`
                   min-height: 50px;
                 `}
@@ -80,6 +82,7 @@ export const ItemCardRegular = ({ item, type }) => {
                 <div
                   css={css`
                     background-color: "white";
+                    padding-left: 20px;
                   `}
                 >
                   {type === "mob" && (
@@ -109,7 +112,12 @@ export const ItemCardRegular = ({ item, type }) => {
                   >
                     {language === "en" ? item.desc_en : item.desc_ru}
                   </Card.Text>
-                  <div className="item_tags">
+                  <div
+                    className="item_tags"
+                    css={css`
+                      margin-left: -2px;
+                    `}
+                  >
                     {item.tags?.map((tag, index) => (
                       <Tag key={"i" + index}>{tag}</Tag>
                     ))}
