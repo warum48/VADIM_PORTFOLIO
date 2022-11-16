@@ -72,6 +72,9 @@ export default function App() {
     },
     multi: {
       default: 1
+    },
+    multislider: {
+      default: 1
     }
   };
 
@@ -100,96 +103,97 @@ export default function App() {
     }
   }
   return (
-    <div className="App">
+    <>
       <NavigationTop dB={dB} />
-      <GoToTop />
-      <Container
-        fluid
-        css={css`
-          padding-top: 70px;
-        `}
-      >
-        <Row>
-          <Col sm={4} md={4} lg={3} className="bg-light d-none d-sm-block">
-            <div>
-              {dB && <AnchorLinks dB={dB} renderCount={renderCount} />}
-              <hr className="my-3" />
+      <div className="App">
+        <GoToTop />
+        <Container
+          fluid
+          css={css`
+            padding-top: 70px;
+          `}
+        >
+          <Row>
+            <Col sm={4} md={4} lg={3} className="bg-light d-none d-sm-block">
+              <div>
+                {dB && <AnchorLinks dB={dB} renderCount={renderCount} />}
+                <hr className="my-3" />
 
-              {isDesktop && <Filters dB={dB} />}
-            </div>
-          </Col>
-          <Col sm={8} md={8} lg={9}>
-            <div>
-              <Row>
-                <Col md={7}>
-                  <IntroSpeach />
-                </Col>
-                <Col md={5} className="d-none d-md-block">
-                  <Logos dB={dB} />
-                </Col>
-              </Row>
-              <div className="projsholder" ref={projsHolder}>
-                {dB &&
-                  Object.keys(dB).map((keyName, i) => (
-                    <React.Fragment key={"proj" + i}>
-                      {dB[keyName].projects.filter((it) => {
-                        if (seltag === "") {
-                          return true;
-                        } else {
-                          return (
-                            it.tags !== undefined &&
-                            it.tags.indexOf(seltag) !== -1
-                          );
-                        }
-                      }).length > 0 && (
+                {isDesktop && <Filters dB={dB} />}
+              </div>
+            </Col>
+            <Col sm={8} md={8} lg={9}>
+              <div>
+                <Row>
+                  <Col md={7}>
+                    <IntroSpeach />
+                  </Col>
+                  <Col md={5} className="d-none d-md-block">
+                    <Logos dB={dB} />
+                  </Col>
+                </Row>
+                <div className="projsholder" ref={projsHolder}>
+                  {dB &&
+                    Object.keys(dB).map((keyName, i) => (
+                      <React.Fragment key={"proj" + i}>
+                        {dB[keyName].projects.filter((it) => {
+                          if (seltag === "") {
+                            return true;
+                          } else {
+                            return (
+                              it.tags !== undefined &&
+                              it.tags.indexOf(seltag) !== -1
+                            );
+                          }
+                        }).length > 0 && (
+                          <Row>
+                            <Col>
+                              {dB[keyName].type !== "also" ? (
+                                <SectionHead id={keyName}>
+                                  {dB[keyName].description || dB[keyName].type}:
+                                </SectionHead>
+                              ) : (
+                                <SectionHeadAlso>
+                                  {dB[keyName].show_header ? (
+                                    <SectionHead id={keyName}>
+                                      {dB[keyName].description}:
+                                    </SectionHead>
+                                  ) : (
+                                    texts.also[language]
+                                  )}
+                                </SectionHeadAlso>
+                              )}
+                            </Col>
+                          </Row>
+                        )}
+
                         <Row>
-                          <Col>
-                            {dB[keyName].type !== "also" ? (
-                              <SectionHead id={keyName}>
-                                {dB[keyName].description || dB[keyName].type}:
-                              </SectionHead>
-                            ) : (
-                              <SectionHeadAlso>
-                                {dB[keyName].show_header ? (
-                                  <SectionHead id={keyName}>
-                                    {dB[keyName].description}:
-                                  </SectionHead>
-                                ) : (
-                                  texts.also[language]
-                                )}
-                              </SectionHeadAlso>
-                            )}
-                          </Col>
-                        </Row>
-                      )}
-
-                      <Row>
-                        <>
-                          <Masonry
-                            breakpointCols={breakColNum[dB[keyName].type]}
-                            className={"my-masonry-grid"}
-                            columnClassName={"my-masonry-grid_column"}
-                          >
-                            {dB[keyName].projects
-                              .filter((it) => {
-                                if (seltag === "") {
-                                  return true;
-                                } else {
-                                  return (
-                                    it.tags !== undefined &&
-                                    it.tags.indexOf(seltag) !== -1
-                                  );
-                                }
-                              })
-                              .map((item, index) => (
-                                <ItemCard
-                                  item={item}
-                                  dB={dB}
-                                  keyName={keyName}
-                                  index={index}
-                                  key={"ccard" + index}
-                                />
-                                /* if (
+                          <>
+                            <Masonry
+                              breakpointCols={breakColNum[dB[keyName].type]}
+                              className={"my-masonry-grid"}
+                              columnClassName={"my-masonry-grid_column"}
+                            >
+                              {dB[keyName].projects
+                                .filter((it) => {
+                                  if (seltag === "") {
+                                    return true;
+                                  } else {
+                                    return (
+                                      it.tags !== undefined &&
+                                      it.tags.indexOf(seltag) !== -1
+                                    );
+                                  }
+                                })
+                                .map((item, index) => (
+                                  <ItemCard
+                                    item={item}
+                                    dB={dB}
+                                    keyName={keyName}
+                                    index={index}
+                                    key={"ccard" + index}
+                                  />
+                                  /* if (
                                   dB[keyName].type === "also" ||
                                   dB[keyName].type === "compact"
                                 ) {
@@ -223,18 +227,19 @@ export default function App() {
                                 }
 
                                 return <div>type not found</div>; */
-                              ))}
-                          </Masonry>
-                        </>
-                      </Row>
-                    </React.Fragment>
-                  ))}
+                                ))}
+                            </Masonry>
+                          </>
+                        </Row>
+                      </React.Fragment>
+                    ))}
+                </div>
               </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </>
   );
 }
 

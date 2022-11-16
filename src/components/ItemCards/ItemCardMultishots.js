@@ -19,19 +19,12 @@ import { LinkContainer } from "./StyledLinkContainer";
 //import { SliderFM } from "./SliderFM";
 import { SwiperSlider } from "./SwiperSlider";
 import { Tag } from "../StyledTag";
-import Tilt from "react-parallax-tilt";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-  isDesktop
-} from "react-device-detect";
-import { ShowMoreButton } from "./ShowMoreButton";
 
 const LogoContainer = styled.div`
   min-height: 50px;
   width: 33%;
+  min-width: 80px;
+  max-width: 200px;
   padding-right: 1rem;
   text-align: center;
   justify-content: center;
@@ -79,13 +72,19 @@ export const ItemCardMultishots = ({ item, type }) => {
         </Card>
       ) : (
         <Card style={{ width: "100%" }} className="mb-3 overflow-hidden">
-          <MultiShots>
-            {item.img.map((image, index) => (
-              <div key={"imke" + index}>
-                <Image fluid src={constants.imgurl_personal + image} alt="" />
-              </div>
-            ))}
-          </MultiShots>
+          {type === "multi" ? (
+            <MultiShots>
+              {item.img.map((image, index) => (
+                <div key={"imke" + index}>
+                  <Image fluid src={constants.imgurl_personal + image} alt="" />
+                </div>
+              ))}
+            </MultiShots>
+          ) : (
+            <div style={{ width: "100%" }}>
+              <SwiperSlider images={item.img} />
+            </div>
+          )}
           <Card.Body
             className="text-start"
             css={css`
@@ -93,7 +92,8 @@ export const ItemCardMultishots = ({ item, type }) => {
             `}
           >
             <div
-              className="d-flex w-100 p-2  justify-content-between"
+              // justify-content-between
+              className="d-flex w-100 p-2 "
               css={css`
                 min-height: 50px;
               `}
@@ -115,13 +115,12 @@ export const ItemCardMultishots = ({ item, type }) => {
                 </>
               )}
               <div
-                className="ps-3"
                 css={css`
-                  /*width: ${type !== "mob" ? `66%` : "100%"};*/
-                  width: "100%";
+                  background-color: "white";
+                  padding-left: 20px;
                 `}
               >
-                {type == "mobbbb" ||
+                {/*type == "mobbbb" ||
                   (false && (
                     <LogoContainer>
                       <Image
@@ -135,7 +134,7 @@ export const ItemCardMultishots = ({ item, type }) => {
                         `}
                       />
                     </LogoContainer>
-                  ))}
+                  ))*/}
 
                 <Card.Text
                   className="mb-3"
@@ -160,6 +159,7 @@ export const ItemCardMultishots = ({ item, type }) => {
                 </div>
 
                 {type !== "also" &&
+                  item.url &&
                   item.url.map((url, index) => (
                     <a
                       href={url.link}

@@ -20,15 +20,20 @@ export const ItemCard = ({ item, type, dB, keyName, index }) => {
           key={"itemcard" + index}
         />
       );
-    } else if (dB[keyName].type === "multi") {
+    } else if (
+      dB[keyName].type === "multi" ||
+      dB[keyName].type === "multislider"
+    ) {
       return (
         <ItemCardMultishots
           item={item}
           //type={dB[keyName].type}
-          type={"desc"}
+          type={dB[keyName].type}
           key={"itemcard" + index}
         />
       );
+    } else {
+      return <>Item is not loaded</>;
     }
   }, [item, dB, keyName, index]); //type,
 
