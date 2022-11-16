@@ -14,13 +14,13 @@ const SpeachContainer = styled.div`
 `;
 
 const Name = styled.span`
-  /*font-family: "Source Sans Pro", sans-serif;
-  font-family: "Exo 2", sans-serif;*/
-  font-family: "Russo One", sans-serif;
-  font-weight: 400;
+  /*font-family: "Source Sans Pro", sans-serif;*/
+  font-family: "Exo 2", sans-serif;
+  /*font-family: "Russo One", sans-serif;*/
+  font-weight: 700;
   display: inline;
 
-  font-size: 30px;
+  font-size: 26px;
   line-height: 28px;
   /*margin-bottom: 20px;
   font-size: 12px;*/
@@ -29,11 +29,12 @@ const Name = styled.span`
 const MainInfo = styled.div`
   background-color: white;
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
   position: relative;
 
   li {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
+    line-height: 160%;
 
     /*background-color: #f6f6f6;*/
   }
@@ -151,6 +152,108 @@ export const IntroSpeach = (props) => {
           <div className="inline">
             {language === "en" ? (
               <>
+                <MainInfo>
+                  <NameContainer>
+                    <Image
+                      fluid
+                      src={constants.imgurl_personal + "myphoto/1.jpg"}
+                      className={"float-start"}
+                      css={css`
+                        max-width: 125px;
+                        margin: 0 20px 0px 0;
+                        border: 2px solid white;
+                      `}
+                    />
+                    <Name>Vadim Rumyantsev</Name>
+                    <div
+                      css={css`
+                        height: 6px;
+                        width: 20px;
+                      `}
+                    ></div>
+
+                    <span className="subhead">Frontend developer</span>
+                  </NameContainer>
+                  <code>
+                    <strong>Stack:</strong> JavaScript ES6, TypeScript, React,
+                    Redux Toolkit, Preact, jQuery, Angular 1, Animation (CSS,
+                    Canvas, SVG), Webpack, HTML5, CSS3, SASS, Styled Components
+                    (Emotion), MUI, Bootstrap, Photoshop, Figma
+                  </code>
+                  <br />
+                </MainInfo>
+                <MainInfo>
+                  <div
+                    css={css`
+                      padding-bottom: 4px;
+                      /*font-size: 16px;*/
+                    `}
+                  >
+                    <Bullet />
+                    <strong>Опыт работы:</strong>
+                  </div>
+                  <ul
+                    className="block"
+                    css={css`
+                      list-style-position: inside;
+                      margin: 0;
+                      padding: 0;
+                      padding-left: 0px;
+                      padding-right: 0px;
+                    `}
+                  >
+                    <li
+                      css={css`
+                        padding-left: 0px;
+                      `}
+                    >
+                      <i>2005-2006:</i> Advertising agency "Leader". Design
+                      (Photoshop), Flash, ActionScript
+                    </li>
+                    <li>
+                      <i>2006-2010:</i> Advertising agency "Lakehouse". Design
+                      (Photoshop), Flash, ActionScript, HTML-JS-CSS
+                    </li>
+                    <li>
+                      <i>2010-2022:</i> Special projects in&nbsp;
+                      <a
+                        href="https://english.imedia.ru/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        "Sanoma Independent Media"
+                      </a>
+                      &nbsp; (Cosmopolitan, Esquire, Men's Health, Bazaar)
+                      JavaScript (jQuery
+                      {"-> "}Angular {"-> "}
+                      React), HTML,CSS, Webpack.
+                    </li>
+                    <li>
+                      <i>2022:</i> Freelance for advertising agency "Digitas
+                      Moscow". React websites and promo applications
+                    </li>
+                  </ul>
+                  This portfolio is not a complete list of works, only shows the
+                  spectrum of my skills.
+                  <div
+                    css={css`
+                      position: absolute;
+                      width: 100px;
+                      height: 50px;
+                      bottom: -3px;
+                      right: -3px;
+                      z-index: -1;
+                      background-color: #f70576;
+                      background: linear-gradient(
+                        155deg,
+                        hsla(271, 96%, 33%, 1) 40%,
+                        hsla(332, 96%, 49%, 1) 100%
+                      );
+                    `}
+                  ></div>
+                </MainInfo>
+
+                {/* <>
                 <strong>Name:</strong> Vadim Rumyantsev
                 <br />
                 <strong>Year of birth:</strong> 1981
@@ -159,8 +262,7 @@ export const IntroSpeach = (props) => {
                 <br />
                 <strong>My skills: </strong> Promo websites, landing pages, web
                 applications, online 2d games
-                {/* , Instagram
-                games or masks*/}
+                
                 <br />
                 <code>
                   <pre>
@@ -200,9 +302,7 @@ export const IntroSpeach = (props) => {
                       href="https://english.imedia.ru/"
                       target="_blank"
                       rel="noreferrer"
-                      /*css={css`
-                    font-size: 1rem;
-                  `}*/
+                      
                     >
                       "Sanoma Independent Media"
                     </a>
@@ -218,19 +318,13 @@ export const IntroSpeach = (props) => {
                 </ul>
                 <strong>Place of birth:</strong> Moscow
                 <br />
-                {/*<strong>Current location:</strong> Cambodia
-                <br />*/}
+                
                 This portfolio is not a complete list of works, only shows the
                 spectrum of my skills.
+                    </>*/}
               </>
             ) : (
               <>
-                {/*<strong>Имя:</strong> Вадим Румянцев
-                <br />
-                <strong>Год рождения:</strong> 1981
-                <br />
-                <strong>Специальность:</strong> Frontend developer
-                <br />*/}
                 <MainInfo>
                   <NameContainer>
                     <Image
@@ -238,8 +332,8 @@ export const IntroSpeach = (props) => {
                       src={constants.imgurl_personal + "myphoto/1.jpg"}
                       className={"float-start"}
                       css={css`
-                        max-width: 130px;
-                        margin: 0 20px 10px 0;
+                        max-width: 125px;
+                        margin: 0 20px 0px 0;
                         border: 2px solid white;
                       `}
                     />
@@ -277,8 +371,6 @@ export const IntroSpeach = (props) => {
                       list-style-position: inside;
                       margin: 0;
                       padding: 0;
-                      padding-left: 0px;
-                      padding-right: 0px;
                     `}
                   >
                     <li
@@ -299,9 +391,6 @@ export const IntroSpeach = (props) => {
                         href="https://english.imedia.ru/"
                         target="_blank"
                         rel="noreferrer"
-                        /*css={css`
-                    font-size: 1rem;
-                  `}*/
                       >
                         "Sanoma Independent Media"
                       </a>
@@ -319,10 +408,6 @@ export const IntroSpeach = (props) => {
                       сборка, интерактивные блоки, анимация, иногда верстка.
                     </li>
                   </ul>
-                  {/*<strong>Место регистрации:</strong> Москва
-                  <br />*/}
-                  {/*<strong>Текущая локация:</strong> Камбоджа
-                <br />*/}
                   Это портфолио не является полным списком работ, только
                   показывает спектр.
                   <div
