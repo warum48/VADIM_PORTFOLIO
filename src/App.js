@@ -35,6 +35,14 @@ const SectionHeadAlso = styled.div`
   padding: 10px 015px;
 `;
 
+const Bullet = styled.span`
+  width: 10px;
+  height: 22px;
+  margin-right: 6px;
+  display: inline-block;
+  background-color: #7844a9;
+`;
+
 export default function App() {
   const texts = {
     also: { en: "Also:", ru: "A так же:" }
@@ -125,10 +133,10 @@ export default function App() {
             <Col sm={8} md={8} lg={9}>
               <div>
                 <Row>
-                  <Col md={7}>
+                  <Col lg={8}>
                     <IntroSpeach />
                   </Col>
-                  <Col md={5} className="d-none d-md-block">
+                  <Col lg={4} className="d-none d-lg-block">
                     <Logos dB={dB} />
                   </Col>
                 </Row>
@@ -149,13 +157,19 @@ export default function App() {
                           <Row>
                             <Col>
                               {dB[keyName].type !== "also" ? (
-                                <SectionHead id={keyName}>
-                                  {dB[keyName].description || dB[keyName].type}:
-                                </SectionHead>
+                                <>
+                                  <SectionHead id={keyName}>
+                                    <Bullet />
+                                    {dB[keyName].description ||
+                                      dB[keyName].type}
+                                    :
+                                  </SectionHead>
+                                </>
                               ) : (
                                 <SectionHeadAlso>
                                   {dB[keyName].show_header ? (
                                     <SectionHead id={keyName}>
+                                      <Bullet />
                                       {dB[keyName].description}:
                                     </SectionHead>
                                   ) : (

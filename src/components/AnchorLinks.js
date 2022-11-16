@@ -15,7 +15,7 @@ const LinksCont = styled.div`
 
 const AnkorLink = styled.div`
   display: block;
-  padding: 4px 10px 5px 10px;
+  padding: 4px 10px 5px 0px;
   font-size: 1rem;
   transition: all 0.5s;
   &:hover {

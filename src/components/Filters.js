@@ -8,6 +8,9 @@ import { Tag } from "./StyledTag";
 
 const TagCont = styled.div`
   margin-top: 1rem;
+  /*background-color: #dedede;*/
+  text-align: left;
+  padding-left: 2rem;
 `;
 
 const TagButton = styled(Tag)`
@@ -90,15 +93,27 @@ export const Filters = ({ dB, topMenu = false, ...props }) => {
     <>
       {tags.length > 0 ? (
         <TagCont {...props}>
-          <span
+          <div
             className={topMenu ? "text-white" : ""}
             css={css`
               display: block;
-              margin: 0.5rem;
+              margin: 0.5rem 0 0.5rem 0;
+
+              /*width: 100%;*/
+              color: white;
+              font-weight: 600px;
+              text-align: left;
             `}
           >
-            FILTER BY TAG:&nbsp;
-          </span>
+            <span
+              css={css`
+                background-color: #7844a9;
+                padding-left: 10px;
+              `}
+            >
+              FILTER BY TAG:&nbsp;
+            </span>
+          </div>
           {tags.sort(Intl.Collator().compare).map((tagg, index) => (
             <TagButton
               onClick={() => dispatch(updatetag(tagg))}

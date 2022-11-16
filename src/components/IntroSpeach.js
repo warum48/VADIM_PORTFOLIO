@@ -3,13 +3,118 @@ import styled from "@emotion/styled";
 import { css, jsx } from "@emotion/react";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
+import * as constants from "../CONSTS";
 
 const SpeachContainer = styled.div`
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  /*background-color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  padding: 1rem;*/
+`;
+
+const Name = styled.span`
+  /*font-family: "Source Sans Pro", sans-serif;
+  font-family: "Exo 2", sans-serif;*/
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  display: inline;
+
+  font-size: 30px;
+  line-height: 28px;
+  /*margin-bottom: 20px;
+  font-size: 12px;*/
+`;
+
+const MainInfo = styled.div`
+  background-color: white;
   margin-top: 1rem;
   padding: 1rem;
+  position: relative;
+
+  li {
+    margin-bottom: 10px;
+
+    /*background-color: #f6f6f6;*/
+  }
+`;
+
+const NameContainer = styled.div`
+  width: 100%;
+  /*background-color: #7844a9; */ /*#9540e6;*/
+  /*background-color: indigo;*/ /*#9540e6;*/
+  /*background-image: linear-gradient(
+    to right,
+    #13167b,
+    #1a1273,
+    #1e0f6c,
+    #200b64,
+    #22085d,
+    #181059,
+    #0f1454,
+    #08174f,
+    #001d48,
+    #07213f,
+    #152434,
+    #212529
+  );*/
+
+  /* red!! #9F1A82 */
+
+  /* background: hsla(271, 43%, 46%, 1);
+
+  background: linear-gradient(
+    155deg,
+    hsla(271, 43%, 46%, 1) 0%,
+    hsla(313, 72%, 36%, 1) 100%
+  );*/
+
+  /*background: hsla(271, 95%, 47%, 1);
+
+  background: linear-gradient(
+    165deg,
+    hsla(271, 95%, 47%, 1) 0%,
+    hsla(358, 95%, 50%, 1) 100%
+  );*/
+
+  /*background: hsla(271, 95%, 47%, 1);
+
+  background: linear-gradient(
+    165deg,
+    hsla(271, 95%, 47%, 1) 0%,
+    hsla(332, 96%, 49%, 1) 100%
+  );*/
+
+  background: hsla(271, 96%, 33%, 1);
+
+  background: linear-gradient(
+    155deg,
+    hsla(271, 96%, 33%, 1) 40%,
+    hsla(332, 96%, 49%, 1) 100%
+  );
+
+  color: white;
+  /*background-color: rgb(255, 255, 255);
+  color: indigo;*/
+  /*margin-top: 1rem;*/
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  .subhead {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 0px;
+    font-style: italic;
+    margin-top: -14px;
+  }
+`;
+
+const Bullet = styled.span`
+  width: 20px;
+  height: 12px;
+  margin-right: 4px;
+  display: inline-block;
+  background-color: #7844a9;
 `;
 
 const Peace = styled.div`
@@ -30,7 +135,7 @@ export const IntroSpeach = (props) => {
   const language = useSelector((state) => state.lang.value);
   useEffect(() => {}, []);
   return (
-    <SpeachContainer className="text-start" id="about">
+    <SpeachContainer className="text-start color-intro" id="about">
       <Row>
         <Col>
           {/*<Image
@@ -57,10 +162,14 @@ export const IntroSpeach = (props) => {
                 {/* , Instagram
                 games or masks*/}
                 <br />
-                <strong>Stack:</strong> JavaScript ES6, TypeScript, React, Redux
-                Toolkit, Preact, jQuery, Angular 1, Animation (CSS, Canvas,
-                SVG), Webpack, HTML5, CSS3, SASS, Styled Components (Emotion),
-                MUI, Bootstrap, Photoshop, Figma
+                <code>
+                  <pre>
+                    <strong>Stack:</strong> JavaScript ES6, TypeScript, React,
+                    Redux Toolkit, Preact, jQuery, Angular 1, Animation (CSS,
+                    Canvas, SVG), Webpack, HTML5, CSS3, SASS, Styled Components
+                    (Emotion), MUI, Bootstrap, Photoshop, Figma
+                  </pre>
+                </code>
                 <br />
                 <strong>Working experience:</strong>
                 <ul
@@ -100,7 +209,7 @@ export const IntroSpeach = (props) => {
                     &nbsp; (Cosmopolitan, Esquire, Men's Health, Bazaar)
                     JavaScript (jQuery
                     {"-> "}Angular {"-> "}
-                    React), HTML,CSS, Webpack
+                    React), HTML,CSS, Webpack.
                   </li>
                   <li>
                     <i>2022:</i> Freelance for advertising agency "Digitas
@@ -116,64 +225,123 @@ export const IntroSpeach = (props) => {
               </>
             ) : (
               <>
-                <strong>Имя:</strong> Вадим Румянцев
+                {/*<strong>Имя:</strong> Вадим Румянцев
                 <br />
                 <strong>Год рождения:</strong> 1981
                 <br />
                 <strong>Специальность:</strong> Frontend developer
-                <br />
-                <strong>Stack:</strong> JavaScript ES6, TypeScript, React, Redux
-                Toolkit, Preact, jQuery, Angular 1, Animation (CSS, Canvas,
-                SVG), Webpack, HTML5, CSS3, SASS, Styled Components (Emotion),
-                MUI, Bootstrap, Photoshop, Figma
-                <br />
-                <strong>Опыт работы:</strong>
-                <ul
-                  className="block"
-                  css={css`
-                    list-style-position: inside;
-                    margin: 0;
-                    padding: 0;
-                    padding-left: 0px;
-                    padding-right: 0px;
-                  `}
-                >
-                  <li
+                <br />*/}
+                <MainInfo>
+                  <NameContainer>
+                    <Image
+                      fluid
+                      src={constants.imgurl_personal + "myphoto/1.jpg"}
+                      className={"float-start"}
+                      css={css`
+                        max-width: 130px;
+                        margin: 0 20px 10px 0;
+                        border: 2px solid white;
+                      `}
+                    />
+                    <Name>Вадим Румянцев</Name>
+                    <div
+                      css={css`
+                        height: 6px;
+                        width: 20px;
+                      `}
+                    ></div>
+
+                    <span className="subhead">Frontend разработчик</span>
+                  </NameContainer>
+                  <code>
+                    <strong>Stack:</strong> JavaScript ES6, TypeScript, React,
+                    Redux Toolkit, Preact, jQuery, Angular 1, Animation (CSS,
+                    Canvas, SVG), Webpack, HTML5, CSS3, SASS, Styled Components
+                    (Emotion), MUI, Bootstrap, Photoshop, Figma
+                  </code>
+                  <br />
+                </MainInfo>
+                <MainInfo>
+                  <div
                     css={css`
-                      padding-left: 0px;
+                      padding-bottom: 4px;
+                      /*font-size: 16px;*/
                     `}
                   >
-                    <i>2005-2006:</i> Рекламное агенство "Передовик". Design
-                    (Photoshop), Flash, ActionScript
-                  </li>
-                  <li>
-                    <i>2006-2010:</i> Рекламное агенство "Lakehouse". Design
-                    (Photoshop), Flash, ActionScript, HTML-JS-CSS
-                  </li>
-                  <li>
-                    <i>2010-2022:</i> Спецпроекты в{" "}
-                    <a
-                      href="https://english.imedia.ru/"
-                      target="_blank"
-                      rel="noreferrer"
-                      /*css={css`
+                    <Bullet />
+                    <strong>Опыт работы:</strong>
+                  </div>
+                  <ul
+                    className="block"
+                    css={css`
+                      list-style-position: inside;
+                      margin: 0;
+                      padding: 0;
+                      padding-left: 0px;
+                      padding-right: 0px;
+                    `}
+                  >
+                    <li
+                      css={css`
+                        padding-left: 0px;
+                      `}
+                    >
+                      <i>2005-2006:</i> Рекламное агенство "Передовик". Design
+                      (Photoshop), Flash, ActionScript
+                    </li>
+                    <li>
+                      <i>2006-2010:</i> Рекламное агенство "Lakehouse". Design
+                      (Photoshop), Flash, ActionScript, HTML-JS-CSS
+                    </li>
+                    <li>
+                      <i>2010-2022:</i> Спецпроекты в{" "}
+                      <a
+                        href="https://english.imedia.ru/"
+                        target="_blank"
+                        rel="noreferrer"
+                        /*css={css`
                     font-size: 1rem;
                   `}*/
-                    >
-                      "Sanoma Independent Media"
-                    </a>
-                    &nbsp; (Cosmopolitan, Esquire, Men's Health, Bazaar)
-                    JavaScript (jQuery
-                    {"-> "}Angular {"-> "}
-                    React), HTML,CSS, Webpack
-                  </li>
-                </ul>
-                <strong>Место регистрации:</strong> Москва
-                <br />
-                {/*<strong>Текущая локация:</strong> Камбоджа
+                      >
+                        "Sanoma Independent Media"
+                      </a>
+                      &nbsp; (Cosmopolitan, Esquire, Men's Health, Bazaar)
+                      JavaScript (jQuery
+                      {"-> "}Angular {"-> "}
+                      React), HTML, SCSS, Webpack
+                      <br /> Структура, сборка сайтов (React, Webpack, CRA),
+                      интерактивные модули, игры, интерфейсы организации
+                      рекламных блоков для контент-менеджмента, иногда верстка.
+                    </li>
+                    <li>
+                      <i>2022:</i> Freelance в рекламном агенстве "Digitas
+                      Moscow". React сайты и промо-приложения. Структура,
+                      сборка, интерактивные блоки, анимация, иногда верстка.
+                    </li>
+                  </ul>
+                  {/*<strong>Место регистрации:</strong> Москва
+                  <br />*/}
+                  {/*<strong>Текущая локация:</strong> Камбоджа
                 <br />*/}
-                Это портфолио не является полным списком работ, только
-                показывает спектр.
+                  Это портфолио не является полным списком работ, только
+                  показывает спектр.
+                  <div
+                    css={css`
+                      position: absolute;
+                      width: 100px;
+                      height: 50px;
+                      bottom: -3px;
+                      right: -3px;
+                      z-index: -1;
+                      background-color: #f70576;
+                      background: linear-gradient(
+                        155deg,
+                        hsla(271, 96%, 33%, 1) 40%,
+                        hsla(332, 96%, 49%, 1) 100%
+                      );
+                    `}
+                  ></div>
+                </MainInfo>
               </>
             )}
           </div>
