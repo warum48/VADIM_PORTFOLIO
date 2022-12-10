@@ -1,6 +1,6 @@
 {
   "websites_react": {
-    "description": "Websites / React",
+    "description": "Websites",
     "type": "desc",
     "projects": [
       {
@@ -16,7 +16,7 @@
           "sites/ey/4.png",
           "sites/ey/5.png"
         ],
-        "url": [{ "link": "https://dev.nahab.info/dev-eyvtimes/" }],
+        "url": [{ "link": "https://ey-vtimes.vercel.app/" }],
         "tags": ["react", "map"]
       },
 
@@ -54,151 +54,7 @@
         ],
         "tags": ["react", "greetingcard", "lottie"]
       },
-      {
-        "name": "Tommy Hilfiger / Lamoda",
-        "logo": "sites/tommy/logo.png",
-        "desc_en": "Taro cards & holy random",
-        "desc_ru": "Карты таро и божественный рандом расскажут что носить",
-        "img": ["sites/tommy/1.jpg", "sites/tommy/2.jpg"],
-        "url": [
-          {
-            "link": "https://sp.bazaar.ru/lamoda2021/"
-          }
-        ],
-        "tags": ["react", "quiz", "flipcard"]
-      }
-    ]
-  },
 
-  "websites_react_also": {
-    "description": "Websites / React",
-    "type": "also",
-    "projects": [
-      {
-        "name": "v-a-c2021",
-        "logoname": "V-A-C",
-        "url": "https://sp.esquire.ru/v-a-c2021/",
-        "tags": ["react"]
-      },
-      {
-        "name": "got2b2021",
-        "url": "https://sp.cosmo.ru/got2b2021/",
-        "logo": ["logos/got2b-us-logo.png"],
-        "tags": ["react"]
-      },
-      {
-        "name": "acquapanna2021",
-        "logoname": "PANNA",
-        "url": "http://sp.bazaar.ru/acquapanna2021/",
-        "tags": ["react", "quiz"]
-      },
-      {
-        "name": "galaxywatch",
-        "url": "http://sp.mhealth.ru/galaxywatch/",
-        "logo": ["logos/samsung_galaxy_watch_logo.png"],
-        "tags": ["react"]
-      },
-      {
-        "name": "travel2021",
-        "logoname": "Hylak Forte",
-        "url": "https://sp.cosmo.ru/travel2021/",
-        "tags": ["react"]
-      },
-
-      {
-        "name": "playstation",
-        "url": "https://sp.esquire.ru/playstation/",
-        "logo": "logos/sony-logo.jpg",
-        "tags": ["react"]
-      },
-      {
-        "name": "barbieastronaut",
-        "url": "https://sp.cosmo.ru/barbieastronaut",
-        "logo": ["logos/barbie-logo.png"],
-        "tags": ["react"]
-      },
-      {
-        "name": "fondpotanina",
-        "url": "https://sp.goodhouse.ru/fondpotanina/",
-        "logoname": "",
-        "cover": ["sites/fondpotanina/1.jpg"],
-        "tags": ["react"]
-      }
-    ]
-  },
-
-  "petproject_react": {
-    "description": "LTFL Pet Project / React",
-    "type": "multi",
-    "projects": [
-      {
-        "name": "LTFL",
-        "name_ru": "LTFL",
-
-        "desc_en": "My current pet project. Learn this f... language. Memorize foreigh words with the help of repetitive listening and rhythm. ",
-        "desc_ru": "Выучи этот ... язык. Запоминай слова с помощью повторяемого прослушивания и ритма. Проект в стадии наполнения",
-        "img": [
-          "ltfl/intro.png",
-          "ltfl/dicts.png",
-          "ltfl/playloop.png",
-          "ltfl/playsynth.png"
-        ],
-        "url": [{ "link": "https://ltfl.vercel.app" }],
-        "tags": ["react", "redux toolkit", "MUI", "typescript"]
-      }
-    ]
-  },
-
-  "react_apps": {
-    "description": "React applications",
-    "type": "desc",
-    "projects": [
-      {
-        "name": "Slider generator",
-        "logo": "",
-        "desc_en": "Slider generator",
-        "desc_ru": "Генератор слайдеров для контент-менеджеров космо",
-        "img": ["reactaps/slidergen/1.png"],
-        "tags": ["react", "utils"],
-        "url": [
-          {
-            "link": "https://slidergen.vercel.app/"
-          }
-        ]
-      },
-      {
-        "name": "Iframe code generator",
-        "logo": "",
-        "desc_en": "Generate code for insertions into an article and preview all screen sizes",
-        "desc_ru": "Генератор кода вставок в iframe для контент-менеджеров космо, первьювер iframe'ов в разных размерах, подсчет их высоты",
-        "img": ["reactaps/iframes/1.jpg"],
-        "tags": ["react", "utils"],
-        "url": [
-          {
-            "link": "https://iframe-breakpoints.vercel.app/"
-          }
-        ]
-      },
-      {
-        "name": "Qrcodes generator and list",
-        "logo": "",
-        "desc_en": "REST CRUD list. This is just demo, API calls are disabled",
-        "desc_ru": "Генератор и список QR-кодов для печати в журналах Imedia Group. Это демо, вызовы API отключены",
-        "img": ["reactaps/qrcodes/1.png"],
-        "tags": ["react", "utils"],
-        "url": [
-          {
-            "link": "https://qrcodes-imweb.vercel.app/"
-          }
-        ]
-      }
-    ]
-  },
-
-  "websites_angular": {
-    "description": "Websites / Angular1",
-    "type": "desc",
-    "projects": [
       {
         "name": "KIA Quoris",
         "logo": "sites/kia/kia_logo_2012.svg",
@@ -304,6 +160,146 @@
           }
         ],
         "tags": ["keyframe animation", "angular1"]
+      }
+    ]
+  },
+
+  "websites_react_also": {
+    "description": "Websites / React",
+    "type": "also",
+    "projects": [
+      {
+        "name": "Tommy Hilfiger / Lamoda",
+        "logo": "sites/tommy/logo.png",
+        "cover": "sites/tommy/1.jpg",
+        "url": "https://sp.bazaar.ru/lamoda2021/",
+        "tags": ["react", "quiz", "flipcard"]
+      },
+      {
+        "name": "v-a-c2021",
+        "logoname": "V-A-C",
+        "url": "https://sp.esquire.ru/v-a-c2021/",
+        "tags": ["react"]
+      },
+
+      {
+        "name": "got2b2021",
+        "url": "https://sp.cosmo.ru/got2b2021/",
+        "logo": ["logos/got2b-us-logo.png"],
+        "tags": ["react"]
+      },
+      {
+        "name": "acquapanna2021",
+        "logoname": "PANNA",
+        "url": "http://sp.bazaar.ru/acquapanna2021/",
+        "tags": ["react", "quiz"]
+      },
+      {
+        "name": "galaxywatch",
+        "url": "http://sp.mhealth.ru/galaxywatch/",
+        "logo": ["logos/samsung_galaxy_watch_logo.png"],
+        "tags": ["react"]
+      },
+      {
+        "name": "travel2021",
+        "logoname": "Hylak Forte",
+        "url": "https://sp.cosmo.ru/travel2021/",
+        "tags": ["react"]
+      },
+
+      {
+        "name": "playstation",
+        "url": "https://sp.esquire.ru/playstation/",
+        "logo": "logos/sony-logo.jpg",
+        "tags": ["react"]
+      },
+      {
+        "name": "barbieastronaut",
+        "url": "https://sp.cosmo.ru/barbieastronaut",
+        "logo": ["logos/barbie-logo.png"],
+        "tags": ["react"]
+      },
+      {
+        "name": "fondpotanina",
+        "url": "https://sp.goodhouse.ru/fondpotanina/",
+        "logoname": "",
+        "cover": ["sites/fondpotanina/1.jpg"],
+        "tags": ["react"]
+      }
+    ]
+  },
+
+  "petproject_react": {
+    "description": "LTFL Project",
+    "type": "multi",
+    "projects": [
+      {
+        "name": "LTFL",
+        "name_ru": "LTFL",
+
+        "desc_en": "Learn this f... language. Memorize foreign words with the help of repetitive listening and music. ",
+        "desc_ru": "Обучающее приложение для лучшего усвоения незнакомой лексики. Слова лучше записываются в мозг с помощью повторяемого прослушивания и музыкального монотонного сопровождения. К тому же, это можно совмещать с другим делом. Выучи, наконец, этот язык. Проект в стадии наполнения контентом",
+        "img": [
+          "ltfl/intro.png",
+          "ltfl/dicts.png",
+          "ltfl/playloop.png",
+          "ltfl/playsynth.png"
+        ],
+        "url": [{ "link": "https://ltfl.vercel.app" }],
+        "tags": [
+          "react",
+          "redux toolkit",
+          "typescript",
+          "MUI",
+          "SpeechSynthesis",
+          "WebAudio"
+        ]
+      }
+    ]
+  },
+
+  "react_apps": {
+    "description": "React applications",
+    "type": "desc",
+    "projects": [
+      {
+        "name": "Slider generator",
+        "logo": "",
+        "desc_en": "Slider generator",
+        "desc_ru": "Генератор слайдеров для контент-менеджеров космо",
+        "img": ["reactaps/slidergen/1.png"],
+        "tags": ["react", "utils"],
+        "url": [
+          {
+            "link": "https://slidergen.vercel.app/"
+          }
+        ]
+      },
+      {
+        "name": "Iframe code generator",
+        "logo": "",
+        "desc_en": "Generate code for insertions into an article and preview all screen sizes",
+        "desc_ru": "Генератор кода вставок в iframe для контент-менеджеров космо, первьювер iframe'ов в разных размерах, подсчет их высоты",
+        "img": ["reactaps/iframes/1.jpg"],
+        "tags": ["react", "utils"],
+        "url": [
+          {
+            "link": "https://iframe-breakpoints.vercel.app/"
+          }
+        ]
+      },
+      {
+        "name": "Qrcodes generator and list",
+        "logo": "",
+        "desc_en": "REST CRUD list. This is just demo, API calls are disabled",
+        "desc_ru": "Генератор и список QR-кодов для печати в журналах Imedia Group. Это демо, вызовы API отключены",
+        "img": ["reactaps/qrcodes/1.png"],
+        "tags": ["react", "utils"],
+        "url": [
+          {
+            "link": "https://qrcodes-imweb.vercel.app/"
+          }
+        ]
       }
     ]
   },
@@ -427,8 +423,8 @@
       {
         "name": "McDonalds",
         "logo": "games/mcdonalds/logo.png",
-        "desc_en": "Packman",
-        "desc_ru": "Пакман",
+        "desc_en": "",
+        "desc_ru": "",
         "img": ["games/mcdonalds/1.jpg"],
         "tags": ["canvas", "game", "createjs"],
         "url": [
@@ -441,8 +437,8 @@
         "name": "Cherkizovo",
         "name_ru": "Черкизово",
         "logo": "games/cherkizovo/logo.jpeg",
-        "desc_en": "Catch sausage",
-        "desc_ru": "Поймай ртом колбасу",
+        "desc_en": "",
+        "desc_ru": "",
         "img": ["games/cherkizovo/1.jpg"],
         "tags": ["game", "instagram", "sparkAR"],
         "url": [
