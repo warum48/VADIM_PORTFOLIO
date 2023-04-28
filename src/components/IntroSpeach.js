@@ -200,7 +200,7 @@ export const IntroSpeach = (props) => {
                     `}
                   >
                     <Bullet />
-                    <strong>My skills:</strong>
+                    <strong>My experience:</strong>
                   </div>
                   <ul
                     className="block"
