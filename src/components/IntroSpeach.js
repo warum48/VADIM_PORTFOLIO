@@ -11,6 +11,7 @@ const SpeachContainer = styled.div`
   /*background-color: rgb(255, 255, 255);
   margin-top: 1rem;
   padding: 1rem;*/
+  padding-bottom: 2rem;
 `;
 
 const Name = styled.span`
@@ -88,11 +89,20 @@ const NameContainer = styled.div`
 
   background: hsla(271, 96%, 33%, 1);
 
-  background: linear-gradient(
+  /*background: linear-gradient(
     155deg,
     hsla(271, 96%, 33%, 1) 40%,
     hsla(332, 96%, 49%, 1) 100%
+  );*/
+
+  background: linear-gradient(
+    155deg,
+    
+   
+    #212529 50%,
+    hsla(271, 96%, 33%, 1) 100%
   );
+   /*hsla(277, 46%, 27%, 1) 30%,*/
 
   color: white;
   /*background-color: rgb(255, 255, 255);
@@ -175,7 +185,7 @@ export const IntroSpeach = (props) => {
                     <span className="subhead">Frontend developer</span>
                   </NameContainer>
                   <code>
-                    <strong>Stack:</strong> JavaScript ES6, TypeScript, React,
+                    <strong>Stack:</strong> JavaScript ES6, TypeScript, React, GraphQl (Apollo),
                     Redux Toolkit, Preact, jQuery, Angular 1, Animation (CSS,
                     Canvas, SVG), Webpack, HTML5, CSS3, SASS, Styled Components
                     (Emotion), MUI, Bootstrap, Photoshop, Figma
@@ -190,7 +200,7 @@ export const IntroSpeach = (props) => {
                     `}
                   >
                     <Bullet />
-                    <strong>Опыт работы:</strong>
+                    <strong>My skills:</strong>
                   </div>
                   <ul
                     className="block"
@@ -231,6 +241,9 @@ export const IntroSpeach = (props) => {
                     <li>
                       <i>2022:</i> Freelance for advertising agency "Digitas
                       Moscow". React websites and promo applications
+                    </li>
+                    <li>
+                      <i>2022 - today:</i> Front End Developer in LLC "Business Solutions"
                     </li>
                   </ul>
                   This portfolio is not a complete list of works, only shows the
@@ -348,7 +361,7 @@ export const IntroSpeach = (props) => {
                     <span className="subhead">Frontend разработчик</span>
                   </NameContainer>
                   <code>
-                    <strong>Stack:</strong> JavaScript ES6, TypeScript, React,
+                    <strong>Stack:</strong> JavaScript ES6, TypeScript, React, GraphQl (Apollo),
                     Redux Toolkit, Preact, jQuery, Angular 1, Animation (CSS,
                     Canvas, SVG), Webpack, HTML5, CSS3, SASS, Styled Components
                     (Emotion), MUI, Bootstrap, Photoshop, Figma
@@ -406,6 +419,9 @@ export const IntroSpeach = (props) => {
                       <i>2022:</i> Freelance в рекламном агенстве "Digitas
                       Moscow". React сайты и промо-приложения. Структура,
                       сборка, интерактивные блоки, анимация, иногда верстка.
+                    </li>
+                    <li>
+                      <i>2022 - сегодня:</i> Ведущий программист в ООО «УК «Бизнес решения»
                     </li>
                   </ul>
                   Это портфолио не является полным списком работ, только
