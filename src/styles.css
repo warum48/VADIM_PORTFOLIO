@@ -12,11 +12,22 @@ html {
 }
 
 body {
+  margin:0;
+  padding:0;
+  width:100%;
   background-color: rgb(242, 245, 250);
   font-size: 1rem;
   color: rgb(72, 84, 97);
   /*font-family: Helvetica, Verdana, Geneva, sans-serif;*/
   font-family: "Source Sans Pro", Helvetica, Verdana, Geneva, sans-serif;
+}
+
+#root{
+  width:100%;
+}
+
+.App{
+  width: 100%;
 }
 
 .violet {

@@ -119,6 +119,7 @@ export default function App() {
           fluid
           css={css`
             padding-top: 70px;
+            //padding-right: 50px;
           `}
         >
           <Row>
@@ -130,7 +131,12 @@ export default function App() {
                 {isDesktop && <Filters dB={dB} />}
               </div>
             </Col>
-            <Col sm={8} md={8} lg={9}>
+            <Col sm={8} md={8} lg={9} css={css`
+            padding-right: 40px;
+            @media (max-width : 575px){
+              padding-right: 1rem;
+            }
+          `}>
               <div>
                 <Row>
                   <Col lg={8}>
