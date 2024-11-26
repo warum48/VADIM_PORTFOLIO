@@ -82,7 +82,7 @@ export const ItemCardMultishots = ({ item, type }) => {
             </MultiShots>
           ) : (
             <div style={{ width: "100%" }}>
-              <SwiperSlider images={item.img} />
+              <SwiperSlider images={item.img} urlToImg={ item.urlToImg} />
             </div>
           )}
           <Card.Body

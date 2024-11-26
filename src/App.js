@@ -87,7 +87,8 @@ export default function App() {
   };
 
   useEffect(() => {
-    fetch(constants.imgurl_personal + "DB.json")
+   // fetch(constants.imgurl_personal + "DB.json")
+    fetch("/DB.json")
       .then((res) => res.json())
       .then((data) => {
         setDB(data);

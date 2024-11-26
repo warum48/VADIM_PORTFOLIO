@@ -17,7 +17,7 @@ import * as constants from "../../CONSTS";
 
 SwiperCore.use([EffectCreative]);
 
-export function SwiperSlider({ images }) {
+export function SwiperSlider({ images, urlToImg }) {
   return (
     <div>
       <Swiper
@@ -51,7 +51,7 @@ export function SwiperSlider({ images }) {
             <img
               //style={{ opacity: 0 }}
               //src={constants.imgurl_personal + sizeKeeperSrc}
-              src={constants.imgurl_personal + image}
+              src={image.includes("http") ? image : constants.imgurl_personal + image}
               className="img-fluid"
               alt="..."
             />
