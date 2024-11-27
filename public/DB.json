@@ -7,7 +7,7 @@
         "name": "Virilis",
         "name_ru": "Virilis",
 
-        "desc_en": "Design and development of admin panel from scratch. React, GraphQL, MUI",
+        "desc_en": "Design and development of a patient's personal cabinet for Virilis clinic network. React,Next.js, Tailwind, Redux-Toolkit, Mantine",
         "desc_ru": "Дизайн и разработка личного кабинта пациента сети клиник Вирилис. React,Next.js, Tailwind, Redux-Toolkit, Mantine",
         "img": [
           "https://utfs.io/f/4k0kTpVdQ68locXOwVg6DoMdqLRCkpiwga8QPYtvm5xbZTNu",
