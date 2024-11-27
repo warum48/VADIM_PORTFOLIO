@@ -301,4 +301,4 @@ export default function App() {
           }
         ],
         "tags": ["map", "angular1", "canvas"]
-      }, run new build*/
+      }, run  new new build*/
