@@ -120,5 +120,57 @@
         ]
       },
 
+"banners": {
+    "description": "Banners",
+    "show_header": 1,
+    "type": "compact",
+    "projects": [
+      {
+        "name": "SVG HTML",
+        "desc_en": "SVG banner",
+        "desc_ru": "SVG banner",
+        "cover": [
+          "banners/banner_vk.jpg"
+        ],
+        "url": "https://x1xqr.csb.app/",
+        "tags": [
+          "banner",
+          "SVG animation"
+        ]
+      },
+      {
+        "name": "Fullscreen",
+        "desc_en": "Fullscreen banner",
+        "desc_ru": "Fullscreen banner",
+        "cover": [
+          "banners/banner_full.jpg"
+        ],
+        "url": "https://dev.nahab.info/banner/dist/2021_01_mcdmonopoly_base64/",
+        "tags": [
+          "banner",
+          "canvas",
+          "createjs"
+        ]
+      },
+      {
+        "name": "Interactive",
+        "desc_en": "Interactive banner with rollover",
+        "desc_ru": "Interactive banner with rollover",
+        "cover": [
+          "banners/banner_interactive.png"
+        ],
+        "url": "https://dev.nahab.info/aerovadim/-=cosmo/banners/promocode/desc/index.html",
+        "tags": [
+          "banner"
+        ]
+      },
+      {
+        "show_more": "true",
+        "url": "banners"
+      }
+    ]
+  },
+
+
 
   */

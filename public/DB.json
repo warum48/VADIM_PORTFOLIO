@@ -1,4 +1,41 @@
 {
+  "hrm_react": {
+    "description": "Recruitment service",
+    "type": "multislider",
+    "projects": [
+      {
+        "name": "Recruitment service",
+        "name_ru": "Сервис по подбору персонала",
+
+        "desc_en": "Recruitment service. Design, React,Next.js, Tailwind, Redux-Toolkit, Mantine",
+        "desc_ru": "Сервис по подбору персонала. Проект на завершающей стадии разработкиДизайн, React,Next.js, Tailwind, Redux-Toolkit, Mantine",
+        "img": [
+          "https://utfs.io/f/4k0kTpVdQ68lTajOom2hQpTL7jRz3a0uIy4reVCwnq9bHxmF",
+          "https://utfs.io/f/4k0kTpVdQ68ljzzIQ8h4JDreS86pC1kla0o7IUybFhc9AwTq",
+          "https://utfs.io/f/4k0kTpVdQ68lzPO91K6JOv9tdHWMRwNzBGiQCaA3rDnj51EX",
+          "https://utfs.io/f/4k0kTpVdQ68l1yyxmbRkoyFwOI4CUg0WTPR9B5VzN3eZpMi7",
+          "https://utfs.io/f/4k0kTpVdQ68lXijYyw3A21nCT3zY6IchiyUSr4R8DQWJ50Ed",
+          "https://utfs.io/f/4k0kTpVdQ68loCbXwmg6DoMdqLRCkpiwga8QPYtvm5xbZTNu",
+          "https://utfs.io/f/4k0kTpVdQ68lVbRkgQOz2Tny07t5xdYqLuQ46JNjrX3M8Blh",       
+          "https://utfs.io/f/4k0kTpVdQ68lM706Esye0hR8pvwPJQc61j7BIzZoasUfk9lD",
+          "https://utfs.io/f/4k0kTpVdQ68lo87GNqg6DoMdqLRCkpiwga8QPYtvm5xbZTNu",
+          "https://utfs.io/f/4k0kTpVdQ68l1gK3U3RkoyFwOI4CUg0WTPR9B5VzN3eZpMi7",
+          "https://utfs.io/f/4k0kTpVdQ68lhrNwaJQhtQNSPes1D4cFq3OdrCZwjWiXamnV",
+          "https://utfs.io/f/4k0kTpVdQ68ljNfKR14JDreS86pC1kla0o7IUybFhc9AwTqG"
+          
+        ],
+        
+        "tags": [
+          "react",
+          "next.js",
+          "tailwind",
+          "redux-toolkit",
+          "design",
+          "ui-design"
+        ]
+      }
+    ]
+  },
   "virilis_react": {
     "description": "Virilis",
     "type": "multislider",
@@ -872,56 +909,7 @@
       }
     ]
   },
-  "banners": {
-    "description": "Banners",
-    "show_header": 1,
-    "type": "compact",
-    "projects": [
-      {
-        "name": "SVG HTML",
-        "desc_en": "SVG banner",
-        "desc_ru": "SVG banner",
-        "cover": [
-          "banners/banner_vk.jpg"
-        ],
-        "url": "https://x1xqr.csb.app/",
-        "tags": [
-          "banner",
-          "SVG animation"
-        ]
-      },
-      {
-        "name": "Fullscreen",
-        "desc_en": "Fullscreen banner",
-        "desc_ru": "Fullscreen banner",
-        "cover": [
-          "banners/banner_full.jpg"
-        ],
-        "url": "https://dev.nahab.info/banner/dist/2021_01_mcdmonopoly_base64/",
-        "tags": [
-          "banner",
-          "canvas",
-          "createjs"
-        ]
-      },
-      {
-        "name": "Interactive",
-        "desc_en": "Interactive banner with rollover",
-        "desc_ru": "Interactive banner with rollover",
-        "cover": [
-          "banners/banner_interactive.png"
-        ],
-        "url": "https://dev.nahab.info/aerovadim/-=cosmo/banners/promocode/desc/index.html",
-        "tags": [
-          "banner"
-        ]
-      },
-      {
-        "show_more": "true",
-        "url": "banners"
-      }
-    ]
-  },
+  
   "vue_apps": {
     "description": "Vue quizzes",
     "type": "mob",
