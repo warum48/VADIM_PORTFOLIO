@@ -29,10 +29,11 @@
         ],
         "tags": [
           "react",
-          "architecture",
+          "next.js",
+          "graphQL",
           "design",
-          "ui-design",
-          "leaflet"
+          "ui-design"
+          
         ]
       }
     ]
@@ -57,7 +58,9 @@
         ],
         "tags": [
           "react",
-          "architecture",
+          
+          
+          "graphQL",
           "design",
           "ui-design",
           "leaflet"
