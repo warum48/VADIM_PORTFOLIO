@@ -344,7 +344,8 @@ export const IntroSpeach = (props) => {
                   <NameContainer>
                     <Image
                       fluid
-                      src={constants.imgurl_personal + "myphoto/1.jpg"}
+                      //src={constants.imgurl_personal + "myphoto/1.jpg"}
+                      src="https://utfs.io/f/4k0kTpVdQ68lgXir47SsRY6fApECg1XiNaW2myGtQ0zJ4BFL"
                       className={"float-start"}
                       css={css`
                         max-width: 125px;
@@ -363,10 +364,10 @@ export const IntroSpeach = (props) => {
                     <span className="subhead">Frontend разработчик</span>
                   </NameContainer>
                   <code>
-                    <strong>Stack:</strong> JavaScript ES6, TypeScript, React, GraphQl (Apollo),
-                    Redux Toolkit, Preact, jQuery, Angular 1, Animation (CSS,
-                    Canvas, SVG), Webpack, HTML5, CSS3, SASS, Styled Components
-                    (Emotion), MUI, Bootstrap, Photoshop, Figma
+                  <strong>Stack:</strong> React, TypeScript, JavaScript, Next.js, Tailwind,  GraphQl (Apollo),
+                    Redux-Toolkit, Preact,  Animation (CSS,
+                    Canvas, SVG), Webpack, SASS,
+                     MUI,  Photoshop, Figma, Styled Components, jQuery, Angular 1, Bootstrap
                   </code>
                   <br />
                 </MainInfo>
