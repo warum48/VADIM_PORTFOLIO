@@ -126,7 +126,7 @@ export default function App() {
           <Row>
             <Col sm={4} md={4} lg={3} className="bg-light d-none d-sm-block">
               <div>
-                {dB && <AnchorLinks dB={dB} renderCount={renderCount} />}
+                {dB && <AnchorLinks dB={dB} renderCount={renderCount} language={language}/>}
                 <hr className="my-3" />
 
                 {isDesktop && <Filters dB={dB} />}
@@ -167,7 +167,8 @@ export default function App() {
                                 <>
                                   <SectionHead id={keyName}>
                                     <Bullet />
-                                    {dB[keyName]["description_"+language] ||   dB[keyName].description ||
+                                    {dB[keyName]["description_"+language] ||  
+                                     dB[keyName].description ||
                                       dB[keyName].type}
                                     :
                                   </SectionHead>

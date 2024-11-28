@@ -46,6 +46,7 @@ https://stackoverflow.com/questions/16312528/check-if-an-array-contains-any-elem
 
 export const AnchorLinks = ({
   dB,
+  language,
   renderCount,
   setOpen = null,
   outsideRender = 0,
@@ -153,7 +154,7 @@ export const AnchorLinks = ({
                     }}
                   >
                     <Link to={"/#" + keyName}>
-                      {dB[keyName].description || dB[keyName].type}
+                      {dB[keyName]["description_"+language] || dB[keyName].description || dB[keyName].type}
                     </Link>
                   </AnkorLink>
                 )}

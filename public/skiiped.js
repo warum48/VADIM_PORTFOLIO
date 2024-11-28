@@ -172,12 +172,47 @@
   },
 
 
- "url": [
-          {
-            "link": "https://dev.nahab.info/aerovadim/portfolio/games/flash/nokia_parkur.zip"
-          }
-        ],
+ ,
+  "implants": {
+    "description": "Interactive Iframes",
+    "description_ru": "Интерактивные фреймы",
+    "show_header": 1,
+    "type": "also",
+    "projects": [
+      
+      {
+        "name": "guerlain-game2015",
+        "url": "https://sp.imweb.ru/implant/sp/guerlain-game2015/templates/default/preview.html",
+        "tags": [
+          "drag"
+        ]
+      },
+      {
+        "name": "shiseido2016/",
+        "url": "https://sp.imweb.ru/implant/sp/shiseido2016/templates/default/preview.html",
+        "tags": [
+          "angular"
+        ]
+      },
+      {
+        "name": "canon2019",
+        "url": "https://sp.imweb.ru/implant/sp/canon2019/templates/default/preview.html"
+      },
+      {
+        "name": "cosmo_form2022",
+        "url": "https://sp.imweb.ru/implant/sp/cosmo_form2022/templates/default/preview.html",
+        "tags": [
+          "form"
+        ]
+      },
+      {
+        "name": "greetingcard2022",
+        "url": "https://sp.imweb.ru/implant/sp/greetingcard2022/templates/default/preview.html"
+      }
+    ]
+  }
 
 
 
   */
+
