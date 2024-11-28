@@ -1,6 +1,7 @@
 {
   "hrm_react": {
     "description": "Recruitment service",
+    "description_ru": "Сервис по подбору персонала",
     "type": "multislider",
     "projects": [
       {
@@ -38,7 +39,8 @@
     ]
   },
   "virilis_react": {
-    "description": "Virilis",
+    "description": "Virilis Clinic",
+    "description_ru": "ЛК пациента клиник Вирилис",
     "type": "multislider",
     "projects": [
       {
@@ -78,6 +80,7 @@
   },
   "surveer_react": {
     "description": "Admin panel",
+    "description_ru": "Панель управления Сюрвеер/Neurolab",
     "type": "multislider",
     "projects": [
       {
@@ -108,6 +111,7 @@
   },
   "websites_react": {
     "description": "Websites",
+    "description_ru": "Промо-сайты",
     "type": "desc",
     "projects": [
       {
@@ -382,6 +386,7 @@
   },
   "websites_react_also": {
     "description": "Websites / React",
+    "description_ru": "Еще сайты (React)",
     "type": "also",
     "projects": [
       {
@@ -507,6 +512,7 @@
   },
   "react_apps": {
     "description": "React applications",
+    "description_ru": "React приложения",
     "type": "desc",
     "projects": [
       {
@@ -591,6 +597,7 @@
   
   "music_apps": {
     "description": "Music applications",
+    "description_ru": "Ambient-cинтезатор",
     "type": "desc",
     "projects": [
       {
@@ -615,6 +622,7 @@
   },
   "games_desc": {
     "description": "Desktop games",
+    "description_ru": "Промо-игры-таймкиллеры",
     "type": "desc",
     "projects": [
       {
@@ -669,6 +677,7 @@
   },
   "games_mob": {
     "description": "Web-mobile / Instagram games",
+    "description_ru": "Web-mobile / Instagram игры",
     "type": "mob",
     "projects": [
       {
@@ -754,11 +763,7 @@
         "img": [
           "games/flash/nokia.png"
         ],
-        "url": [
-          {
-            "link": "https://dev.nahab.info/aerovadim/portfolio/games/flash/nokia_parkur.zip"
-          }
-        ],
+       
         "tags": [
           "game",
           "flash",
@@ -769,6 +774,8 @@
   },
   "interactive_blocks": {
     "description": "Interactive blocks",
+    "description_ru": "Интерактивные блоки",
+    
     "type": "desc",
     "projects": [
       {
@@ -807,6 +814,7 @@
   },
   "animation": {
     "description": "Animation and art",
+    "description_ru": "Анимация и искусство",
     "type": "desc",
     "projects": [
       {
@@ -861,7 +869,8 @@
     ]
   },
   "design": {
-    "description": "Design",
+    "description": "Design (2006-2010)",
+    "description_ru": "Дизайн (2006-2010)",
     "type": "desc",
     "projects": [
       {
@@ -913,6 +922,7 @@
   
   "vue_apps": {
     "description": "Vue quizzes",
+    "description_ru": "Vue тесты",
     "type": "mob",
     "projects": [
       {
@@ -956,6 +966,7 @@
   },
   "implants": {
     "description": "Interactive Iframes",
+    "description_ru": "Интерактивные фреймы",
     "show_header": 1,
     "type": "also",
     "projects": [

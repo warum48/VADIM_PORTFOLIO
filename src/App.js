@@ -167,7 +167,7 @@ export default function App() {
                                 <>
                                   <SectionHead id={keyName}>
                                     <Bullet />
-                                    {dB[keyName].description ||
+                                    {dB[keyName]["description_"+language] ||   dB[keyName].description ||
                                       dB[keyName].type}
                                     :
                                   </SectionHead>
