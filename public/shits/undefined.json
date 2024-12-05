@@ -1,0 +1,182 @@
+,
+  "interactive_blocks": {
+    "description": "Interactive blocks",
+    "type": "desc",
+    "projects": [
+      {
+        "name": "Stenograffia",
+        "desc_en": "Drawing, Transition effect",
+        "desc_ru": "Спецэффект перехода между фото, рисовательный движок",
+        "img": ["intractiveblocks/stenograffia/1.jpg"],
+        "url": [{ "link": "https://sp.kommersant.ru/stenograffia2017/#!/" }],
+        "tags": ["drawing", "special effect", "canvas"]
+      },
+
+      {
+        "name": "Gillette Venus",
+        "logo": "intractiveblocks/gillettevenus/logo.png",
+        "desc_en": "Put your photo on the COSMOPOLITAN cover!",
+        "desc_ru": "Помести свое фото на обложку КОСМО!",
+        "img": ["intractiveblocks/gillettevenus/1.jpg"],
+        "url": [
+          {
+            "link": "https://sp.cosmo.ru/venus2016/#!/"
+          }
+        ]
+      }
+    ]
+  },
+  "animation": {
+    "description": "Animation and art",
+    "type": "desc",
+    "projects": [
+      {
+        "name": "Asteroidea",
+        "desc_en": "Experimental particles animation",
+        "desc_ru": "Анимация частиц",
+        "img": ["animation/asteroidea_particles.jpg"],
+        "url": [
+          {
+            "link": "https://dev.nahab.info/aerovadim/liaparticles/proton/index.html"
+          }
+        ],
+        "tags": ["art", "animation", "particles"]
+      },
+
+      {
+        "name": "Asteroidea",
+        "desc_en": "SVG logo to 3D. Threejs",
+        "desc_ru": "Three.js SVG logo",
+        "img": ["animation/asteroidea_svg.jpg"],
+        "url": [
+          {
+            "link": "https://dev.nahab.info/aerovadim/threejs/logo2/index.html",
+            "name_en": "Landscape 1",
+            "name_ru": "Пейзаж 1"
+          },
+          {
+            "link": "https://dev.nahab.info/aerovadim/threejs/logo/index.html",
+            "name_en": "Landscape 2",
+            "name_ru": "Пейзаж 2"
+          },
+          {
+            "link": "https://dev.nahab.info/aerovadim/threejs/logo3/index.html",
+            "name_en": "Landscape 3",
+            "name_ru": "Пейзаж 3"
+          }
+        ],
+        "tags": ["art", "animation", "3D SVG", "SVG animation"]
+      }
+    ]
+  },
+  "design": {
+    "description": "Design",
+    "type": "desc",
+    "projects": [
+      {
+        "name": "Burn",
+        "desc_en": "Photoshop collage and design for BURN",
+        "desc_ru": "Дизайн-коллаж спецпроекта BURN",
+        "img": ["design/vulkan-end_.jpg"],
+        "url": [
+          {
+            "link": "https://dev.nahab.info/aerovadim/portfolio/design/vulkan-end_.jpg",
+            "name_en": "Main Page",
+            "name_ru": "Главная страница"
+          },
+          {
+            "link": "https://dev.nahab.info/aerovadim/portfolio/design/vulkan-end_.jpg",
+            "name_en": "Inner Page",
+            "name_ru": "Внутренняя страница"
+          }
+        ],
+        "tags": ["photoshop", "design", "collage"]
+      },
+
+      {
+        "name": "Panasonic FZ18",
+        "logo": "intractiveblocks/gillettevenus/logo.png",
+        "desc_en": "Letter design for Panasonic",
+        "desc_ru": "Рассылка Panasonic",
+        "img": ["design/crea_FZ18_mod3_tennis2_full.jpg"],
+        "url": [
+          {
+            "link": "https://dev.nahab.info/aerovadim/portfolio/design/crea_FZ18_mod3_tennis2_full.jpg"
+          }
+        ],
+        "tags": ["photoshop", "design"]
+      }
+    ]
+  },
+  "banners": {
+    "description": "Banners",
+    "show_header": 1,
+    "type": "compact",
+
+    "projects": [
+      {
+        "name": "SVG HTML",
+        "desc_en": "SVG banner",
+        "desc_ru": "SVG banner",
+        "cover": ["banners/banner_vk.jpg"],
+        "url": "https://x1xqr.csb.app/",
+        "tags": ["banner", "SVG animation"]
+      },
+      {
+        "name": "Fullscreen",
+        "desc_en": "Fullscreen banner",
+        "desc_ru": "Fullscreen banner",
+        "cover": ["banners/banner_full.jpg"],
+        "url": "https://dev.nahab.info/banner/dist/2021_01_mcdmonopoly_base64/",
+        "tags": ["banner", "canvas", "createjs"]
+      },
+      {
+        "name": "Interactive",
+        "desc_en": "Interactive banner with rollover",
+        "desc_ru": "Interactive banner with rollover",
+        "cover": ["banners/banner_interactive.png"],
+        "url": "https://dev.nahab.info/aerovadim/-=cosmo/banners/promocode/desc/index.html",
+        "tags": ["banner"]
+      },
+      {
+        "show_more": "true"
+      }
+    ]
+  },
+  "implants": {
+    "description": "Interactive implants",
+    "show_header": 1,
+    "type": "also",
+    "projects": [
+      {
+        "name": "pobeda2022",
+        "url": "https://sp.imweb.ru/implant/sp/pobeda2022",
+        "tags": ["vue", "quiz"]
+      },
+      {
+        "name": "guerlain-game2015",
+        "url": "https://sp.imweb.ru/implant/sp/guerlain-game2015/templates/default/preview.html",
+        "tags": ["drag"]
+      },
+      {
+        "name": "shiseido2016/",
+        "url": "https://sp.imweb.ru/implant/sp/shiseido2016/templates/default/preview.html",
+        "tags": ["angular"]
+      },
+      {
+        "name": "canon2019",
+        "url": "https://sp.imweb.ru/implant/sp/canon2019/templates/default/preview.html"
+      },
+
+      {
+        "name": "cosmo_form2022",
+        "url": "https://sp.imweb.ru/implant/sp/cosmo_form2022/templates/default/preview.html",
+        "tags": ["form"]
+      },
+
+      {
+        "name": "greetingcard2022",
+        "url": "https://sp.imweb.ru/implant/sp/greetingcard2022/templates/default/preview.html"
+      }
+    ]
+  }

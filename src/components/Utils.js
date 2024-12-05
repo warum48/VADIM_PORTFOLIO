@@ -204,7 +204,7 @@ export const useFirstRender = () => {
   useEffect(() => {
     isMountedRef.current = false;
   }, []);
-  console.log("useFirstRender");
+  //console.log("useFirstRender");
   return isMountedRef.current;
 };
 //https://newbedev.com/with-useeffect-how-can-i-skip-applying-an-effect-upon-the-initial-render

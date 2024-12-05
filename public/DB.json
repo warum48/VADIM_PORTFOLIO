@@ -1,6 +1,117 @@
 {
+  "hrm_react": {
+    "description": "Recruitment service",
+    "description_ru": "Сервис по подбору персонала",
+    "type": "multislider",
+    "projects": [
+      {
+        "name": "Recruitment service",
+        "name_ru": "Сервис по подбору персонала",
+
+        "desc_en": "Recruitment service. Design, React,Next.js, Tailwind, Redux-Toolkit, Mantine",
+        "desc_ru": "Сервис по подбору персонала. Проект на завершающей стадии разработкиДизайн, React,Next.js, Tailwind, Redux-Toolkit, Mantine",
+        "img": [
+          "https://utfs.io/f/4k0kTpVdQ68lTajOom2hQpTL7jRz3a0uIy4reVCwnq9bHxmF",
+          "https://utfs.io/f/4k0kTpVdQ68ljzzIQ8h4JDreS86pC1kla0o7IUybFhc9AwTq",
+          "https://utfs.io/f/4k0kTpVdQ68lzPO91K6JOv9tdHWMRwNzBGiQCaA3rDnj51EX",
+          "https://utfs.io/f/4k0kTpVdQ68l1yyxmbRkoyFwOI4CUg0WTPR9B5VzN3eZpMi7",
+          "https://utfs.io/f/4k0kTpVdQ68lXijYyw3A21nCT3zY6IchiyUSr4R8DQWJ50Ed",
+                 
+   
+          "https://utfs.io/f/4k0kTpVdQ68lo87GNqg6DoMdqLRCkpiwga8QPYtvm5xbZTNu",
+          "https://utfs.io/f/4k0kTpVdQ68l1gK3U3RkoyFwOI4CUg0WTPR9B5VzN3eZpMi7",
+          "https://utfs.io/f/4k0kTpVdQ68lhrNwaJQhtQNSPes1D4cFq3OdrCZwjWiXamnV",
+          "https://utfs.io/f/4k0kTpVdQ68ljNfKR14JDreS86pC1kla0o7IUybFhc9AwTqG",
+          "https://utfs.io/f/4k0kTpVdQ68loCbXwmg6DoMdqLRCkpiwga8QPYtvm5xbZTNu",
+          "https://utfs.io/f/4k0kTpVdQ68lVbRkgQOz2Tny07t5xdYqLuQ46JNjrX3M8Blh"
+          
+        ],
+        
+        "tags": [
+          "react",
+          "next.js",
+          "tailwind",
+          "redux-toolkit",
+          "design",
+          "ui-design"
+        ]
+      }
+    ]
+  },
+  "virilis_react": {
+    "description": "Virilis Clinic",
+    "description_ru": "ЛК пациента клиник Вирилис",
+    "type": "multislider",
+    "projects": [
+      {
+        "name": "Virilis",
+        "name_ru": "Virilis",
+
+        "desc_en": "Design and development of a patient's personal cabinet for Virilis clinic network. React,Next.js, Tailwind, Redux-Toolkit, Mantine",
+        "desc_ru": "Дизайн и разработка личного кабинта пациента сети клиник Вирилис. React,Next.js, Tailwind, Redux-Toolkit, Mantine",
+        "img": [
+          "https://utfs.io/f/4k0kTpVdQ68locXOwVg6DoMdqLRCkpiwga8QPYtvm5xbZTNu",
+          "https://utfs.io/f/4k0kTpVdQ68lPjI4ZTdvKFpONR1Un2BCtHMGkAWXdziv95Yw",
+          "https://utfs.io/f/4k0kTpVdQ68l3510q9H3v0ZQcj91E8tyJpVkhqfBKzLGu5bM",
+          "https://utfs.io/f/4k0kTpVdQ68l8GIhMofbdjKYBzyJeXkfn4ErgZhTspcOSmGx",
+          "https://utfs.io/f/4k0kTpVdQ68l466R90cVdQ68lDIxzYJHwfVtyo3O1nRm7c2S",
+          "https://utfs.io/f/4k0kTpVdQ68l62YQCIybJ4vULXp7qmYFtBMs2dEOoy16WRi0",
+          "https://utfs.io/f/4k0kTpVdQ68lx1QanL9Hg6nPVRBiOIpmUfQYLbJdl3FaM7N9",
+          
+          "https://utfs.io/f/4k0kTpVdQ68lL9DWOWbERoG2SY5ijDqzpchIm1JZQkBXCVAN",
+          "https://utfs.io/f/4k0kTpVdQ68lFhleYvk2MQKNRYwHnWoIub49DkB5V7iZqXEh"
+          
+        ],
+        "url": [
+          {
+            "link": "https://lk.virilisgroup.ru/"
+          }
+        ],
+        "tags": [
+          "react",
+          "next.js",
+          "graphQL",
+          "design",
+          "ui-design"
+          
+        ]
+      }
+    ]
+  },
+  "surveer_react": {
+    "description": "Admin panel",
+    "description_ru": "Панель управления Сюрвеер",
+    "type": "multislider",
+    "projects": [
+      {
+        "name": "Surveer",
+        "name_ru": "Surveer",
+        "logo": "surveer/logo.png",
+        "desc_en": "Design and development of admin panel from scratch. React, GraphQL, MUI",
+        "desc_ru": "Дизайн и разработка админ-панели для Сюрвеер - приложения учета выполнения задач сотрудниками. Клиенты: Чистая линия, Emarko",
+        "img": [
+          "surveer/surveer_home.png",
+          "surveer/surveer_dark.png",
+          "surveer/surveer_table.png",
+          "surveer/surveer_map.png",
+          "surveer/surveer_reco.jpg",
+          "surveer/surveer_form.png"
+        ],
+        "tags": [
+          "react",
+          
+          
+          "graphQL",
+          "design",
+          "ui-design",
+          "leaflet"
+        ]
+      }
+    ]
+  },
   "websites_react": {
-    "description": "Websites / React",
+    "description": "Websites",
+    "description_ru": "Промо-сайты",
     "type": "desc",
     "projects": [
       {
@@ -9,114 +120,108 @@
         "logo": "sites/ey/logo.png",
         "desc_en": "Taxes world map with filters",
         "desc_ru": "Интерактивная налоговая карта мира с фильтрами",
-        "img": ["sites/ey/1.jpg"],
-        "url": [{ "link": "https://dev.nahab.info/dev-eyvtimes/" }],
-        "tags": ["react", "map"]
+        "img": [
+          "sites/ey/1.png",
+          "sites/ey/2.png",
+          "sites/ey/3.png",
+          "sites/ey/4.png",
+          "sites/ey/5.png"
+        ],
+        "url": [
+          {
+            "link": "https://ey-vtimes.vercel.app/"
+          }
+        ],
+        "tags": [
+          "react",
+          "map"
+        ]
       },
-
+      {
+        "name": "Holesterix",
+        "name_ru": "Холестерикс",
+        "logo": "sites/holesterix/holesterix-logo.png",
+        "desc_en": "ScrollTrigger animation, calculators",
+        "desc_ru": "ScrollTrigger анимация, калькуляторы",
+        "img": [
+          "sites/holesterix/1.png",
+          "sites/holesterix/2.png",
+          "sites/holesterix/3.png"
+        ],
+        "url": [
+          {
+            "link": "https://xn--e1aajibrrgdg2a.xn--p1ai/"
+          }
+        ],
+        "tags": [
+          "react",
+          "scrolltrigger",
+          "calculator"
+        ]
+      },
       {
         "name": "Beeline",
         "name_ru": "Билайн",
         "logo": "sites/beeline/logo.jpeg",
         "desc_en": "Fill text and send to the friend. Lottie animations sync",
         "desc_ru": "Заполнить текст и отправить ссылку другу. Синхронизация Lottie анимаций",
-        "img": ["sites/beeline/1.jpg"],
+        "img": [
+          "sites/beeline/1.jpg"
+        ],
         "url": [
+          
           {
-            "link": "https://sp.imweb.ru/implant/sp/greetingcard2022/templates/default/preview.html"
+            "name": "View",
+            "link": "https://dev.nahab.info/dev-beeline2021/"
           }
         ],
-        "tags": ["react", "greetingcard", "lottie"]
+        "tags": [
+          "react",
+          "greetingcard",
+          "lottie"
+        ]
       },
       {
-        "name": "Tommy Hilfiger / Lamoda",
-        "logo": "sites/tommy/logo.png",
-        "desc_en": "Taro cards & holy random",
-        "desc_ru": "Карты таро и божественный рандом расскажут что носить",
-        "img": ["sites/tommy/1.jpg"],
+        "name": "Beeline",
+        "name_ru": "Билайн",
+        "logo": "sites/beeline/logo.jpeg",
+        "desc_en": "Fill text and send to the friend. Lottie animations sync",
+        "desc_ru": "Заполнить текст и отправить ссылку другу. Синхронизация Lottie анимаций",
+        "img": [
+          "sites/beeline/march.jpg"
+        ],
         "url": [
+         
           {
-            "link": "https://sp.bazaar.ru/lamoda2021/"
+            "name": "View",
+            "link": "https://dev.nahab.info/dev-beeline2022_8march/create"
           }
         ],
-        "tags": ["react", "quiz", "flipcard"]
-      }
-    ]
-  },
-
-  "websites_react_also": {
-    "description": "Websites / React",
-    "type": "also",
-    "projects": [
-      {
-        "name": "v-a-c2021",
-        "logoname": "V-A-C",
-        "url": "https://sp.esquire.ru/v-a-c2021/",
-        "tags": ["react"]
+        "tags": [
+          "react",
+          "greetingcard",
+          "lottie"
+        ]
       },
-      {
-        "name": "got2b2021",
-        "url": "https://sp.cosmo.ru/got2b2021/",
-        "img": ["logos/got2b-us-logo.png"],
-        "tags": ["react"]
-      },
-      {
-        "name": "acquapanna2021",
-        "logoname": "PANNA",
-        "url": "http://sp.bazaar.ru/acquapanna2021/",
-        "tags": ["react", "quiz"]
-      },
-      {
-        "name": "galaxywatch",
-        "url": "http://sp.mhealth.ru/galaxywatch/",
-        "img": ["logos/samsung_galaxy_watch_logo.png"],
-        "tags": ["react"]
-      },
-      {
-        "name": "travel2021",
-        "logoname": "Hylak Forte",
-        "url": "https://sp.cosmo.ru/travel2021/",
-        "tags": ["react"]
-      },
-
-      {
-        "name": "playstation",
-        "url": "https://sp.esquire.ru/playstation/",
-        "img": "logos/sony-logo.jpg",
-        "tags": ["react"]
-      },
-      {
-        "name": "barbieastronaut",
-        "url": "https://sp.cosmo.ru/barbieastronaut",
-        "img": ["logos/barbie-logo.png"],
-        "tags": ["react"]
-      },
-      {
-        "name": "fondpotanina",
-        "url": "https://sp.goodhouse.ru/fondpotanina/",
-        "logoname": "",
-        "cover": ["sites/fondpotanina/1.jpg"],
-        "tags": ["react"]
-      }
-    ]
-  },
-
-  "websites_angular": {
-    "description": "Websites / Angular1",
-    "type": "desc",
-    "projects": [
       {
         "name": "KIA Quoris",
         "logo": "sites/kia/kia_logo_2012.svg",
         "desc_en": "Prerendered 3d car rotating on canvas",
         "desc_ru": "Пререндер машины на канвасе",
-        "img": ["sites/kia/1.jpg"],
+        "img": [
+          "sites/kia/1.jpg"
+        ],
         "url": [
           {
             "link": "https://sp.esquire.ru/quoris2015"
           }
         ],
-        "tags": ["canvas", "pseudo3d", "angular1", "jquery"]
+        "tags": [
+          "canvas",
+          "pseudo3d",
+          "angular1",
+          "jquery"
+        ]
       },
       {
         "name": "Elle / Austria",
@@ -124,9 +229,20 @@
         "logo": "sites/austria/logo.png",
         "desc_en": "Scrollmagic and sound design",
         "desc_ru": "Scrollmagic и саунд дизайн",
-        "img": ["sites/austria/1.jpg"],
-        "url": [{ "link": "https://sp.elle.ua/feelaustria/" }],
-        "tags": ["parallax", "scrollmagic", "sounddesign", "angular1"]
+        "img": [
+          "sites/austria/1.jpg"
+        ],
+        "url": [
+          {
+            "link": "https://sp.elle.ua/feelaustria/"
+          }
+        ],
+        "tags": [
+          "parallax",
+          "scrollmagic",
+          "sounddesign",
+          "angular1"
+        ]
       },
       {
         "name": "Dyson",
@@ -135,9 +251,20 @@
         "year": "2020",
         "desc_en": "3D gallery",
         "desc_ru": "3D обзор комнат рассказывающий о преимуществах пылесоса Дайсон",
-        "img": ["sites/dyson/1.jpg", "sites/dyson/2.jpg"],
-        "url": [{ "link": "https://sp.esquire.ru/dyson2020/" }],
-        "tags": ["3D", "panolens", "angular1"]
+        "img": [
+          "sites/dyson/1.jpg",
+          "sites/dyson/2.jpg"
+        ],
+        "url": [
+          {
+            "link": "https://sp.esquire.ru/dyson2020/"
+          }
+        ],
+        "tags": [
+          "3D",
+          "panolens",
+          "angular1"
+        ]
       },
       {
         "name": "Bayer",
@@ -146,11 +273,20 @@
         "year": "2020",
         "desc_en": "3D CSS animation",
         "desc_ru": "3D CSS анимация",
-        "img": ["sites/bayer/1.jpg"],
-        "url": [{ "link": "https://sp.kommersant.ru/bayer/#!/" }],
-        "tags": ["3D", "3D CSS animation", "angular1"]
+        "img": [
+          "sites/bayer/1.jpg"
+        ],
+        "url": [
+          {
+            "link": "https://dev.nahab.info/dev-bayer2016/#!/"
+          }
+        ],
+        "tags": [
+          "3D",
+          "3D CSS animation",
+          "angular1"
+        ]
       },
-
       {
         "name": "Bahroma",
         "name_ru": "Бахрома",
@@ -158,11 +294,20 @@
         "year": "2020",
         "desc_en": "3D CSS animation",
         "desc_ru": "3D CSS анимация",
-        "img": ["sites/bahroma/1.jpg"],
-        "url": [{ "link": "http://specialproject.bahroma.ru/" }],
-        "tags": ["3D", "3D CSS animatiosn", "angular1"]
+        "img": [
+          "sites/bahroma/1.jpg"
+        ],
+        "url": [
+          {
+            "link": "http://specialproject.bahroma.ru/"
+          }
+        ],
+        "tags": [
+          "3D",
+          "3D CSS animatiosn",
+          "angular1"
+        ]
       },
-
       {
         "name": "Sex around the world",
         "name_ru": "Секс вокруг света",
@@ -170,104 +315,204 @@
         "year": "2015",
         "desc_en": "Fullpage parallax",
         "desc_ru": "Fullpage parallax",
-        "img": ["sites/sex2015/1.jpg"],
-        "url": [{ "link": "https://sp.cosmo.ru/sex2015/#/" }],
-        "tags": ["fullpage", "parallax", "angular1"]
+        "img": [
+          "sites/sex2015/1.jpg"
+        ],
+        "url": [
+          {
+            "link": "https://sp.cosmo.ru/sex2015/#/"
+          }
+        ],
+        "tags": [
+          "fullpage",
+          "parallax",
+          "angular1"
+        ]
       },
-
       {
         "name": "Soderzhanki",
         "name_ru": "Содержанки",
         "logo": "",
         "year": "2020",
-        "desc_en": "Chat bot quiz",
-        "desc_ru": "Тест-диалог с ботом с разными ветками историй в зависимости от выбираемых ответов, в формате чата на экране мобильного телефона",
-        "img": ["sites/soderzhanki/1.jpg"],
-        "url": [{ "link": "https://sp.cosmo.ru/soderzhanki/#!/" }],
-        "tags": ["chatbot", "angular1"]
+        "desc_en": "Chat bot imitation quiz",
+        "desc_ru": "Тест-диалог с ботом с заданнами предварительно разными ветками историй в зависимости от выбираемых ответов, в формате чата на экране мобильного телефона",
+        "img": [
+          "sites/soderzhanki/1.jpg"
+        ],
+        "url": [
+          {
+            "link": "https://sp.cosmo.ru/soderzhanki/#!/"
+          }
+        ],
+        "tags": [
+          "chatbot",
+          "angular1"
+        ]
       },
-
       {
         "name": "Canon",
         "logo": "sites/canon/logo.png",
         "year": "2020",
         "desc_en": "Photo adjustment",
         "desc_ru": "Цветокоррекция фото",
-        "img": ["sites/canon/1.jpg"],
-        "url": [],
-        "tags": ["photofilter", "angular1"]
-      },
-
-      {
-        "name": "Gazprom",
-        "name_ru": "Газпром",
-        "logo": "sites/neft/logo.svg",
-        "desc_en": "Oilfields of Russia",
-        "desc_ru": "Карта нефтяных месторождений в России",
-        "img": ["sites/neft/1.jpg"],
-        "url": [
-          {
-            "link": "https://sp.popmech.ru/neft/#!/"
-          }
+        "img": [
+          "sites/canon/1.jpg"
         ],
-        "tags": ["map", "angular1", "canvas"]
+        "url": [],
+        "tags": [
+          "photofilter",
+          "angular1"
+        ]
       },
-
       {
         "name": "Ingosstrakh",
         "name_ru": "Ингосстрах",
         "desc_en": "The history of the company",
         "desc_ru": "История компании",
-        "img": ["sites/ingosstrakh/1.jpg"],
+        "img": [
+          "sites/ingosstrakh/1.jpg"
+        ],
         "url": [
           {
-            "link": "https://sp.kommersant.ru/ingos-70-let/#!/"
+            "link": "https://api.nahab.info/ingos-70-let/#!/"
           }
         ],
-        "tags": ["keyframe animation", "angular1"]
+        "tags": [
+          "keyframe animation",
+          "angular1"
+        ]
       }
     ]
   },
-
-  "sites_mob": {
-    "description": "Web-mobile applications",
-    "type": "mob",
+  "websites_react_also": {
+    "description": "Websites / React",
+    "description_ru": "Еще сайты (React)",
+    "type": "also",
     "projects": [
       {
-        "name": "Bond",
-        "logo": "logos/bond_street_logo.png",
-        "desc_en": "Quiz, videostories, timer",
-        "desc_ru": "Тест, видоеоистории, таймер",
-        "img": [
-          "webmobile/bond_preact/1.jpg",
-          "webmobile/bond_preact/2.jpg",
-          "webmobile/bond_preact/3.jpg"
-        ],
-        "tags": ["preact", "webmobile"],
-        "url": [
-          {
-            "link": "https://dev.nahab.info/aerovadim/bond_preact/?debug=true"
-          }
+        "name": "Tommy Hilfiger / Lamoda",
+        "logo": "sites/tommy/logo.png",
+        "cover": "sites/tommy/1.jpg",
+        "url": "https://sp.bazaar.ru/lamoda2021/",
+        "tags": [
+          "react",
+          "quiz",
+          "flipcard"
         ]
       },
       {
-        "name": "Bond",
-        "logo": "logos/bond_street_logo.png",
-        "desc_en": "",
-        "desc_ru": "",
-        "img": ["webmobile/bond2020/1.jpg"],
-        "tags": ["webmobile", "jquery"],
-        "url": [
-          {
-            "link": "https://dev.nahab.info/dev-landings/bond2020/"
-          }
+        "name": "v-a-c2021",
+        "logoname": "V-A-C",
+        "url": "https://sp.esquire.ru/v-a-c2021/",
+        "tags": [
+          "react"
+        ]
+      },
+      {
+        "name": "got2b2021",
+        "url": "https://sp.cosmo.ru/got2b2021/",
+        "logo": [
+          "logos/got2b-us-logo.png"
+        ],
+        "tags": [
+          "react"
+        ]
+      },
+      {
+        "name": "lioton",
+        "url": "https://sp.thevoicemag.ru/azbukazdorovihnog/",
+        "logoname": "Lioton",
+        "tags": [
+          "react"
+        ]
+      },
+      {
+        "name": "sensodine",
+        "url": "https://api.nahab.info/dev-icechallenge/",
+        "logo": "sites/sensodine/logo.png",
+        "cover": "sites/sensodine/1.jpg",
+        "tags": [
+          "angular1"
+        ]
+      },
+      {
+        "name": "gasprom",
+        "url": "https://sp.popmech.ru/neft/#!/",
+        "logo": "sites/neft/logo.svg",
+        "tags": [
+          "react"
+        ]
+      },
+      {
+        "name": "acquapanna2021",
+        "logoname": "PANNA",
+        "url": "http://sp.bazaar.ru/acquapanna2021/",
+        "tags": [
+          "react",
+          "quiz"
+        ]
+      },
+      {
+        "name": "galaxywatch",
+        "url": "http://sp.mhealth.ru/galaxywatch/",
+        "logo": [
+          "logos/samsung_galaxy_watch_logo.png"
+        ],
+        "tags": [
+          "react"
+        ]
+      },
+      {
+        "name": "travel2021",
+        "logoname": "Hylak Forte",
+        "url": "https://sp.cosmo.ru/travel2021/",
+        "tags": [
+          "react"
+        ]
+      },
+      {
+        "name": "playstation",
+        "url": "https://sp.esquire.ru/playstation/",
+        "logo": "logos/sony-logo.jpg",
+        "tags": [
+          "react"
+        ]
+      },
+      {
+        "name": "barbieastronaut",
+        "url": "https://sp.cosmo.ru/barbieastronaut",
+        "logo": [
+          "logos/barbie-logo.png"
+        ],
+        "tags": [
+          "react"
+        ]
+      },
+      {
+        "name": "fondpotanina",
+        "url": "https://sp.goodhouse.ru/fondpotanina/",
+        "logoname": "",
+        "cover": [
+          "sites/fondpotanina/1.jpg"
+        ],
+        "tags": [
+          "react"
+        ]
+      },
+      {
+        "name": "glucophage",
+        "url": "https://api.nahab.info/dev-glucophage2021/",
+        "logo": "sites/glucophage/logo.jpg",
+        "cover": "sites/glucophage/1.jpg",
+        "tags": [
+          "react"
         ]
       }
     ]
   },
-
   "react_apps": {
     "description": "React applications",
+    "description_ru": "React приложения",
     "type": "desc",
     "projects": [
       {
@@ -275,8 +520,13 @@
         "logo": "",
         "desc_en": "Slider generator",
         "desc_ru": "Генератор слайдеров для контент-менеджеров космо",
-        "img": ["reactaps/slidergen/1.png"],
-        "tags": ["react", "utils"],
+        "img": [
+          "reactaps/slidergen/1.png"
+        ],
+        "tags": [
+          "react",
+          "utils"
+        ],
         "url": [
           {
             "link": "https://slidergen.vercel.app/"
@@ -288,8 +538,13 @@
         "logo": "",
         "desc_en": "Generate code for insertions into an article and preview all screen sizes",
         "desc_ru": "Генератор кода вставок в iframe для контент-менеджеров космо, первьювер iframe'ов в разных размерах, подсчет их высоты",
-        "img": ["reactaps/iframes/1.jpg"],
-        "tags": ["react", "utils"],
+        "img": [
+          "reactaps/iframes/1.jpg"
+        ],
+        "tags": [
+          "react",
+          "utils"
+        ],
         "url": [
           {
             "link": "https://iframe-breakpoints.vercel.app/"
@@ -301,8 +556,13 @@
         "logo": "",
         "desc_en": "REST CRUD list. This is just demo, API calls are disabled",
         "desc_ru": "Генератор и список QR-кодов для печати в журналах Imedia Group. Это демо, вызовы API отключены",
-        "img": ["reactaps/qrcodes/1.png"],
-        "tags": ["react", "utils"],
+        "img": [
+          "reactaps/qrcodes/1.png"
+        ],
+        "tags": [
+          "react",
+          "utils"
+        ],
         "url": [
           {
             "link": "https://qrcodes-imweb.vercel.app/"
@@ -311,9 +571,33 @@
       }
     ]
   },
-
+  "philip_react": {
+    "description": "Web-mobile React",
+    "type": "multislider",
+    "projects": [
+      {
+        "name": "LTFL",
+        "name_ru": "LTFL",
+        "logo": "philipmorris/logo.png",
+        "desc_en": "Web-mobile promo apps for Philip Morris",
+        "desc_ru": "Ветвящиеся Web-mobile промо-приложения for Philip Morris. React-каркас, импорт форм, библиотек face-recognition, qrcode сканера от клиента. Промоакции имеют ограниченный срок, работают только с нужных доменов и в данный момент уже не доступны",
+        "img": [
+          "philipmorris/5.jpg",
+          "philipmorris/1.jpg",
+          "philipmorris/2.jpg",
+          "philipmorris/3.jpg",
+          "philipmorris/4.jpg"
+        ],
+        "tags": [
+          "react"
+        ]
+      }
+    ]
+  },
+  
   "music_apps": {
     "description": "Music applications",
+    "description_ru": "Ambient-cинтезатор",
     "type": "desc",
     "projects": [
       {
@@ -321,21 +605,13 @@
         "logo": "",
         "desc_en": "Drone-ambient synthesizer",
         "desc_ru": "Drone-ambient синтезатор",
-        "img": ["musicaps/drone/1.png"],
-        "tags": ["angular1", "sounddesign"],
-        "url": [
-          {
-            "link": "https://69lt1.csb.app/"
-          }
-        ]
-      },
-      {
-        "name": "Fugue in A minor",
-        "logo": "",
-        "desc_en": "Fugue in A minor",
-        "desc_ru": "Фуга для органа ля минор",
-        "img": ["musicaps/fugue_am/1.jpg"],
-        "tags": ["angular1", "sounddesign"],
+        "img": [
+          "musicaps/drone/1.png"
+        ],
+        "tags": [
+          "angular1",
+          "sounddesign"
+        ],
         "url": [
           {
             "link": "https://69lt1.csb.app/"
@@ -344,9 +620,9 @@
       }
     ]
   },
-
   "games_desc": {
     "description": "Desktop games",
+    "description_ru": "Промо-игры-таймкиллеры",
     "type": "desc",
     "projects": [
       {
@@ -355,30 +631,42 @@
         "logo_bg": "blue",
         "desc_en": "Game for Dominicana Republic Embassy.",
         "desc_ru": "Доминиканская республика. Ознакомительное путешествие в игровой форме.",
-        "img": ["games/dominicana/1.jpg"],
-        "url": [{ "link": "https://game.visitdominicanrepublic.ru/" }],
-        "tags": ["canvas", "game", "createjs"]
+        "img": [
+          "games/dominicana/1.jpg"
+        ],
+        "url": [
+          {
+            "link": "https://sp.novochag.ru/dominicana2020/"
+          }
+        ],
+        "tags": [
+          "canvas",
+          "game",
+          "createjs"
+        ]
       },
-
       {
         "name": "Нейродоз",
         "logo": "games/neurodoz/logo.svg",
         "desc_en": "- ",
         "desc_ru": "- ",
-        "img": ["games/neurodoz/1.jpg"],
+        "img": [
+          "games/neurodoz/1.jpg"
+        ],
         "url": [
           {
             "link": "https://sp.popmech.ru/nerodoz2017/#!/"
           }
         ]
       },
-
       {
         "name": "Kinder",
         "logo": "games/kinder/logo.jpeg",
         "desc_en": "- ",
         "desc_ru": "- ",
-        "img": ["games/kinder/1.jpg"],
+        "img": [
+          "games/kinder/1.jpg"
+        ],
         "url": [
           {
             "link": "https://dev.nahab.info/aerovadim/portfolio/games/kinder/mob/game.html"
@@ -389,18 +677,25 @@
   },
   "games_mob": {
     "description": "Web-mobile / Instagram games",
+    "description_ru": "Web-mobile / Instagram игры",
     "type": "mob",
     "projects": [
       {
         "name": "McDonalds",
         "logo": "games/mcdonalds/logo.png",
-        "desc_en": "Packman",
-        "desc_ru": "Пакман",
-        "img": ["games/mcdonalds/1.jpg"],
-        "tags": ["canvas", "game", "createjs"],
+        "desc_en": "",
+        "desc_ru": "",
+        "img": [
+          "games/mcdonalds/1.jpg"
+        ],
+        "tags": [
+          "canvas",
+          "game",
+          "createjs"
+        ],
         "url": [
           {
-            "link": "https://sp.imweb.ru/implant/sp/greetingcard2022/templates/default/preview.html"
+            "link": "http://dev.nahab.info/aerovadim/portfolio/games/mcdonalds/index.html"
           }
         ]
       },
@@ -408,10 +703,16 @@
         "name": "Cherkizovo",
         "name_ru": "Черкизово",
         "logo": "games/cherkizovo/logo.jpeg",
-        "desc_en": "Catch sausage",
-        "desc_ru": "Поймай ртом колбасу",
-        "img": ["games/cherkizovo/1.jpg"],
-        "tags": ["game", "instagram", "sparkAR"],
+        "desc_en": "",
+        "desc_ru": "",
+        "img": [
+          "games/cherkizovo/1.jpg"
+        ],
+        "tags": [
+          "game",
+          "instagram",
+          "sparkAR"
+        ],
         "url": [
           {
             "name": "Instagram",
@@ -429,8 +730,14 @@
         "logo": "games/soyuzmultfilm/logo.jpeg",
         "desc_en": "Keep balance",
         "desc_ru": "Держи равновесие",
-        "img": ["games/soyuzmultfilm/1.jpg"],
-        "tags": ["game", "instagram", "sparkAR"],
+        "img": [
+          "games/soyuzmultfilm/1.jpg"
+        ],
+        "tags": [
+          "game",
+          "instagram",
+          "sparkAR"
+        ],
         "url": [
           {
             "name": "Instagram",
@@ -444,25 +751,64 @@
       }
     ]
   },
+  "games_flash": {
+    "description": "Flash games",
+    "type": "desc",
+    "projects": [
+      {
+        "name": "Nokia",
+        "logo": "games/flash/nokia_logo.png",
+        "desc_en": "Nokia Parkur",
+        "desc_ru": "Nokia Паркур",
+        "img": [
+          "games/flash/nokia.png"
+        ],
+        "url": [
+          {
+            "link": "https://dev.nahab.info/aerovadim/portfolio/games/flash/nokia_parkur.zip"
+          }
+        ],
+       
+        "tags": [
+          "game",
+          "flash",
+          "design"
+        ]
+      }
+    ]
+  },
   "interactive_blocks": {
     "description": "Interactive blocks",
+    "description_ru": "Интерактивные блоки",
+    
     "type": "desc",
     "projects": [
       {
         "name": "Stenograffia",
         "desc_en": "Drawing, Transition effect",
         "desc_ru": "Спецэффект перехода между фото, рисовательный движок",
-        "img": ["intractiveblocks/stenograffia/1.jpg"],
-        "url": [{ "link": "https://sp.kommersant.ru/stenograffia2017/#!/" }],
-        "tags": ["drawing", "special effect", "canvas"]
+        "img": [
+          "intractiveblocks/stenograffia/1.jpg"
+        ],
+        "url": [
+          {
+            "link": "https://api.nahab.info/stenograffia2017/#!/"
+          }
+        ],
+        "tags": [
+          "drawing",
+          "special effect",
+          "canvas"
+        ]
       },
-
       {
         "name": "Gillette Venus",
         "logo": "intractiveblocks/gillettevenus/logo.png",
         "desc_en": "Put your photo on the COSMOPOLITAN cover!",
         "desc_ru": "Помести свое фото на обложку КОСМО!",
-        "img": ["intractiveblocks/gillettevenus/1.jpg"],
+        "img": [
+          "intractiveblocks/gillettevenus/1.jpg"
+        ],
         "url": [
           {
             "link": "https://sp.cosmo.ru/venus2016/#!/"
@@ -473,26 +819,34 @@
   },
   "animation": {
     "description": "Animation and art",
+    "description_ru": "Анимация и искусство",
     "type": "desc",
     "projects": [
       {
         "name": "Asteroidea",
         "desc_en": "Experimental particles animation",
         "desc_ru": "Анимация частиц",
-        "img": ["animation/asteroidea_particles.jpg"],
+        "img": [
+          "animation/asteroidea_particles.jpg"
+        ],
         "url": [
           {
             "link": "https://dev.nahab.info/aerovadim/liaparticles/proton/index.html"
           }
         ],
-        "tags": ["art", "animation", "particles"]
+        "tags": [
+          "art",
+          "animation",
+          "particles"
+        ]
       },
-
       {
         "name": "Asteroidea",
         "desc_en": "SVG logo to 3D. Threejs",
         "desc_ru": "Three.js SVG logo",
-        "img": ["animation/asteroidea_svg.jpg"],
+        "img": [
+          "animation/asteroidea_svg.jpg"
+        ],
         "url": [
           {
             "link": "https://dev.nahab.info/aerovadim/threejs/logo2/index.html",
@@ -510,19 +864,28 @@
             "name_ru": "Пейзаж 3"
           }
         ],
-        "tags": ["art", "animation", "3D SVG", "SVG animation"]
+        "tags": [
+          "art",
+          "animation",
+          "3D SVG",
+          "SVG animation"
+        ]
       }
     ]
   },
   "design": {
-    "description": "Design",
+    "description": "Design (2006-2010)",
+    "description_ru": "Дизайн (2006-2010)",
     "type": "desc",
     "projects": [
       {
         "name": "Burn",
+        "logo": "logos/burn_logo.png",
         "desc_en": "Photoshop collage and design for BURN",
-        "desc_ru": "Дизайн-коллаж спецпроекта BURN",
-        "img": ["design/vulkan-end_.jpg"],
+        "desc_ru": "Дизайн-коллаж спецпроекта BURN (коллаж собран в ФШ из отдельных объектов из клипарта)",
+        "img": [
+          "design/vulkan-end_.jpg"
+        ],
         "url": [
           {
             "link": "https://dev.nahab.info/aerovadim/portfolio/design/vulkan-end_.jpg",
@@ -535,89 +898,74 @@
             "name_ru": "Внутренняя страница"
           }
         ],
-        "tags": ["photoshop", "design", "collage"]
+        "tags": [
+          "photoshop",
+          "design",
+          "collage"
+        ]
       },
-
       {
         "name": "Panasonic FZ18",
-        "logo": "intractiveblocks/gillettevenus/logo.png",
         "desc_en": "Letter design for Panasonic",
         "desc_ru": "Рассылка Panasonic",
-        "img": ["design/crea_FZ18_mod3_tennis2_full.jpg"],
+        "logo": "logos/panasonic_logo.svg",
+        "img": [
+          "design/crea_FZ18_mod3_tennis2_full.jpg"
+        ],
         "url": [
           {
             "link": "https://dev.nahab.info/aerovadim/portfolio/design/crea_FZ18_mod3_tennis2_full.jpg"
           }
         ],
-        "tags": ["photoshop", "design"]
+        "tags": [
+          "photoshop",
+          "design"
+        ]
       }
     ]
   },
-  "banners": {
-    "description": "Banners",
-    "show_header": 1,
-    "type": "also",
+  
+  "vue_apps": {
+    "description": "Vue quizzes",
+    "description_ru": "Vue тесты",
+    "type": "mob",
     "projects": [
       {
-        "name": "SVG HTML",
-        "desc_en": "SVG banner",
-        "desc_ru": "SVG banner",
-        "cover": ["banners/banner_vk.jpg"],
-        "url": "https://x1xqr.csb.app/",
-        "tags": ["banner", "SVG animation"]
+        "name": "Cordiant",
+        "logo": "logos/logo_condiant.png",
+        "desc_en": "",
+        "desc_ru": "",
+        "img": [
+          "vue/quizzes/cordiant.png"
+        ],
+        "tags": [
+          "vue",
+          "quiz"
+        ],
+        "url": [
+          {
+            "link": "https://sp.imweb.ru/implant/sp/cordiant2022/"
+          }
+        ]
       },
+     
       {
-        "name": "Fullscreen",
-        "desc_en": "Fullscreen banner",
-        "desc_ru": "Fullscreen banner",
-        "cover": ["banners/banner_full.jpg"],
-        "url": "https://dev.nahab.info/banner/dist/2021_01_mcdmonopoly_base64/",
-        "tags": ["banner", "canvas", "createjs"]
-      },
-      {
-        "name": "Interactive",
-        "desc_en": "Interactive banner with rollover",
-        "desc_ru": "Interactive banner with rollover",
-        "cover": ["banners/banner_interactive.png"],
-        "url": "https://dev.nahab.info/aerovadim/-=cosmo/banners/promocode/desc/index.html",
-        "tags": ["banner"]
-      }
-    ]
-  },
-  "implants": {
-    "description": "Interactive implants",
-    "show_header": 1,
-    "type": "also",
-    "projects": [
-      {
-        "name": "pobeda2022",
-        "url": "https://sp.imweb.ru/implant/sp/pobeda2022",
-        "tags": ["vue", "quiz"]
-      },
-      {
-        "name": "guerlain-game2015",
-        "url": "https://sp.imweb.ru/implant/sp/guerlain-game2015/templates/default/preview.html",
-        "tags": ["drag"]
-      },
-      {
-        "name": "shiseido2016/",
-        "url": "https://sp.imweb.ru/implant/sp/shiseido2016/templates/default/preview.html",
-        "tags": ["angular"]
-      },
-      {
-        "name": "canon2019",
-        "url": "https://sp.imweb.ru/implant/sp/canon2019/templates/default/preview.html"
-      },
-
-      {
-        "name": "cosmo_form2022",
-        "url": "https://sp.imweb.ru/implant/sp/cosmo_form2022/templates/default/preview.html",
-        "tags": ["form"]
-      },
-
-      {
-        "name": "greetingcard2022",
-        "url": "https://sp.imweb.ru/implant/sp/greetingcard2022/templates/default/preview.html"
+        "name": "Pobeda",
+        "logo": "logos/pobeda_logo.png",
+        "desc_en": "",
+        "desc_ru": "",
+        "img": [
+          "vue/quizzes/pobeda.png"
+        ],
+        "tags": [
+          "vue",
+          "quiz"
+        ],
+        "url": [
+          {
+            "link": "https://dev.nahab.info/implant/sp/pobeda/"
+          }
+        ]
       }
     ]
   }

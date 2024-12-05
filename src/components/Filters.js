@@ -4,43 +4,15 @@ import { css, jsx } from "@emotion/react";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updatetag } from "../redux/TagSlice";
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-  Button,
-  Accordion,
-  Card,
-  useAccordionButton
-} from "react-bootstrap";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-  isDesktop
-} from "react-device-detect";
-
 import { Tag } from "./StyledTag";
 
 const TagCont = styled.div`
   margin-top: 1rem;
+  /*background-color: #dedede;*/
+  text-align: left;
+  padding-left: 2rem;
 `;
 
-/*const Tag = styled.div`
-  display: inline-block;
-  padding: 4px 10px 5px 10px;
-  background-color: gray;
-  transition: all 0.5s;
-  &:hover {
-    background-color: #333333;
-  }
-  color: white;
-  border-radius: 15px;
-  margin: 0px 2px 4px 2px;
-  cursor: pointer;
-`;*/
 const TagButton = styled(Tag)`
   cursor: pointer;
   transition: all 0.5s;
@@ -96,7 +68,7 @@ const found = arr1.some(r=> arr2.indexOf(r) >= 0)
 https://stackoverflow.com/questions/16312528/check-if-an-array-contains-any-element-of-another-array-in-javascript*/
 
 export const Filters = ({ dB, topMenu = false, ...props }) => {
-  const [tags, setTags] = useState(["react", "sounddesign", "canvas"]);
+  const [tags, setTags] = useState([]); //react", "sounddesign", "canvas
   const tag = useSelector((state) => state.tag.value);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -104,7 +76,6 @@ export const Filters = ({ dB, topMenu = false, ...props }) => {
     if (dB) {
       var fullAr = [];
       Object.keys(dB).forEach((keyName, i) => {
-        //console.log(keyName);
         dB[keyName].projects.forEach((item, index) => {
           if (item.tags) {
             item.tags.forEach((itemm, index) => {
@@ -116,40 +87,54 @@ export const Filters = ({ dB, topMenu = false, ...props }) => {
         });
       });
       setTags(fullAr);
-      //console.log('i', i);
-
-      //setFilters(db);
-      //doRefresh(prev => prev + 1);
     }
   }, [dB]);
   return (
-    <TagCont {...props}>
-      <span
-        className={topMenu ? "text-white" : ""}
-        css={css`
-          display: block;
-          margin: 0.5rem;
-        `}
-      >
-        SHOW BY TAG:&nbsp;
-      </span>
-      {tags.map((tagg, index) => (
-        <TagButton
-          onClick={() => dispatch(updatetag(tagg))}
-          key={"key" + index}
-          css={css`
-            background-color: ${tag === tagg ? `#333333` : ""};
-          `}
-        >
-          {tagg}
-        </TagButton>
-      ))}
-      <br />
-      {tag !== "" && (
-        <ClearButton onClick={() => dispatch(updatetag(""))}>
-          <span>CLEAR TAG</span>
-        </ClearButton>
+    <>
+      {tags.length > 0 ? (
+        <TagCont {...props}>
+          <div
+            className={topMenu ? "text-white" : ""}
+            css={css`
+              display: block;
+              margin: 0.5rem 0 0.5rem 0;
+
+              /*width: 100%;*/
+              color: white;
+              font-weight: 600px;
+              text-align: left;
+            `}
+          >
+            <span
+              css={css`
+                background-color: #7844a9;
+                padding-left: 10px;
+              `}
+            >
+              FILTER BY TAG:&nbsp;
+            </span>
+          </div>
+          {tags.sort(Intl.Collator().compare).map((tagg, index) => (
+            <TagButton
+              onClick={() => dispatch(updatetag(tagg))}
+              key={"key" + index}
+              css={css`
+                background-color: ${tag === tagg ? `#333333` : ""};
+              `}
+            >
+              {tagg}
+            </TagButton>
+          ))}
+          <br />
+          {tag !== "" && (
+            <ClearButton onClick={() => dispatch(updatetag(""))}>
+              <span>CLEAR TAG</span>
+            </ClearButton>
+          )}
+        </TagCont>
+      ) : (
+        <TagCont {...props}>LOADING CONTENT...</TagCont>
       )}
-    </TagCont>
+    </>
   );
 };
